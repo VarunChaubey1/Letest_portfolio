@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varun Chaubey - Data Analyst & BI Developer Portfolio</title>
+    <meta name="description" content="Varun Chaubey's portfolio: Expert Data Analyst & BI Developer skilled in Power BI, SQL, Python, and Power Apps for impactful data visualization.">
+    <meta name="keywords" content="Varun Chaubey, data analyst, business intelligence developer, Power BI, SQL, Python, Power Apps, data visualization, BI projects, portfolio">
+    <meta name="author" content="Varun Chaubey">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Varun Chaubey - Data Analyst & BI Developer Portfolio">
+    <meta property="og:description" content="Explore Varun Chaubey's portfolio showcasing expertise in data analysis and business intelligence with Power BI, SQL, Python, and Power Apps.">
+    <meta property="og:image" content="https://analystvarun.com/images/varun-photo.webp">
+    <meta property="og:url" content="https://analystvarun.com/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Varun Chaubey - Data Analyst & BI Developer Portfolio">
+    <meta name="twitter:description" content="Portfolio of Varun Chaubey featuring data analysis and BI projects with Power BI, SQL, Python, and Power Apps.">
+    <meta name="twitter:image" content="https://analystvarun.com/images/varun-photo.webp">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" as="style" onload="this.rel='stylesheet';this.onload=null">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" as="script">
+    <link rel="preload" href="images/varun-photo.webp" as="image">
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="https://analystvarun.com/">
+    <style>
+        /* Critical CSS for fast loading (Hero + Navbar) */
+        .navbar { position: sticky; top: 0; width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 1rem clamp(1rem, 5vw, 2.5rem); background: rgba(46, 49, 146, 0.9); backdrop-filter: blur(10px); z-index: 1000; transition: background 0.3s ease; }
+        .navbar.scrolled { background: #2E3192; }
+        .logo { font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 700; color: #F4A261; letter-spacing: 1.2px; }
+        .nav-links { display: flex; list-style: none; gap: clamp(1.2rem, 3vw, 2rem); }
+        .nav-links a { color: #fff; text-decoration: none; font-weight: 500; font-size: clamp(0.9rem, 2vw, 1rem); position: relative; transition: color 0.3s ease; }
+        .nav-links a::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -4px; left: 0; background-color: #F4A261; transition: width 0.3s ease; }
+        .nav-links a:hover::after { width: 100%; }
+        .nav-links a:hover { color: #F4A261; }
+        .hero { min-height: 100vh; background-size: cover; background-position: center; padding: 5rem clamp(1rem, 5vw, 2rem); max-width: 1200px; margin: 0 auto; position: relative; display: flex; align-items: flex-start; }
+        .hero-content { position: relative; z-index: 2; display: flex; align-items: center; justify-content: flex-start; flex-wrap: wrap; gap: 2rem; width: 100%; background: transparent; margin-top: 0; padding-left: 2rem; }
+        .hero-text { flex: 1; display: flex; flex-direction: column; justify-content: center; text-align: left; min-width: 400px; color: #05036f; padding: 0.5rem 0 0.5rem 1rem; border-radius: 0; box-shadow: none; background: transparent; margin-top: 2rem; }
+        .hero-title { font-size: clamp(2rem, 6vw, 4rem); font-weight: 700; line-height: 1.1; white-space: nowrap; }
+        .tagline { font-size: clamp(1.2rem, 3.5vw, 1.8rem); font-weight: 500; margin-top: 0.8rem; }
+    </style>
+</head>
+<body>
+    <div class="loader">
+        <div class="spinner"></div>
+    </div>
+    <svg style="position:absolute;width:0;height:0">
+        <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#F4A261"/>
+                <stop offset="100%" style="stop-color:#2E3192"/>
+            </linearGradient>
+        </defs>
+    </svg>
+    <nav class="navbar">
+        <div class="logo">Varun Chaubey</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+    <section id="home" class="section hero">
+        <a href="tel:+919473733774" class="reach-out-btn">Reach Out</a>
+        <div class="hero-content">
+            <div class="hero-visual">
+                <svg class="rotating-ring" viewBox="0 0 200 200">
+                    <circle cx="100" cy="100" r="90" fill="none" stroke="url(#gradient)" stroke-width="4"/>
+                </svg>
+                <picture>
+                    <source srcset="images/varun-photo-small.webp 300w, images/varun-photo.webp 600w" type="image/webp" sizes="(max-width: 768px) 300px, 600px">
+                    <img src="images/varun-photo.jpg" alt="Varun Chaubey - Data Analyst & BI Developer" class="profile-photo" loading="lazy" decoding="async" width="360" height="360">
+                </picture>
+            </div>
+            <div class="hero-text">
+                <h1 class="hero-title">Varun Chaubey</h1>
+                <p class="tagline">Data Analyst | Transforming Insights</p>
+                <ul class="intro-text">
+                    <li>2+ years of experience in data analysis and BI development.</li>
+                    <li>Expert in Power BI, SQL, Python, and Power Apps for actionable insights.</li>
+                    <li>Proven track record in automating workflows and optimizing performance.</li>
+                </ul>
+                <div class="button-container">
+                    <a href="#projects" class="btn primary-btn">View Projects</a>
+                    <a href="https://drive.google.com/file/d/18USOVOJa06Qouf5-1V-uTwwhB3dASIIe/view?usp=sharing" target="_blank" class="btn secondary-btn">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="experience" class="section">
+        <h2 class="section-title">Experience</h2>
+        <div class="experience-grid">
+            <div class="exp-card">
+                <img src="images/experience/adglobal360-logo.webp" class="company-logo" alt="Adglobal360 Logo" loading="lazy">
+                <div class="exp-content">
+                    <h3>BI Analyst</h3>
+                    <p class="company">Adglobal360 India Pvt. Ltd. | Apr 2024 – Present (Nov 2025)</p>
+                    <ul>
+                        <li>Automated analysis of 10K+ JSON files daily with Python.</li>
+                        <li>Integrated APIs, saving 15 hours/week in workflows.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="exp-card">
+                <img src="images/experience/varahe-logo.webp" class="company-logo" alt="Varahe Analytics Logo" loading="lazy">
+                <div class="exp-content">
+                    <h3>BI Consultant</h3>
+                    <p class="company">Varahe Analytics Pvt. Ltd. | Jul 2023 – Apr 2024</p>
+                    <ul>
+                        <li>Built interactive Power BI dashboards for actionable insights.</li>
+                        <li>Optimized SQL queries, boosting performance by 25%.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="section">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fas fa-table"></i>
+                <h3>Excel</h3>
+                <div class="progress-container">
+                    <div class="progress-bar" data-percentage="92">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <span class="progress-percentage">0%</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-chart-bar"></i>
+                <h3>Power BI</h3>
+                <div class="progress-container">
+                    <div class="progress-bar" data-percentage="87">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <span class="progress-percentage">0%</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-cloud"></i>
+                <h3>Power BI Service</h3>
+                <div class="progress-container">
+                    <div class="progress-bar" data-percentage="85">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <span class="progress-percentage">0%</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-python"></i>
+                <h3>Python</h3>
+                <div class="progress-container">
+                    <div class="progress-bar" data-percentage="85">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <span class="progress-percentage">0%</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-eye"></i>
+                <h3>Looker Studio</h3>
+                <div class="progress-container">
+                    <div class="progress-bar" data-percentage="80">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <span class="progress-percentage">0%</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-database"></i>
+                <h3>SQL</h3>
+                <div class="progress-container">
+                    <div class="progress-bar" data-percentage="90">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <span class="progress-percentage">0%</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-chart-pie"></i>
+                <h3>Tableau</h3>
+                <div class="progress-container">
+                    <div class="progress-bar" data-percentage="75">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <span class="progress-percentage">0%</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-link"></i>
+                <h3>API Integration</h3>
+                <div class="progress-container">
+                    <div class="progress-bar" data-percentage="75">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <span class="progress-percentage">0%</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Power Apps</h3>
+                <div class="progress-container">
+                    <div class="progress-bar" data-percentage="80">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <span class="progress-percentage">0%</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-tools"></i>
+                <h3>Postman</h3>
+                <div class="progress-container">
+                    <div class="progress-bar" data-percentage="80">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <span class="progress-percentage">0%</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-snowflake"></i>
+                <h3>Snowflake</h3>
+                <div class="progress-container">
+                    <div class="progress-bar" data-percentage="90">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <span class="progress-percentage">0%</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-cloud"></i>
+                <h3>Azure Data Factory</h3>
+                <div class="progress-container">
+                    <div class="progress-bar" data-percentage="85">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <span class="progress-percentage">0%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="certifications" class="section">
+        <h2 class="section-title">Certifications</h2>
+        <div class="cert-grid">
+            <div class="cert-card">
+                <img src="images/certificates/google-analyst-thumbnail.webp" alt="Google Data Analyst Certification" loading="lazy" decoding="async">
+                <div class="cert-content">
+                    <h3>Google Data Analyst</h3>
+                    <a href="https://skillshop.credential.net/675fb475-adcf-40eb-a0dc-900c45d6bec4#acc.aqnY9oMy" target="_blank" class="modern-btn">View Certificate</a>
+                </div>
+            </div>
+            <div class="cert-card">
+                <img src="images/certificates/powerbi-masterclass-thumbnail.webp" alt="Power BI Master Class Certification" loading="lazy" decoding="async">
+                <div class="cert-content">
+                    <h3>Power BI Master Class</h3>
+                    <a href="https://drive.google.com/file/d/1brUVNXedj6sE9QWaFm1Znv36HJojIgii/view?usp=sharing" target="_blank" class="modern-btn">View Certificate</a>
+                </div>
+            </div>
+            <div class="cert-card">
+                <img src="images/certificates/sql-cert-thumbnail.webp" alt="SQL Certification" loading="lazy" decoding="async">
+                <div class="cert-content">
+                    <h3>SQL</h3>
+                    <a href="https://drive.google.com/file/d/1mmmX_WyhMiKnbiKjxKFLEnJ6m76ABvb8/view?usp=sharing" target="_blank" class="modern-btn">View Certificate</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="section">
+        <h2 class="section-title">Projects</h2>
+        <div class="slider-container" role="region" aria-label="Projects Slider">
+            <div class="project-slider">
+                <div class="project-card">
+                    <img src="images/projects/ola-thumbnail.webp" alt="OLA Ride Analysis Dashboard" loading="lazy" decoding="async">
+                    <h3>OLA Ride Analysis</h3>
+                    <p class="project-desc">Tools: Power BI, SQL<br>Outcome: Visualized ride patterns, improving operational efficiency by 10%.</p>
+                    <div class="project-links">
+                        <a href="https://app.powerbi.com/view?r=eyJrIjoiMDQzNDlmZjgtZjZjYi00M2UzLWI1ZDEtMmZjZDFkYTMxYWFhIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" class="modern-btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/projects/blinkit-thumbnail.webp" alt="Blinkit Delivery Dashboard" loading="lazy" decoding="async">
+                    <h3>Blinkit Dashboard</h3>
+                    <p class="project-desc">Tools: Power BI, Python<br>Outcome: Reduced delivery time analysis by 20%.</p>
+                    <div class="project-links">
+                        <a href="https://app.powerbi.com/view?r=eyJrIjoiMjk0YWM1ZjctNWE5My00OWM2LTg1MjQtMTAwMDBkNmU0MDI5IiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" class="modern-btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/projects/zomato-thumbnail.webp" alt="Zomato Restaurant Analysis" loading="lazy" decoding="async">
+                    <h3>Zomato Analysis</h3>
+                    <p class="project-desc">Tools: Power BI, SQL<br>Outcome: Enhanced restaurant performance insights by 15%.</p>
+                    <div class="project-links">
+                        <a href="https://app.powerbi.com/view?r=eyJrIjoiMDBiMzA2NWItNjE5My00NWRmLWIxZmMtOThiMGRhNjJkZTY0IiwidCI6ImYzMjM8N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" class="modern-btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/projects/election-thumbnail.webp" alt="Election Insights Dashboard" loading="lazy" decoding="async">
+                    <h3>Election Dashboard</h3>
+                    <p class="project-desc">Tools: Power BI, Python<br>Outcome: Provided real-time election insights for stakeholders.</p>
+                    <div class="project-links">
+                        <a href="https://app.powerbi.com/view?r=eyJrIjoiZDgxYTcyNjQtNDI3Yi00OWJiLTlhZjgtYjIwOWFlZGY4Y2JhIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" class="modern-btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/projects/atm-thumbnail.webp" alt="ATM Transaction Analysis" loading="lazy" decoding="async">
+                    <h3>ATM Transaction Analysis</h3>
+                    <p class="project-desc">Tools: Power BI, SQL<br>Outcome: Improved transaction monitoring efficiency by 12%.</p>
+                    <div class="project-links">
+                        <a href="https://app.powerbi.com/view?r=eyJrIjoiZGRlMDNkNjItZTg2Mi00ZjQyLTk5MjgtM2FmYTAwNWNhNTJjIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" class="modern-btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/projects/ipl-thumbnail.webp" alt="IPL Statistics Dashboard" loading="lazy" decoding="async">
+                    <h3>IPL Dashboard</h3>
+                    <p class="project-desc">Tools: Power BI, Python<br>Outcome: Delivered detailed match statistics for fan engagement.</p>
+                    <div class="project-links">
+                        <a href="https://app.powerbi.com/view?r=eyJrIjoiZWYwZWIwMjgtZTE5YS00ZTEyLThhYjUtMDMyMjk0ZjY2YzRjIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" class="modern-btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/projects/weather-thumbnail.webp" alt="Live Weather Data and Forecasting" loading="lazy" decoding="async">
+                    <h3>Live Weather Data and Forecasting</h3>
+                    <p class="project-desc">Tools: Power BI, API, SQL<br>Outcome: Enabled real-time weather tracking and forecasting.</p>
+                    <div class="project-links">
+                        <a href="https://app.powerbi.com/view?r=eyJrIjoiMjU5OGIzMTItOTM4YS00YWZiLTgyM2UtNmUyMGZjNDkyMmRkIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" class="modern-btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/projects/Spotify-thumbnail.webp" alt="Spotify Analysis Dashboard" loading="lazy" decoding="async">
+                    <h3>Spotify Analysis</h3>
+                    <p class="project-desc">Tools: Power BI, Python<br>Outcome: Analyzed user listening patterns to enhance recommendations.</p>
+                    <div class="project-links">
+                        <a href="https://app.powerbi.com/view?r=eyJrIjoiMzU4MDhkNDctZWM5Zi00NDQ4LWFkN2ItNzNiNWRiNWVjZjIwIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" class="modern-btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <button class="slider-btn prev-btn" role="button" aria-label="Previous Project" tabindex="0"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-btn next-btn" role="button" aria-label="Next Project" tabindex="0"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+    <section id="achievements" class="section">
+        <h2 class="section-title">Achievements</h2>
+        <div class="slider-container" role="region" aria-label="Achievements Slider">
+            <div class="achievement-slider">
+                <div class="achievement-card">
+                    <img src="images/achievements/achievement1.webp" alt="🏅 Corona Yodha Samman" loading="lazy" decoding="async" onclick="openLightbox('images/achievements/achievement1.webp', '🏅 Corona Yodha Samman')">
+                    <h3>🏅 Corona Yodha Samman</h3>
+                </div>
+                <div class="achievement-card">
+                    <img src="images/achievements/achievement2.webp" alt="🎓 MBA Academic Excellence" loading="lazy" decoding="async" onclick="openLightbox('images/achievements/achievement2.webp', '🎓 MBA Academic Excellence')">
+                    <h3>🎓 MBA Academic Excellence</h3>
+                </div>
+                <div class="achievement-card">
+                    <img src="images/achievements/achievement3.webp" alt="📰 Youth Voice Feature" loading="lazy" decoding="async" onclick="openLightbox('images/achievements/achievement3.webp', '📰 Youth Voice Feature')">
+                    <h3>📰 Youth Voice Feature</h3>
+                </div>
+                <div class="achievement-card">
+                    <img src="images/achievements/achievement4.webp" alt="📖 Article Publication" loading="lazy" decoding="async" onclick="openLightbox('images/achievements/achievement4.webp', '📖 Article Publication')">
+                    <h3>📖 Article Publication</h3>
+                </div>
+                <div class="achievement-card">
+                    <img src="images/achievements/chhat-puja-article.webp"alt=" Article on Chhath Puja" loading="lazy" decoding="async" onclick="openLightbox('images/achievements/chhat-puja-article.webp', ' Article on Chhath Puja')">
+                    <h3> Article on Chhath Puja</h3>
+            </div>
+          </div>
+            <button class="slider-btn prev-btn" role="button" aria-label="Previous Achievement" tabindex="0"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-btn next-btn" role="button" aria-label="Next Achievement" tabindex="0"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+    <section id="contact" class="section">
+        <h2 class="section-title">Let's Connect</h2>
+        <div class="connect-container">
+            <p class="connect-text">Interested in collaborating or have a project in mind? Reach out to me!</p>
+            <div class="connect-links">
+                <a href="https://linkedin.com/in/varunchaubey" target="_blank" class="modern-btn connect-btn" role="button">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="mailto:varun.chaubey@example.com" class="modern-btn connect-btn" role="button">
+                    <i class="fas fa-envelope"></i> Email Me
+                </a>
+                <a href="tel:+919473733774" class="modern-btn connect-btn" role="button">
+                    <i class="fas fa-phone"></i> Call Me
+                </a>
+            </div>
+        </div>
+    </section>
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" onclick="closeLightbox()">×</span>
+        <img src="" alt="Full-size image" id="lightbox-img">
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+    <footer>
+        <p>© 2025 Varun Chaubey - Data Analyst & BI Developer 
+            <a href="https://linkedin.com/in/varunchaubey" target="_blank" class="footer-icon"><i class="fab fa-linkedin"></i></a> 
+            <a href="https://github.com/VarunChaubey1" target="_blank" class="footer-icon"><i class="fab fa-github"></i></a>
+        </p>
+    </footer>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+    <script defer src="script.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+</body>
+</html>

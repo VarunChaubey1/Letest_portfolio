@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | Varun Chaubey</title>
+    <meta name="robots" content="noindex">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" as="style" onload="this.rel='stylesheet';this.onload=null">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; text-align: center; padding: 2rem; background: #F5F5F5; font-family: 'Inter', sans-serif;">
+        <h1 style="font-size: clamp(4rem, 10vw, 6rem); color: #2E3192; margin-bottom: 1rem;">404</h1>
+        <h2 style="color: #333; margin-bottom: 1rem; font-size: clamp(1.5rem, 4vw, 2rem);">Oops! Page Not Found</h2>
+        <p style="color: #666; margin-bottom: 2rem; font-size: 1.1rem;">The page you're looking for doesn't exist. Redirecting to home in 3 seconds...</p>
+        <a href="/" style="padding: 0.8rem 2rem; background: linear-gradient(135deg, #F4A261, #2E3192); color: #fff; text-decoration: none; border-radius: 25px; font-weight: 600; transition: all 0.3s ease;">Go Home</a>
+    </div>
+    <script>
+        setTimeout(() => { window.location.href = '/'; }, 3000);
+    </script>
+</body>
+</html>
