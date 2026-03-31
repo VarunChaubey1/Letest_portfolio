@@ -117,12 +117,38 @@ button{border:none;cursor:pointer;background:none;}
 
 /* ─── HERO ─── */
 .hero{
-  min-height:100vh;
-  background:var(--bg2);
-  display:flex;align-items:center;
-  padding:7rem clamp(1.5rem,7vw,6rem) 4rem;
-  position:relative;overflow:hidden;
+  height:100vh;
+  min-height:600px;
+  background:radial-gradient(ellipse 80% 80% at 50% 50%, #0F1830 0%, #0A0E1A 100%);
+  display:flex;
+  align-items:center;
+  padding:0 clamp(1.5rem,7vw,6rem);
+  padding-top:70px; /* offset for fixed navbar */
+  position:relative;
+  overflow:hidden;
 }
+/* grid texture */
+.hero::before{
+  content:'';position:absolute;inset:0;
+  background-image:
+    linear-gradient(rgba(79,142,247,.05) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(79,142,247,.05) 1px,transparent 1px);
+  background-size:50px 50px;
+  pointer-events:none;
+}
+/* glow blobs — spread across full viewport */
+.glow{position:absolute;border-radius:50%;pointer-events:none;filter:blur(90px);}
+.g1{width:700px;height:700px;background:rgba(79,142,247,.2);top:-15%;left:-10%;}
+.g2{width:600px;height:600px;background:rgba(45,212,191,.14);bottom:-20%;right:-5%;}
+.g3{width:500px;height:500px;background:rgba(167,139,250,.1);top:10%;right:20%;}
+/* scroll hint at bottom */
+.hero-scroll{
+  position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);
+  display:flex;flex-direction:column;align-items:center;gap:.4rem;
+  color:var(--text3);font-size:.65rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;
+  animation:sc-bob 2s ease-in-out infinite;
+}
+@keyframes sc-bob{0%,100%{transform:translateX(-50%) translateY(0);}50%{transform:translateX(-50%) translateY(6px);}}
 
 /* unified grid texture across full hero */
 .hero::before{
@@ -145,17 +171,12 @@ button{border:none;cursor:pointer;background:none;}
 /* grid texture on left — remove since hero handles it */
 .hero-l::before{ display:none; }
 
-/* glow blobs — spread across full width */
-.glow{position:absolute;border-radius:50%;pointer-events:none;filter:blur(120px);}
-.g1{width:500px;height:500px;background:rgba(79,142,247,.1);top:-150px;left:-100px;}
-.g2{width:400px;height:400px;background:rgba(45,212,191,.07);bottom:-100px;right:10%;}
-
 .h-chip{
   display:inline-flex;align-items:center;gap:.5rem;
   background:rgba(45,212,191,.1);border:1px solid rgba(45,212,191,.25);
   color:var(--teal);padding:.28rem .85rem;border-radius:50px;
   font-size:.7rem;font-weight:700;letter-spacing:.8px;text-transform:uppercase;
-  margin-bottom:2rem;width:fit-content;
+  margin-bottom:1.2rem;width:fit-content;
 }
 .h-chip-dot{width:6px;height:6px;border-radius:50%;background:var(--teal);animation:pulse 2s ease-in-out infinite;}
 @keyframes pulse{0%,100%{opacity:1;}50%{opacity:.3;}}
@@ -164,7 +185,7 @@ button{border:none;cursor:pointer;background:none;}
   font-family:var(--h);
   font-size:clamp(2.5rem,4.5vw,5rem);
   font-weight:700;line-height:1;letter-spacing:-2px;
-  color:var(--text);margin-bottom:1.2rem;
+  color:var(--text);margin-bottom:.9rem;
   white-space:nowrap;
 }
 .h-name-accent{
@@ -174,22 +195,22 @@ button{border:none;cursor:pointer;background:none;}
 
 .h-role{
   font-size:.9rem;font-weight:500;color:var(--text2);
-  margin-bottom:1.5rem;display:flex;align-items:center;gap:.7rem;flex-wrap:wrap;
+  margin-bottom:1rem;display:flex;align-items:center;gap:.7rem;flex-wrap:wrap;
 }
 .h-role-dot{width:3px;height:3px;border-radius:50%;background:var(--text3);}
 
 .h-desc{
-  font-size:.92rem;color:var(--text2);line-height:1.85;
-  max-width:440px;margin-bottom:2.5rem;font-weight:400;
+  font-size:.92rem;color:var(--text2);line-height:1.8;
+  max-width:440px;margin-bottom:1.6rem;font-weight:400;
 }
 
 /* Stats */
 .h-stats{
-  display:flex;gap:0;margin-bottom:2.5rem;
+  display:flex;gap:0;margin-bottom:1.8rem;
   border:1px solid var(--border);border-radius:12px;overflow:hidden;width:fit-content;
 }
 .hst{
-  padding:.9rem 1.5rem;display:flex;flex-direction:column;
+  padding:.75rem 1.3rem;display:flex;flex-direction:column;
   border-right:1px solid var(--border);
 }
 .hst:last-child{border-right:none;}
@@ -233,8 +254,8 @@ button{border:none;cursor:pointer;background:none;}
 /* circle photo frame */
 .photo-wrap{
   position:relative;
-  width:clamp(240px,30vw,320px);
-  height:clamp(240px,30vw,320px);
+  width:clamp(260px,32vw,360px);
+  height:clamp(260px,32vw,360px);
 }
 /* spinning gradient border */
 .photo-spin{
@@ -265,32 +286,32 @@ button{border:none;cursor:pointer;background:none;}
 
 /* orbiting dot */
 .photo-orbit{
-  position:absolute;inset:-16px;border-radius:50%;
-  border:1px dashed rgba(79,142,247,.2);
+  position:absolute;inset:-20px;border-radius:50%;
+  border:1px dashed rgba(79,142,247,.35);
   animation:rotate 20s linear infinite reverse;
 }
 .orbit-dot{
-  position:absolute;top:-5px;left:calc(50% - 5px);
-  width:10px;height:10px;border-radius:50%;
+  position:absolute;top:-6px;left:calc(50% - 6px);
+  width:12px;height:12px;border-radius:50%;
   background:var(--blue);
-  box-shadow:0 0 12px var(--blue),0 0 24px rgba(79,142,247,.4);
+  box-shadow:0 0 16px var(--blue),0 0 30px rgba(79,142,247,.5);
 }
 
 /* floating tag cards */
 .ftag{
   position:absolute;z-index:5;
-  background:rgba(20,25,41,.9);
+  background:rgba(14,20,40,.92);
   border:1px solid var(--border-hover);
-  border-radius:10px;backdrop-filter:blur(12px);
-  padding:.55rem .9rem;
-  display:flex;align-items:center;gap:.55rem;
-  box-shadow:0 8px 32px rgba(0,0,0,.4);
+  border-radius:12px;backdrop-filter:blur(16px);
+  padding:.65rem 1rem;
+  display:flex;align-items:center;gap:.6rem;
+  box-shadow:0 12px 40px rgba(0,0,0,.5);
   white-space:nowrap;
   animation:ftag-f 4s ease-in-out infinite;
 }
-.ftag.ft1{bottom:-10px;left:-30px;animation-delay:0s;}
-.ftag.ft2{top:10px;right:-30px;animation-delay:1.5s;}
-@keyframes ftag-f{0%,100%{transform:translateY(0);}50%{transform:translateY(-7px);}}
+.ftag.ft1{bottom:-20px;left:-50px;animation-delay:0s;}
+.ftag.ft2{top:0px;right:-55px;animation-delay:1.5s;}
+@keyframes ftag-f{0%,100%{transform:translateY(0);}50%{transform:translateY(-8px);}}
 .ftag-icon{width:28px;height:28px;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:.8rem;color:#fff;flex-shrink:0;}
 .fi-b{background:linear-gradient(135deg,var(--blue),var(--purple));}
 .fi-t{background:linear-gradient(135deg,var(--teal),#059669);}
@@ -492,19 +513,18 @@ footer p{font-size:.78rem;color:var(--text3);}
   .reach{display:none;}
 }
 @media(max-width:960px){
-  .hero{padding:5rem 1.5rem 2.5rem;}
-  .hero>div{flex-direction:column;gap:1.5rem;align-items:center;text-align:center;}
+  .hero{height:auto;min-height:100vh;padding:5rem 1.5rem 4rem;align-items:center;}
+  .hero>div:not(.glow):not(.hero-scroll){flex-direction:column;gap:2rem;align-items:center;text-align:center;}
   .hero-r{padding-left:0;order:-1;}
   .hero-l{align-items:center;}
   .h-chip,.h-stats,.h-btns,.h-role{justify-content:center;}
   .h-desc{margin-left:auto;margin-right:auto;}
   .ct-inner{grid-template-columns:1fr;gap:2.5rem;}
-  .photo-area{gap:.8rem;}
+  .photo-area{gap:.6rem;}
 }
 @media(max-width:580px){
   .sec{padding:4rem 1.5rem;}
   .divider{margin:0 1.5rem;}
-  .hero-l{padding:6rem 1.5rem 3rem;}
   .sk-grid{grid-template-columns:repeat(2,1fr);}
   .exp-grid,.cert-grid{grid-template-columns:1fr;}
   footer{flex-direction:column;text-align:center;align-items:center;}
@@ -512,6 +532,155 @@ footer p{font-size:.78rem;color:var(--text3);}
   .h-stats{flex-wrap:wrap;}
   .ftag{display:none;}
 }
+
+/* ══════════════════════════════════════
+   HIRE ME / FREELANCE SECTION STYLES
+══════════════════════════════════════ */
+
+/* Trust strip */
+.trust-strip{background:var(--card2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:1rem clamp(1.5rem,7vw,6rem);}
+.trust-inner{max-width:1220px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:2.5rem;flex-wrap:wrap;}
+.trust-item{display:flex;align-items:center;gap:.55rem;font-size:.75rem;font-weight:600;color:var(--text3);}
+.trust-item i{color:var(--blue);font-size:.85rem;}
+
+/* Services */
+.svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:1.5rem;}
+.svc-card{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:20px;padding:2rem 1.8rem;
+  position:relative;overflow:hidden;transition:all .35s ease;
+}
+.svc-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;opacity:0;transition:opacity .3s;}
+.svc-card.sc-blue::after{background:linear-gradient(90deg,var(--blue),var(--teal));}
+.svc-card.sc-teal::after{background:linear-gradient(90deg,var(--teal),#059669);}
+.svc-card.sc-purple::after{background:linear-gradient(90deg,var(--purple),var(--blue));}
+.svc-card.sc-orange::after{background:linear-gradient(90deg,#F59E0B,#EF4444);}
+.svc-card:hover{transform:translateY(-6px);box-shadow:0 20px 50px rgba(0,0,0,.4);border-color:var(--border-hover);}
+.svc-card:hover::after{opacity:1;}
+.svc-card.popular{border-color:rgba(79,142,247,.4);}
+.pop-badge{position:absolute;top:1.2rem;right:1.2rem;background:linear-gradient(135deg,var(--blue),var(--teal));color:#fff;padding:.2rem .75rem;border-radius:50px;font-size:.6rem;font-weight:800;letter-spacing:.8px;text-transform:uppercase;}
+.svc-ico{width:48px;height:48px;border-radius:13px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;margin-bottom:1.3rem;}
+.ico-b{background:rgba(79,142,247,.15);color:var(--blue);}
+.ico-t{background:rgba(45,212,191,.12);color:var(--teal);}
+.ico-p{background:rgba(167,139,250,.12);color:var(--purple);}
+.ico-o{background:rgba(245,158,11,.12);color:#F59E0B;}
+.svc-card h3{font-family:var(--h);font-size:1.1rem;font-weight:700;color:var(--text);margin-bottom:.55rem;}
+.svc-card>p{font-size:.81rem;color:var(--text2);line-height:1.7;margin-bottom:1.4rem;}
+.svc-feats{list-style:none;margin-bottom:1.6rem;}
+.svc-feats li{font-size:.79rem;color:var(--text2);padding:.32rem 0;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:.55rem;}
+.svc-feats li:last-child{border-bottom:none;}
+.svc-feats li i{color:var(--teal);font-size:.6rem;flex-shrink:0;}
+.svc-price{display:flex;align-items:baseline;gap:.35rem;margin-bottom:.5rem;}
+.pr-from{font-size:.68rem;color:var(--text3);font-weight:600;}
+.pr-amt{font-family:var(--h);font-size:1.75rem;font-weight:700;color:var(--text);}
+.pr-unit{font-size:.72rem;color:var(--text3);}
+.svc-btn{width:100%;padding:.7rem;border-radius:10px;font-size:.83rem;font-weight:700;transition:all .3s;border:1px solid var(--border-hover);color:var(--text);background:transparent;cursor:pointer;font-family:var(--b);}
+.svc-btn:hover{background:var(--blue);border-color:var(--blue);color:#fff;}
+.svc-card.popular .svc-btn{background:linear-gradient(135deg,var(--blue),#3b6fd4);border-color:transparent;color:#fff;}
+.svc-card.popular .svc-btn:hover{box-shadow:0 6px 20px rgba(79,142,247,.4);}
+
+/* Process */
+.proc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem;position:relative;}
+.proc-grid::before{content:'';position:absolute;top:35px;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--border),transparent);pointer-events:none;}
+.proc-step{text-align:center;}
+.proc-num{width:70px;height:70px;border-radius:50%;background:var(--card);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;margin:0 auto 1.4rem;position:relative;z-index:2;font-family:var(--h);font-size:1.25rem;font-weight:700;color:var(--blue);transition:all .3s;}
+.proc-step:hover .proc-num{background:var(--blue);color:#fff;border-color:var(--blue);box-shadow:0 0 28px rgba(79,142,247,.4);}
+.proc-step h4{font-size:.93rem;font-weight:700;color:var(--text);margin-bottom:.45rem;}
+.proc-step p{font-size:.79rem;color:var(--text2);line-height:1.65;}
+
+/* Booking form */
+.book-wrap{display:grid;grid-template-columns:1fr 1.6fr;gap:3rem;align-items:start;}
+.book-info{position:sticky;top:6rem;}
+.book-info-card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:1.8rem;margin-bottom:1.2rem;}
+.book-info-card h4{font-size:.87rem;font-weight:700;color:var(--text);margin-bottom:1rem;}
+.bi-item{display:flex;align-items:flex-start;gap:.8rem;margin-bottom:.9rem;}
+.bi-item:last-child{margin-bottom:0;}
+.bi-ico{width:34px;height:34px;border-radius:9px;background:rgba(79,142,247,.1);border:1px solid rgba(79,142,247,.2);display:flex;align-items:center;justify-content:center;font-size:.82rem;color:var(--blue);flex-shrink:0;}
+.bi-ico.t{background:rgba(45,212,191,.1);border-color:rgba(45,212,191,.2);color:var(--teal);}
+.bi-ico.p{background:rgba(167,139,250,.1);border-color:rgba(167,139,250,.2);color:var(--purple);}
+.bi-ico.o{background:rgba(245,158,11,.1);border-color:rgba(245,158,11,.2);color:#F59E0B;}
+.bi-txt strong{display:block;font-size:.8rem;font-weight:700;color:var(--text);}
+.bi-txt span{font-size:.74rem;color:var(--text2);}
+.avail-pill{background:rgba(45,212,191,.07);border:1px solid rgba(45,212,191,.2);border-radius:12px;padding:1rem 1.3rem;display:flex;align-items:center;gap:.7rem;}
+.avail-pill .avail-dot{width:8px;height:8px;border-radius:50%;background:var(--teal);animation:pulse 2s infinite;flex-shrink:0;}
+.avail-pill p{font-size:.78rem;color:var(--text2);}
+.avail-pill strong{color:var(--teal);}
+
+/* Form card */
+.form-card{background:var(--card);border:1px solid var(--border);border-radius:22px;padding:2.4rem 2.2rem;}
+.form-card h3{font-family:var(--h);font-size:1.5rem;font-weight:700;color:var(--text);letter-spacing:-.5px;margin-bottom:.4rem;}
+.form-sub{font-size:.81rem;color:var(--text2);margin-bottom:1.8rem;}
+.f-row{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem;margin-bottom:1.1rem;}
+.f-grp{margin-bottom:1.1rem;}
+.f-grp label{display:block;font-size:.73rem;font-weight:700;color:var(--text2);letter-spacing:.5px;text-transform:uppercase;margin-bottom:.5rem;}
+.f-grp label span{color:var(--blue);}
+.fi,.fs,.ft{width:100%;background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:.78rem 1rem;color:var(--text);font-size:.86rem;transition:all .3s;outline:none;font-family:var(--b);}
+.fi::placeholder,.ft::placeholder{color:var(--text3);}
+.fi:focus,.fs:focus,.ft:focus{border-color:rgba(79,142,247,.5);background:rgba(79,142,247,.04);box-shadow:0 0 0 3px rgba(79,142,247,.1);}
+.fs{-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%238B95B0' d='M6 8L0 0h12z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 1rem center;padding-right:2.5rem;cursor:pointer;}
+.fs option{background:var(--card);color:var(--text);}
+.ft{resize:vertical;min-height:100px;line-height:1.6;}
+
+/* Slots */
+.slots-lbl{font-size:.73rem;font-weight:700;color:var(--text2);letter-spacing:.5px;text-transform:uppercase;margin-bottom:.7rem;}
+.slots-lbl span{color:var(--blue);}
+.slots-g{display:grid;grid-template-columns:repeat(auto-fill,minmax(82px,1fr));gap:.55rem;margin-bottom:1.1rem;}
+.slot{padding:.52rem .3rem;background:var(--card2);border:1px solid var(--border);border-radius:8px;text-align:center;font-size:.74rem;font-weight:600;color:var(--text2);cursor:pointer;transition:all .22s;user-select:none;}
+.slot:hover{border-color:rgba(79,142,247,.4);color:var(--text);}
+.slot.sel{background:rgba(79,142,247,.15);border-color:var(--blue);color:var(--blue2);}
+.slot.na{opacity:.3;cursor:not-allowed;pointer-events:none;}
+
+/* Budget */
+.budget-g{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:1.1rem;}
+.b-opt{padding:.42rem .95rem;background:var(--card2);border:1px solid var(--border);border-radius:8px;font-size:.75rem;font-weight:600;color:var(--text2);cursor:pointer;transition:all .22s;user-select:none;}
+.b-opt:hover{border-color:rgba(79,142,247,.4);color:var(--text);}
+.b-opt.sel{background:rgba(79,142,247,.15);border-color:var(--blue);color:var(--blue2);}
+
+/* Submit */
+.sub-note{font-size:.74rem;color:var(--text3);margin-bottom:1.1rem;display:flex;align-items:center;gap:.45rem;}
+.sub-note i{color:var(--teal);}
+.sub-btns{display:flex;gap:.9rem;flex-wrap:wrap;}
+.btn-wa{flex:1;display:inline-flex;align-items:center;justify-content:center;gap:.55rem;background:linear-gradient(135deg,#25D366,#128C7E);color:#fff;padding:.85rem 1.2rem;border-radius:11px;font-size:.88rem;font-weight:700;box-shadow:0 4px 20px rgba(37,211,102,.22);transition:all .3s;cursor:pointer;border:none;font-family:var(--b);}
+.btn-wa:hover{transform:translateY(-3px);box-shadow:0 8px 28px rgba(37,211,102,.38);}
+.btn-em{flex:1;display:inline-flex;align-items:center;justify-content:center;gap:.55rem;background:rgba(79,142,247,.12);border:1px solid rgba(79,142,247,.3);color:var(--blue2);padding:.85rem 1.2rem;border-radius:11px;font-size:.88rem;font-weight:700;transition:all .3s;cursor:pointer;font-family:var(--b);}
+.btn-em:hover{background:var(--blue);border-color:var(--blue);color:#fff;transform:translateY(-3px);}
+
+/* FAQ */
+.faq-list{display:flex;flex-direction:column;gap:.75rem;max-width:820px;margin:0 auto;}
+.faq-item{background:var(--card);border:1px solid var(--border);border-radius:13px;overflow:hidden;}
+.faq-q{display:flex;align-items:center;justify-content:space-between;padding:1.1rem 1.4rem;cursor:pointer;font-size:.88rem;font-weight:600;color:var(--text);transition:background .2s;gap:1rem;}
+.faq-q:hover{background:rgba(79,142,247,.05);}
+.faq-ico{width:27px;height:27px;border-radius:7px;background:rgba(79,142,247,.1);border:1px solid rgba(79,142,247,.2);display:flex;align-items:center;justify-content:center;font-size:.68rem;color:var(--blue);flex-shrink:0;transition:all .3s;}
+.faq-item.open .faq-ico{background:var(--blue);border-color:var(--blue);color:#fff;transform:rotate(45deg);}
+.faq-a{display:none;padding:0 1.4rem 1.1rem;font-size:.82rem;color:var(--text2);line-height:1.75;}
+.faq-item.open .faq-a{display:block;}
+
+/* Success modal */
+#hire-modal{display:none;position:fixed;inset:0;background:rgba(10,14,26,.95);backdrop-filter:blur(16px);z-index:9900;align-items:center;justify-content:center;padding:2rem;}
+#hire-modal.show{display:flex;}
+.modal-box{background:var(--card);border:1px solid var(--border);border-radius:22px;padding:2.8rem;text-align:center;max-width:460px;width:100%;animation:scIn .4s cubic-bezier(.34,1.56,.64,1);}
+@keyframes scIn{from{opacity:0;transform:scale(.85);}to{opacity:1;transform:scale(1);}}
+.modal-ico{width:68px;height:68px;border-radius:50%;background:rgba(45,212,191,.12);border:1px solid rgba(45,212,191,.3);display:flex;align-items:center;justify-content:center;margin:0 auto 1.4rem;font-size:1.7rem;color:var(--teal);}
+.modal-box h3{font-family:var(--h);font-size:1.55rem;font-weight:700;color:var(--text);margin-bottom:.7rem;}
+.modal-box p{font-size:.86rem;color:var(--text2);line-height:1.75;margin-bottom:1.8rem;}
+.modal-close{background:linear-gradient(135deg,var(--blue),#3b6fd4);color:#fff;padding:.75rem 2.5rem;border-radius:10px;font-size:.88rem;font-weight:700;transition:all .3s;cursor:pointer;border:none;font-family:var(--b);}
+.modal-close:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(79,142,247,.4);}
+
+/* Responsive for hire section */
+@media(max-width:900px){.book-wrap{grid-template-columns:1fr;}.book-info{position:static;}}
+@media(max-width:600px){.f-row{grid-template-columns:1fr;}.sub-btns{flex-direction:column;}.svc-grid{grid-template-columns:1fr;}}
+
+/* Single submit button */
+.btn-submit{
+  width:100%;padding:1rem;border-radius:12px;
+  background:linear-gradient(135deg,var(--blue),#3b6fd4);
+  color:#fff;font-size:.95rem;font-weight:700;
+  border:none;cursor:pointer;font-family:var(--b);
+  box-shadow:0 4px 20px rgba(79,142,247,.35);
+  transition:all .3s ease;letter-spacing:.3px;
+}
+.btn-submit:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(79,142,247,.5);}
+.btn-submit:disabled{opacity:.6;cursor:not-allowed;transform:none;}
 </style>
 </head>
 <body>
@@ -539,6 +708,7 @@ footer p{font-size:.78rem;color:var(--text3);}
     <li><a href="#certifications">Certs</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#hire" class="nav-cta" style="background:rgba(45,212,191,.15)!important;border-color:rgba(45,212,191,.35)!important;color:#2DD4BF!important;">💼 Hire Me</a></li>
     <li><a href="#contact" class="nav-cta">Contact</a></li>
   </ul>
   <div class="ham" id="ham"><span></span><span></span><span></span></div>
@@ -546,12 +716,13 @@ footer p{font-size:.78rem;color:var(--text3);}
 
 <!-- ═══ HERO ═══ -->
 <section id="home" class="hero">
+  <div class="glow g1"></div>
+  <div class="glow g2"></div>
+  <div class="glow g3"></div>
 
   <!-- hero inner wrapper -->
-  <div style="max-width:1220px;width:100%;margin:0 auto;display:flex;align-items:center;gap:4rem;position:relative;z-index:2;">
+  <div style="max-width:1220px;width:100%;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:4rem;position:relative;z-index:2;">
   <div class="hero-l">
-    <div class="glow g1"></div>
-    <div class="glow g2"></div>
 
     <div class="h-chip rv" data-d="1">
       <span class="h-chip-dot"></span>Available for Projects
@@ -582,6 +753,7 @@ footer p{font-size:.78rem;color:var(--text3);}
 
     <div class="h-btns rv" data-d="5">
       <a href="#projects" class="btn-p"><i class="fas fa-chart-bar"></i> View Projects</a>
+      <a href="#hire" class="btn-p" style="background:linear-gradient(135deg,#2DD4BF,#059669);box-shadow:0 4px 20px rgba(45,212,191,.3);"><i class="fas fa-calendar-check"></i> Book a Session</a>
       <a href="https://drive.google.com/file/d/18USOVOJa06Qouf5-1V-uTwwhB3dASIIe/view?usp=sharing" target="_blank" class="btn-s"><i class="fas fa-download"></i> Download CV</a>
     </div>
   </div>
@@ -596,12 +768,27 @@ footer p{font-size:.78rem;color:var(--text3);}
           <source srcset="images/varun-photo-small.webp 300w,images/varun-photo.webp 600w" type="image/webp">
           <img src="images/varun-photo.jpg" alt="Varun Chaubey" class="photo-img" loading="eager">
         </picture>
-
+        <!-- Floating tag 1 -->
+        <div class="ftag ft1">
+          <div class="ftag-icon fi-b"><i class="fas fa-chart-bar"></i></div>
+          <div class="ftag-txt"><strong>Power BI</strong><span>Expert Level</span></div>
+        </div>
+        <!-- Floating tag 2 -->
+        <div class="ftag ft2">
+          <div class="ftag-icon fi-t"><i class="fas fa-database"></i></div>
+          <div class="ftag-txt"><strong>SQL + Python</strong><span>Advanced</span></div>
+        </div>
       </div>
       <div class="avail"><span class="avail-dot"></span>Open to new opportunities</div>
     </div>
   </div><!-- end hero-r -->
   </div><!-- end hero inner wrapper -->
+
+  <!-- scroll hint -->
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <i class="fas fa-chevron-down"></i>
+  </div>
 
 </section>
 <div class="ticker">
@@ -637,10 +824,23 @@ footer p{font-size:.78rem;color:var(--text3);}
     <div class="rv"><div class="sec-label">Career</div><h2 class="sec-title">Work <em>Experience</em></h2></div>
     <div class="exp-grid">
       <div class="exp-card rv" data-d="1">
+        <div class="exp-logo" style="background:linear-gradient(135deg,#2DD4BF,#059669);display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--h);font-size:.75rem;font-weight:800;letter-spacing:.5px;border-radius:10px;width:48px;height:48px;flex-shrink:0;">GL</div>
+        <div class="exp-body">
+          <h3>Senior BI Developer</h3>
+          <div class="exp-co">Gleuhr Wellness Pvt. Ltd. · Chandigarh &nbsp;·&nbsp; Sep 2025 – Present</div>
+          <ul>
+            <li>Led design of scalable star-schema models integrating revenue, bookings, and performance metrics.</li>
+            <li>Built automated API-to-Power BI pipeline using Python and PostgreSQL, eliminating manual work.</li>
+            <li>Implemented incremental data sync logic with automated insert/update handling for 50K+ records.</li>
+            <li>Developed executive KPI dashboards tracking revenue, conversion rates, and department performance.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="exp-card rv" data-d="2">
         <img src="images/experience/adglobal360-logo.webp" class="exp-logo" alt="Adglobal360" loading="lazy">
         <div class="exp-body">
           <h3>BI Analyst</h3>
-          <div class="exp-co">Adglobal360 India Pvt. Ltd. · Apr 2024 – Present</div>
+          <div class="exp-co">Adglobal360 India Pvt. Ltd. · Apr 2024 – Sep 2025</div>
           <ul>
             <li>Automated analysis of 10,000+ JSON files daily using Python.</li>
             <li>Integrated APIs into workflows, saving 15 hours per week.</li>
@@ -648,7 +848,7 @@ footer p{font-size:.78rem;color:var(--text3);}
           </ul>
         </div>
       </div>
-      <div class="exp-card rv" data-d="2">
+      <div class="exp-card rv" data-d="3">
         <img src="images/experience/varahe-logo.webp" class="exp-logo" alt="Varahe Analytics" loading="lazy">
         <div class="exp-body">
           <h3>BI Consultant</h3>
@@ -748,6 +948,230 @@ footer p{font-size:.78rem;color:var(--text3);}
 
 <div class="divider"></div>
 
+<!-- ═══ HIRE ME ═══ -->
+<section id="hire" class="sec">
+  <div class="wrap">
+    <div class="rv" style="text-align:center;max-width:680px;margin:0 auto 3.5rem;">
+      <div class="sec-label" style="justify-content:center;">Freelance Services</div>
+      <h2 class="sec-title">Available to <em>Hire</em></h2>
+      <p style="font-size:.88rem;color:var(--text2);line-height:1.8;">Need a Power BI dashboard, SQL pipeline, or Python automation? Book a session and let's turn your data into decisions.</p>
+    </div>
+    <!-- Trust strip -->
+    <div class="trust-strip rv" style="border-radius:14px;margin-bottom:3rem;">
+      <div class="trust-inner">
+        <div class="trust-item"><i class="fas fa-bolt"></i>Fast Turnaround</div>
+        <div class="trust-item"><i class="fas fa-shield-alt"></i>NDA Available</div>
+        <div class="trust-item"><i class="fas fa-redo"></i>Unlimited Revisions</div>
+        <div class="trust-item"><i class="fas fa-headset"></i>Dedicated Support</div>
+        <div class="trust-item"><i class="fas fa-star"></i>100% Satisfaction</div>
+      </div>
+    </div>
+
+    <!-- SERVICE CARDS -->
+    <div class="svc-grid">
+      <div class="svc-card sc-blue rv" data-d="1">
+        <div class="svc-ico ico-b"><i class="fas fa-chart-bar"></i></div>
+        <h3>Power BI Dashboard</h3>
+        <p>Custom interactive dashboards turning raw data into executive-ready insights.</p>
+        <ul class="svc-feats">
+          <li><i class="fas fa-check-circle"></i>Up to 5 report pages</li>
+          <li><i class="fas fa-check-circle"></i>DAX measures & KPIs</li>
+          <li><i class="fas fa-check-circle"></i>Mobile-responsive design</li>
+          <li><i class="fas fa-check-circle"></i>1-month support included</li>
+        </ul>
+        <div class="svc-price"><span class="pr-from">starting</span><span class="pr-amt">₹8,000</span><span class="pr-unit">/ project</span></div>
+        <button class="svc-btn" onclick="pickSvc('Power BI Dashboard')">Book This Service ↓</button>
+      </div>
+      <div class="svc-card sc-teal popular rv" data-d="2">
+        <div class="pop-badge">⭐ Most Popular</div>
+        <div class="svc-ico ico-t"><i class="fas fa-database"></i></div>
+        <h3>Full BI Solution</h3>
+        <p>End-to-end: SQL + Python + Power BI + Azure cloud deployment.</p>
+        <ul class="svc-feats">
+          <li><i class="fas fa-check-circle"></i>Data modeling & SQL pipeline</li>
+          <li><i class="fas fa-check-circle"></i>Python ETL automation</li>
+          <li><i class="fas fa-check-circle"></i>Azure cloud deployment</li>
+          <li><i class="fas fa-check-circle"></i>3-month support & training</li>
+        </ul>
+        <div class="svc-price"><span class="pr-from">starting</span><span class="pr-amt">₹25,000</span><span class="pr-unit">/ project</span></div>
+        <button class="svc-btn" onclick="pickSvc('Full BI Solution')">Book This Service ↓</button>
+      </div>
+      <div class="svc-card sc-purple rv" data-d="3">
+        <div class="svc-ico ico-p"><i class="fas fa-code"></i></div>
+        <h3>Python Automation</h3>
+        <p>Automate repetitive data tasks — reports, scraping, cleaning, scheduling.</p>
+        <ul class="svc-feats">
+          <li><i class="fas fa-check-circle"></i>Data scraping & cleaning</li>
+          <li><i class="fas fa-check-circle"></i>Automated reporting scripts</li>
+          <li><i class="fas fa-check-circle"></i>Email/WhatsApp alerts</li>
+          <li><i class="fas fa-check-circle"></i>Full source code delivered</li>
+        </ul>
+        <div class="svc-price"><span class="pr-from">starting</span><span class="pr-amt">₹6,000</span><span class="pr-unit">/ project</span></div>
+        <button class="svc-btn" onclick="pickSvc('Python Automation')">Book This Service ↓</button>
+      </div>
+      <div class="svc-card sc-orange rv" data-d="4">
+        <div class="svc-ico ico-o"><i class="fas fa-comments"></i></div>
+        <h3>Free Consultation</h3>
+        <p>60-minute 1-on-1 video call to discuss your data challenge and roadmap.</p>
+        <ul class="svc-feats">
+          <li><i class="fas fa-check-circle"></i>60-minute video session</li>
+          <li><i class="fas fa-check-circle"></i>Strategy & tool advice</li>
+          <li><i class="fas fa-check-circle"></i>Written action plan after</li>
+          <li><i class="fas fa-check-circle"></i>Recording shared post-call</li>
+        </ul>
+        <div class="svc-price"><span class="pr-from">completely</span><span class="pr-amt">Free</span><span class="pr-unit">first call</span></div>
+        <button class="svc-btn" onclick="pickSvc('Free Consultation')">Book Free Call ↓</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- PROCESS -->
+<section class="sec sec-dark">
+  <div class="wrap">
+    <div class="rv" style="text-align:center;margin-bottom:3rem;">
+      <div class="sec-label" style="justify-content:center;">How it Works</div>
+      <h2 class="sec-title">Simple <em>Process</em></h2>
+    </div>
+    <div class="proc-grid">
+      <div class="proc-step rv" data-d="1"><div class="proc-num">01</div><h4>Book a Call</h4><p>Fill out the form or message on WhatsApp. First consultation is always free.</p></div>
+      <div class="proc-step rv" data-d="2"><div class="proc-num">02</div><h4>Discuss Project</h4><p>We discuss your data, goals, timeline and I give you a clear scope and pricing.</p></div>
+      <div class="proc-step rv" data-d="3"><div class="proc-num">03</div><h4>I Get to Work</h4><p>I build your solution with regular updates and check-ins at each milestone.</p></div>
+      <div class="proc-step rv" data-d="4"><div class="proc-num">04</div><h4>Deliver & Support</h4><p>Final delivery with full handover, documentation, and ongoing support.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- BOOKING FORM -->
+<section id="book-form" class="sec">
+  <div class="wrap">
+    <div class="rv" style="text-align:center;margin-bottom:3rem;">
+      <div class="sec-label" style="justify-content:center;">Book Now</div>
+      <h2 class="sec-title">Schedule Your <em>Appointment</em></h2>
+    </div>
+    <div class="book-wrap">
+      <!-- LEFT INFO -->
+      <div class="book-info rv" data-d="1">
+        <div class="book-info-card">
+          <h4>Contact Details</h4>
+          <div class="bi-item"><div class="bi-ico"><i class="fab fa-whatsapp"></i></div><div class="bi-txt"><strong>WhatsApp</strong><span>+91 94737 33774</span></div></div>
+          <div class="bi-item"><div class="bi-ico t"><i class="fas fa-envelope"></i></div><div class="bi-txt"><strong>Email</strong><span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5e283f2c2b303d363f2b3c3b2729312c351e39333f3732703d3133">[email&#160;protected]</a></span></div></div>
+          <div class="bi-item"><div class="bi-ico p"><i class="fab fa-linkedin"></i></div><div class="bi-txt"><strong>LinkedIn</strong><span>linkedin.com/in/varunchaubey</span></div></div>
+          <div class="bi-item"><div class="bi-ico o"><i class="fas fa-clock"></i></div><div class="bi-txt"><strong>Response Time</strong><span>Within 2–4 hours</span></div></div>
+        </div>
+        <div class="avail-pill">
+          <span class="avail-dot"></span>
+          <p><strong>Currently available</strong> for new freelance projects. First consultation is free — no strings attached.</p>
+        </div>
+      </div>
+      <!-- RIGHT FORM -->
+      <div class="form-card rv" data-d="2">
+        <h3>Book a Session</h3>
+        <p class="form-sub">Fill this in and I'll confirm your slot within 2–4 hours.</p>
+        <div class="f-row">
+          <div class="f-grp"><label>Full Name <span>*</span></label><input type="text" class="fi" id="fn" placeholder="Your full name"></div>
+          <div class="f-grp"><label>Phone / WhatsApp <span>*</span></label><input type="tel" class="fi" id="fp" placeholder="+91 XXXXX XXXXX"></div>
+        </div>
+        <div class="f-grp"><label>Email Address <span>*</span></label><input type="email" class="fi" id="fe" placeholder="you@example.com"></div>
+        <div class="f-grp">
+          <label>Service Required <span>*</span></label>
+          <select class="fs" id="fsvc">
+            <option value="">— Select a service —</option>
+            <option value="Power BI Dashboard">Power BI Dashboard</option>
+            <option value="Full BI Solution">Full BI Solution (SQL + Python + Power BI)</option>
+            <option value="Python Automation">Python Automation / Script</option>
+            <option value="SQL Analysis">SQL Data Analysis</option>
+            <option value="Azure BI Setup">Azure BI Setup</option>
+            <option value="Free Consultation">Free Consultation Call</option>
+            <option value="Other">Other / Not Sure Yet</option>
+          </select>
+        </div>
+        <div class="f-row">
+          <div class="f-grp"><label>Preferred Date <span>*</span></label><input type="date" class="fi" id="fd"></div>
+          <div class="f-grp"><label>Time Zone</label>
+            <select class="fs" id="ftz">
+              <option value="IST">IST (India +5:30)</option>
+              <option value="GMT">GMT (UK)</option>
+              <option value="EST">EST (US East)</option>
+              <option value="GST">GST (Dubai +4)</option>
+            </select>
+          </div>
+        </div>
+        <div class="f-grp">
+          <div class="slots-lbl">Preferred Time Slot <span>*</span></div>
+          <div class="slots-g" id="slotsG">
+            <div class="slot" onclick="pickSlot(this,'9:00 AM')">9:00 AM</div>
+            <div class="slot" onclick="pickSlot(this,'10:00 AM')">10:00 AM</div>
+            <div class="slot" onclick="pickSlot(this,'11:00 AM')">11:00 AM</div>
+            <div class="slot" onclick="pickSlot(this,'12:00 PM')">12:00 PM</div>
+            <div class="slot na">2:00 PM</div>
+            <div class="slot" onclick="pickSlot(this,'3:00 PM')">3:00 PM</div>
+            <div class="slot" onclick="pickSlot(this,'4:00 PM')">4:00 PM</div>
+            <div class="slot" onclick="pickSlot(this,'5:00 PM')">5:00 PM</div>
+            <div class="slot" onclick="pickSlot(this,'6:00 PM')">6:00 PM</div>
+            <div class="slot" onclick="pickSlot(this,'7:00 PM')">7:00 PM</div>
+            <div class="slot" onclick="pickSlot(this,'8:00 PM')">8:00 PM</div>
+          </div>
+        </div>
+        <div class="f-grp">
+          <label>Project Budget</label>
+          <div class="budget-g" id="budgetG">
+            <div class="b-opt" onclick="pickBudget(this,'Under ₹5k')">Under ₹5k</div>
+            <div class="b-opt" onclick="pickBudget(this,'₹5k–₹15k')">₹5k–₹15k</div>
+            <div class="b-opt" onclick="pickBudget(this,'₹15k–₹30k')">₹15k–₹30k</div>
+            <div class="b-opt" onclick="pickBudget(this,'₹30k+')">₹30k+</div>
+            <div class="b-opt" onclick="pickBudget(this,'Let\'s Discuss')">Let's Discuss</div>
+          </div>
+        </div>
+        <div class="f-grp"><label>Project Description <span>*</span></label><textarea class="ft" id="fdesc" placeholder="Briefly describe your data challenge, what you need built, your industry, and any tools you currently use..."></textarea></div>
+        <div class="sub-note"><i class="fas fa-shield-alt"></i>Your information is private and will never be shared.</div>
+        <div class="sub-btns">
+          <button class="btn-submit" id="submitBtn" onclick="submitForm()">
+            <span id="btnText"><i class="fas fa-paper-plane"></i>&nbsp; Send Appointment Request</span>
+            <span id="btnLoad" style="display:none;"><i class="fas fa-spinner fa-spin"></i>&nbsp; Sending...</span>
+          </button>
+        </div>
+        <p style="font-size:.72rem;color:var(--text3);margin-top:.8rem;text-align:center;">You will get a confirmation on your email · Varun replies within 2–4 hrs</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- FAQ -->
+<section class="sec sec-dark">
+  <div class="wrap">
+    <div class="rv" style="text-align:center;margin-bottom:3rem;">
+      <div class="sec-label" style="justify-content:center;">Questions</div>
+      <h2 class="sec-title">Frequently <em>Asked</em></h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item rv"><div class="faq-q" onclick="toggleFaq(this)"><span>How quickly can you start my project?</span><div class="faq-ico"><i class="fas fa-plus"></i></div></div><div class="faq-a">I typically start within 2–3 business days of onboarding. For urgent requirements, same-week starts are possible — just mention it in your booking form.</div></div>
+      <div class="faq-item rv" data-d="1"><div class="faq-q" onclick="toggleFaq(this)"><span>Do you work with international clients?</span><div class="faq-ico"><i class="fas fa-plus"></i></div></div><div class="faq-a">Yes! I work with clients across India, UAE, UK, and the US. Payments via UPI, bank transfer, PayPal, or Wise. All meetings over Zoom/Google Meet/WhatsApp.</div></div>
+      <div class="faq-item rv" data-d="2"><div class="faq-q" onclick="toggleFaq(this)"><span>What data sources do you work with?</span><div class="faq-ico"><i class="fas fa-plus"></i></div></div><div class="faq-a">Excel, Google Sheets, SQL databases (MySQL, PostgreSQL, SQL Server), REST APIs, Azure, Salesforce, SAP, and more. Book a free call and we'll figure it out together.</div></div>
+      <div class="faq-item rv" data-d="3"><div class="faq-q" onclick="toggleFaq(this)"><span>How do payments work?</span><div class="faq-ico"><i class="fas fa-plus"></i></div></div><div class="faq-a">Under ₹10,000: full upfront. Larger projects: 50% upfront, 50% on delivery. I send a simple invoice — UPI, bank transfer, PayPal all accepted.</div></div>
+      <div class="faq-item rv" data-d="4"><div class="faq-q" onclick="toggleFaq(this)"><span>Do you offer revisions?</span><div class="faq-ico"><i class="fas fa-plus"></i></div></div><div class="faq-a">Yes — unlimited revisions within the agreed scope. Post-delivery bug fixes covered free for 30 days.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SUCCESS MODAL -->
+<div id="hire-modal">
+  <div class="modal-box">
+    <div class="modal-ico"><i class="fas fa-check"></i></div>
+    <h3>Booking Sent!</h3>
+    <p id="modal-msg">Your request has been sent. I'll get back to you within <strong>2–4 hours</strong> to confirm your slot.</p>
+    <button class="modal-close" onclick="document.getElementById('hire-modal').classList.remove('show')">Got it, Thanks!</button>
+  </div>
+</div>
+
+<div class="divider"></div>
+
 <!-- CONTACT -->
 <section id="contact" class="sec">
   <div class="wrap">
@@ -760,7 +1184,7 @@ footer p{font-size:.78rem;color:var(--text3);}
         </div>
         <div class="ct-links">
           <a href="https://linkedin.com/in/varunchaubey" target="_blank" class="ct-link"><div class="ct-link-l"><i class="fab fa-linkedin"></i>LinkedIn</div><span class="ct-arr">→</span></a>
-          <a href="mailto:varun@analystvarun.com" class="ct-link"><div class="ct-link-l"><i class="fas fa-envelope"></i>Email Me</div><span class="ct-arr">→</span></a>
+          <a href="/cdn-cgi/l/email-protection#daacbba8afb49abbb4bbb6a3a9aeacbba8afb4f4b9b5b7" class="ct-link"><div class="ct-link-l"><i class="fas fa-envelope"></i>Email Me</div><span class="ct-arr">→</span></a>
           <a href="tel:+919473733774" class="ct-link"><div class="ct-link-l"><i class="fas fa-phone"></i>Call Me</div><span class="ct-arr">→</span></a>
         </div>
       </div>
@@ -782,6 +1206,7 @@ footer p{font-size:.78rem;color:var(--text3);}
   </div>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script>
 /* LOADER */
 window.addEventListener('load',()=>setTimeout(()=>document.getElementById('loader').classList.add('gone'),1800));
@@ -834,7 +1259,94 @@ slider('aR','aP','aN');
 window.openLB=(s,c)=>{document.getElementById('lb-img').src=s;document.getElementById('lb-cap').textContent=c;document.getElementById('lb').classList.add('show');};
 window.closeLB=()=>document.getElementById('lb').classList.remove('show');
 document.getElementById('lb').addEventListener('click',e=>{if(e.target.id==='lb')closeLB();});
-document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLB();});
+
+/* ── BOOKING FORM JS (EmailJS) ── */
+/* Init EmailJS once at top level */
+emailjs.init({ publicKey: 'aWJFE2wLW-Q6sbFhi' });
+
+/* Set min date */
+const fdEl=document.getElementById('fd');
+if(fdEl){const t=new Date();t.setDate(t.getDate()+1);fdEl.min=t.toISOString().split('T')[0];}
+let selSlot='',selBudget='';
+
+function pickSvc(s){
+  const el=document.getElementById('fsvc');if(el)el.value=s;
+  document.getElementById('book-form').scrollIntoView({behavior:'smooth',block:'start'});
+}
+function pickSlot(el,t){
+  document.querySelectorAll('#slotsG .slot').forEach(s=>s.classList.remove('sel'));
+  el.classList.add('sel');selSlot=t;
+}
+function pickBudget(el,v){
+  document.querySelectorAll('#budgetG .b-opt').forEach(b=>b.classList.remove('sel'));
+  el.classList.add('sel');selBudget=v;
+}
+function toggleFaq(el){
+  const item=el.parentElement,isOpen=item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(i=>i.classList.remove('open'));
+  if(!isOpen)item.classList.add('open');
+}
+function getFormData(){
+  const n=document.getElementById('fn').value.trim();
+  const ph=document.getElementById('fp').value.trim();
+  const em=document.getElementById('fe').value.trim();
+  const sv=document.getElementById('fsvc').value;
+  const dt=document.getElementById('fd').value;
+  const ds=document.getElementById('fdesc').value.trim();
+  if(!n){alert('Please enter your full name.');document.getElementById('fn').focus();return null;}
+  if(!ph){alert('Please enter your phone number.');document.getElementById('fp').focus();return null;}
+  if(!em||!em.includes('@')){alert('Please enter a valid email.');document.getElementById('fe').focus();return null;}
+  if(!sv){alert('Please select a service.');document.getElementById('fsvc').focus();return null;}
+  if(!dt){alert('Please select a preferred date.');document.getElementById('fd').focus();return null;}
+  if(!selSlot){alert('Please select a time slot.');return null;}
+  if(!ds){alert('Please describe your project briefly.');document.getElementById('fdesc').focus();return null;}
+  return{n,ph,em,sv,dt,slot:selSlot,budget:selBudget||'Not specified',ds,tz:document.getElementById('ftz').value};
+}
+
+async function submitForm(){
+  const d=getFormData();if(!d)return;
+  const btn=document.getElementById('submitBtn');
+  document.getElementById('btnText').style.display='none';
+  document.getElementById('btnLoad').style.display='inline';
+  btn.disabled=true;
+
+  /* ── EmailJS send ── */
+  const SERVICE_ID  = 'service_fi9ckee';
+  const TEMPLATE_ID = 'template_f8qzq7i';
+
+  const templateParams = {
+    from_name   : d.n,
+    from_phone  : d.ph,
+    from_email  : d.em,
+    service     : d.sv,
+    date        : d.dt,
+    time_slot   : d.slot + ' (' + d.tz + ')',
+    budget      : d.budget,
+    message     : d.ds,
+    reply_to    : d.em,
+  };
+
+  try {
+    await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, { publicKey: 'aWJFE2wLW-Q6sbFhi' });
+    document.getElementById('modal-msg').innerHTML =
+      'Your appointment request has been sent to Varun directly! You will also receive a confirmation on <strong>' + d.em + '</strong>. Varun will reply within <strong>2&#8211;4 hours</strong>.';
+    document.getElementById('hire-modal').classList.add('show');
+    /* Reset form */
+    ['fn','fp','fe','fd','fdesc'].forEach(id=>document.getElementById(id).value='');
+    document.getElementById('fsvc').value='';
+    document.querySelectorAll('.slot.sel,.b-opt.sel').forEach(el=>el.classList.remove('sel'));
+    selSlot='';selBudget='';
+  } catch(err){
+    console.error('EmailJS error:', err);
+    const msg = err?.text || err?.message || JSON.stringify(err) || 'Unknown error';
+    alert('EmailJS Error: ' + msg);
+  } finally {
+    document.getElementById('btnText').style.display='inline';
+    document.getElementById('btnLoad').style.display='none';
+    btn.disabled=false;
+  }
+}
+document.getElementById('hire-modal')?.addEventListener('click',e=>{if(e.target===e.currentTarget)e.currentTarget.classList.remove('show');});
 </script>
 </body>
 </html>
