@@ -3,8 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Varun Chaubey — Data Analyst & BI Developer</title>
-<meta name="description" content="Varun Chaubey — Data Analyst & BI Developer. Power BI, SQL, Python, Azure.">
+<title>Varun Chaubey | Data Analyst & BI Developer for Power BI, SQL, Python</title>
+<meta name="description" content="Hiring-ready portfolio for Varun Chaubey, a Data Analyst and BI Developer building Power BI dashboards, SQL pipelines, Python automations, and Azure BI solutions.">
+<meta name="keywords" content="Varun Chaubey, Data Analyst, BI Developer, Power BI Developer, SQL, Python, Azure Data Factory, Snowflake, dashboard portfolio">
+<meta name="author" content="Varun Chaubey">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0A0E1A">
+<meta property="og:title" content="Varun Chaubey | Data Analyst & BI Developer">
+<meta property="og:description" content="Power BI, SQL, Python and Azure portfolio with dashboards, automation projects, and BI consulting experience.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/varun-photo.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Clash+Display:wght@500;600;700&display=swap" rel="stylesheet">
@@ -345,50 +353,81 @@ button{border:none;cursor:pointer;background:none;}
 .sec-title{font-family:var(--h);font-size:clamp(2rem,4vw,2.8rem);font-weight:700;letter-spacing:-1px;color:var(--text);line-height:1;margin-bottom:3rem;}
 .sec-title em{font-style:italic;font-family:'Georgia',serif;background:linear-gradient(135deg,var(--blue),var(--teal));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
 
-/* ─── EXPERIENCE ─── */
-.exp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.25rem;}
-.exp-card{
-  background:var(--card);border:1px solid var(--border);border-radius:16px;
-  padding:1.8rem 2rem;display:flex;gap:1.4rem;
-  transition:all .3s ease;position:relative;overflow:hidden;
-}
-.exp-card::before{
-  content:'';position:absolute;top:0;left:0;right:0;height:2px;
-  background:linear-gradient(90deg,var(--blue),var(--teal));
-  transform:scaleX(0);transform-origin:left;
-  transition:transform .4s ease;
-}
-.exp-card:hover{border-color:var(--border-hover);transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,.35);}
-.exp-card:hover::before{transform:scaleX(1);}
+/* Hiring proof */
+.proof-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:2rem;}
+.proof-card{background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.02));border:1px solid var(--border);border-radius:14px;padding:1.25rem;min-height:145px;transition:all .3s ease;}
+.proof-card:hover{transform:translateY(-4px);border-color:rgba(45,212,191,.28);box-shadow:0 16px 45px rgba(0,0,0,.28);}
+.proof-card i{width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:rgba(79,142,247,.12);border:1px solid rgba(79,142,247,.2);color:var(--blue2);margin-bottom:1rem;}
+.proof-card h3{font-size:.88rem;font-weight:700;color:var(--text);margin-bottom:.45rem;}
+.proof-card p{font-size:.78rem;color:var(--text2);line-height:1.65;}
+.proof-card strong{color:var(--teal);font-weight:700;}
+.proof-note{font-size:.8rem;color:var(--text2);line-height:1.8;max-width:720px;margin-top:1.2rem;}
+.about-hire{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;align-items:stretch;}
+.about-copy,.prod-card,.featured-pj{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1.6rem;position:relative;overflow:hidden;}
+.about-copy::before,.prod-card::before,.featured-pj::before{content:'';position:absolute;inset:0 0 auto 0;height:2px;background:linear-gradient(90deg,var(--blue),var(--teal));opacity:.8;}
+.about-copy p{font-size:.88rem;color:var(--text2);line-height:1.85;margin-bottom:1rem;}
+.about-copy p:last-child{margin-bottom:0;}
+.hire-snapshot{display:grid;grid-template-columns:repeat(2,1fr);gap:.9rem;}
+.snap{background:rgba(255,255,255,.035);border:1px solid var(--border);border-radius:12px;padding:1rem;}
+.snap strong{display:block;font-family:var(--h);font-size:1.35rem;line-height:1;color:var(--text);margin-bottom:.35rem;}
+.snap span{font-size:.7rem;color:var(--text2);line-height:1.5;}
+.featured-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.8rem 0 2.2rem;}
+.featured-pj{display:flex;flex-direction:column;min-height:100%;cursor:pointer;padding:1.35rem;}
+.featured-pj h3{font-size:1.02rem;font-weight:800;color:var(--text);margin-bottom:.6rem;line-height:1.25;}
+.case-summary{font-size:.78rem;color:var(--text2);line-height:1.65;margin-bottom:1rem;}
+.case-block{margin-bottom:.85rem;}
+.case-block.case-long{display:none;}
+.case-block b{display:block;font-size:.64rem;letter-spacing:1.8px;text-transform:uppercase;color:var(--blue2);margin-bottom:.25rem;}
+.case-block p,.case-block li{font-size:.78rem;color:var(--text2);line-height:1.65;}
+.case-block ul{list-style:none;display:flex;flex-direction:column;gap:.35rem;}
+.case-block li{position:relative;padding-left:1rem;}
+.case-block li::before{content:'•';position:absolute;left:0;color:var(--teal);}
+.case-result{margin-top:auto;background:rgba(45,212,191,.08);border:1px solid rgba(45,212,191,.2);border-radius:10px;padding:.8rem;font-size:.76rem;color:var(--text2);line-height:1.6;}
+.case-result strong{color:var(--teal);}
+.case-actions{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.85rem;}
+.case-btn{display:inline-flex;align-items:center;gap:.45rem;background:rgba(79,142,247,.12);border:1px solid rgba(79,142,247,.25);color:var(--blue2);border-radius:8px;padding:.55rem .85rem;font-size:.72rem;font-weight:800;cursor:pointer;transition:all .25s ease;font-family:var(--b);}
+.case-btn:hover{background:var(--blue);border-color:var(--blue);color:#fff;transform:translateY(-2px);}
+.preview-strip{display:none;grid-template-columns:repeat(3,1fr);gap:1rem;margin:0 0 2rem;}
+.preview-card{position:relative;border:1px solid var(--border);border-radius:14px;overflow:hidden;background:var(--card);cursor:pointer;min-height:150px;transition:all .3s ease;}
+.preview-card img{width:100%;height:170px;object-fit:cover;filter:saturate(.9);transition:transform .35s ease,filter .35s ease;}
+.preview-card:hover{transform:translateY(-4px);border-color:rgba(45,212,191,.32);box-shadow:0 16px 40px rgba(0,0,0,.3);}
+.preview-card:hover img{transform:scale(1.05);filter:saturate(1.1);}
+.preview-card span{position:absolute;left:.8rem;bottom:.8rem;background:rgba(10,14,26,.82);border:1px solid var(--border);border-radius:999px;color:var(--text);font-size:.68rem;font-weight:800;padding:.32rem .7rem;backdrop-filter:blur(10px);}
+.case-modal{display:none;position:fixed;inset:0;background:rgba(10,14,26,.96);backdrop-filter:blur(18px);z-index:9910;align-items:center;justify-content:center;padding:1.5rem;}
+.case-modal.show{display:flex;}
+.case-modal-box{background:var(--card);border:1px solid var(--border);border-radius:18px;max-width:980px;width:100%;max-height:90vh;overflow:auto;box-shadow:0 35px 90px rgba(0,0,0,.65);animation:scIn .35s cubic-bezier(.34,1.56,.64,1);}
+.case-modal-hero{display:grid;grid-template-columns:1fr 1.15fr;gap:1.4rem;padding:1.4rem;border-bottom:1px solid var(--border);}
+.case-modal-img{border-radius:12px;overflow:hidden;background:var(--card2);min-height:260px;}
+.case-modal-img img{width:100%;height:100%;object-fit:cover;}
+.case-modal-copy{display:flex;flex-direction:column;justify-content:center;}
+.case-kicker{font-size:.66rem;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--teal);margin-bottom:.65rem;}
+.case-modal-copy h3{font-family:var(--h);font-size:clamp(1.55rem,3vw,2.25rem);line-height:1.05;color:var(--text);margin-bottom:.75rem;}
+.case-modal-copy p{font-size:.86rem;color:var(--text2);line-height:1.75;}
+.case-modal-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;padding:1.4rem;}
+.case-modal-section{background:rgba(255,255,255,.035);border:1px solid var(--border);border-radius:12px;padding:1rem;}
+.case-modal-section h4{font-size:.72rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--blue2);margin-bottom:.6rem;}
+.case-modal-section p,.case-modal-section li{font-size:.8rem;color:var(--text2);line-height:1.7;}
+.case-modal-section ul{list-style:none;display:flex;flex-direction:column;gap:.35rem;}
+.case-modal-section li{position:relative;padding-left:1rem;}
+.case-modal-section li::before{content:'•';position:absolute;left:0;color:var(--teal);}
+.case-close{position:absolute;top:1rem;right:1rem;width:38px;height:38px;border-radius:10px;border:1px solid var(--border-hover);background:rgba(20,25,41,.9);color:var(--text);font-size:1.15rem;z-index:2;}
+.prod-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;}
+.prod-card i{width:36px;height:36px;border-radius:9px;display:flex;align-items:center;justify-content:center;background:rgba(45,212,191,.1);border:1px solid rgba(45,212,191,.2);color:var(--teal);margin-bottom:1rem;}
+.prod-card h3{font-size:.88rem;color:var(--text);margin-bottom:.35rem;}
+.prod-card p{font-size:.78rem;color:var(--text2);line-height:1.65;}
+.final-cta{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;background:linear-gradient(135deg,rgba(79,142,247,.16),rgba(45,212,191,.08));border:1px solid rgba(79,142,247,.24);border-radius:16px;padding:1.5rem;margin-top:2rem;}
+.final-cta h3{font-size:1.1rem;color:var(--text);margin-bottom:.35rem;}
+.final-cta p{font-size:.82rem;color:var(--text2);line-height:1.7;}
+.final-cta a{flex-shrink:0;}
+
+
+/* ─── EXPERIENCE — timeline base ─── */
 .exp-logo{width:48px;height:48px;border-radius:10px;border:1px solid var(--border);object-fit:contain;padding:6px;flex-shrink:0;background:var(--card2);}
 .exp-body h3{font-size:1.05rem;font-weight:700;color:var(--text);margin-bottom:.2rem;}
-.exp-co{font-size:.76rem;font-weight:600;color:var(--blue);margin-bottom:.85rem;}
 .exp-body ul{list-style:none;}
 .exp-body li{font-size:.83rem;color:var(--text2);padding-left:1rem;position:relative;margin-bottom:.32rem;line-height:1.55;}
 .exp-body li::before{content:'▸';position:absolute;left:0;color:var(--teal);font-size:.68rem;top:.12rem;}
 
-/* ─── SKILLS ─── */
-.sk-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:1rem;}
-.sk-card{
-  background:var(--card);border:1px solid var(--border);
-  border-radius:14px;padding:1.5rem 1.1rem 1.3rem;
-  text-align:center;transition:all .3s ease;
-}
-.sk-card:hover{border-color:rgba(79,142,247,.3);transform:translateY(-4px);box-shadow:0 8px 28px rgba(79,142,247,.12);}
-.sk-ico-box{
-  width:46px;height:46px;border-radius:12px;
-  background:rgba(79,142,247,.1);
-  display:flex;align-items:center;justify-content:center;
-  margin:0 auto .85rem;transition:background .3s;
-}
-.sk-card:hover .sk-ico-box{background:linear-gradient(135deg,var(--blue),var(--teal));}
-.sk-ico{font-size:1.35rem;color:var(--blue);transition:color .3s;}
-.sk-card:hover .sk-ico{color:#fff;}
-.sk-name{font-size:.76rem;font-weight:700;color:var(--text);margin-bottom:.8rem;letter-spacing:.1px;}
-.sk-bar-row{display:flex;align-items:center;gap:.4rem;}
-.sk-bar{flex:1;height:3px;background:var(--card2);border-radius:3px;overflow:hidden;}
-.sk-fill{height:100%;width:0;background:linear-gradient(90deg,var(--blue),var(--teal));border-radius:3px;transition:width 1.3s cubic-bezier(.4,0,.2,1);}
-.sk-pct{font-size:.66rem;font-weight:700;color:var(--teal);min-width:26px;text-align:right;}
 
 /* ─── CERTS ─── */
 .cert-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;}
@@ -422,7 +461,7 @@ button{border:none;cursor:pointer;background:none;}
 .reel:active{cursor:grabbing;}
 
 /* ─── PROJECT CARD ─── */
-.pj{background:var(--card);border:1px solid var(--border);border-radius:16px;min-width:290px;flex-shrink:0;overflow:hidden;transition:all .3s ease;}
+.pj{background:var(--card);border:1px solid var(--border);border-radius:16px;min-width:320px;max-width:320px;flex-shrink:0;overflow:hidden;transition:all .3s ease;}
 .pj:hover{border-color:rgba(79,142,247,.25);transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,.35);}
 .pj-img{height:162px;overflow:hidden;background:var(--card2);position:relative;}
 .pj-img img{width:100%;height:100%;object-fit:cover;transition:transform .4s;}
@@ -432,6 +471,11 @@ button{border:none;cursor:pointer;background:none;}
 .pj-body h3{font-size:.96rem;font-weight:700;color:var(--text);margin-bottom:.4rem;}
 .pj-out{font-size:.79rem;color:var(--text2);margin-bottom:.9rem;line-height:1.5;}
 .pj-out strong{color:var(--teal);font-weight:700;}
+.pj-meta{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:.85rem;}
+.pj-meta span{font-size:.58rem;font-weight:700;letter-spacing:.7px;text-transform:uppercase;color:var(--blue2);background:rgba(79,142,247,.1);border:1px solid rgba(79,142,247,.2);border-radius:999px;padding:.18rem .5rem;}
+.pj-points{list-style:none;margin:.75rem 0 1rem;display:flex;flex-direction:column;gap:.42rem;}
+.pj-points li{font-size:.73rem;color:var(--text2);line-height:1.55;display:flex;gap:.45rem;align-items:flex-start;}
+.pj-points i{color:var(--teal);font-size:.58rem;margin-top:.28rem;flex-shrink:0;}
 .pj-btn{display:inline-flex;align-items:center;gap:.4rem;background:rgba(79,142,247,.1);border:1px solid rgba(79,142,247,.2);color:var(--blue2);padding:.3rem .85rem;border-radius:6px;font-size:.7rem;font-weight:700;transition:all .3s;}
 .pj-btn:hover{background:var(--blue);color:#fff;border-color:var(--blue);}
 .pj-btn i{font-size:.57rem;}
@@ -507,9 +551,6 @@ footer p{font-size:.78rem;color:var(--text3);}
 /* ─── RESPONSIVE ─── */
 @media(max-width:800px){
   .ham{display:flex;}
-  .nav-links{position:fixed;inset:0;background:var(--bg);flex-direction:column;justify-content:center;align-items:center;gap:2.5rem;display:none;z-index:905;}
-  .nav-links.open{display:flex;}
-  .nav-links a{font-size:1.4rem;}
   .reach{display:none;}
 }
 @media(max-width:960px){
@@ -521,15 +562,23 @@ footer p{font-size:.78rem;color:var(--text3);}
   .h-desc{margin-left:auto;margin-right:auto;}
   .ct-inner{grid-template-columns:1fr;gap:2.5rem;}
   .photo-area{gap:.6rem;}
+  .proof-grid{grid-template-columns:repeat(2,1fr);}
+  .about-hire,.featured-grid,.prod-grid{grid-template-columns:1fr;}
+  .skill-matrix{grid-template-columns:repeat(2,1fr);}
+  .final-cta{align-items:flex-start;flex-direction:column;}
+  .preview-strip,.case-modal-hero,.case-modal-grid{grid-template-columns:1fr;}
 }
 @media(max-width:580px){
   .sec{padding:4rem 1.5rem;}
   .divider{margin:0 1.5rem;}
   .sk-grid{grid-template-columns:repeat(2,1fr);}
-  .exp-grid,.cert-grid{grid-template-columns:1fr;}
+  .cert-grid{grid-template-columns:1fr;}
   footer{flex-direction:column;text-align:center;align-items:center;}
   .contact-box{padding:2.5rem 1.5rem;}
   .h-stats{flex-wrap:wrap;}
+  .proof-grid{grid-template-columns:1fr;}
+  .skill-matrix{grid-template-columns:1fr;}
+  .case-modal{padding:.75rem;}
   .ftag{display:none;}
 }
 
@@ -610,6 +659,13 @@ footer p{font-size:.78rem;color:var(--text3);}
 .form-card{background:var(--card);border:1px solid var(--border);border-radius:22px;padding:2.4rem 2.2rem;}
 .form-card h3{font-family:var(--h);font-size:1.5rem;font-weight:700;color:var(--text);letter-spacing:-.5px;margin-bottom:.4rem;}
 .form-sub{font-size:.81rem;color:var(--text2);margin-bottom:1.8rem;}
+.book-progress{height:6px;background:var(--card2);border:1px solid var(--border);border-radius:999px;overflow:hidden;margin-bottom:1.5rem;}
+.book-progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--blue),var(--teal));transition:width .35s ease;}
+.quick-services{display:grid;grid-template-columns:repeat(2,1fr);gap:.6rem;margin-bottom:1.1rem;}
+.quick-svc{display:flex;align-items:center;gap:.55rem;justify-content:center;background:rgba(255,255,255,.035);border:1px solid var(--border);color:var(--text2);border-radius:10px;padding:.7rem .75rem;font-size:.76rem;font-weight:700;cursor:pointer;transition:all .25s ease;font-family:var(--b);}
+.quick-svc i{color:var(--blue2);font-size:.82rem;}
+.quick-svc:hover,.quick-svc.sel{border-color:rgba(45,212,191,.45);background:rgba(45,212,191,.1);color:var(--text);transform:translateY(-2px);}
+.quick-svc.sel i{color:var(--teal);}
 .f-row{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem;margin-bottom:1.1rem;}
 .f-grp{margin-bottom:1.1rem;}
 .f-grp label{display:block;font-size:.73rem;font-weight:700;color:var(--text2);letter-spacing:.5px;text-transform:uppercase;margin-bottom:.5rem;}
@@ -639,6 +695,13 @@ footer p{font-size:.78rem;color:var(--text3);}
 /* Submit */
 .sub-note{font-size:.74rem;color:var(--text3);margin-bottom:1.1rem;display:flex;align-items:center;gap:.45rem;}
 .sub-note i{color:var(--teal);}
+.brief-helper{display:flex;justify-content:space-between;gap:1rem;margin-top:.45rem;font-size:.68rem;color:var(--text3);}
+.booking-summary{background:rgba(79,142,247,.06);border:1px solid rgba(79,142,247,.18);border-radius:14px;padding:1rem;margin:1rem 0 1.1rem;}
+.booking-summary h4{font-size:.78rem;font-weight:800;color:var(--text);margin-bottom:.75rem;letter-spacing:.8px;text-transform:uppercase;}
+.sum-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.65rem;}
+.sum-item{background:rgba(255,255,255,.035);border:1px solid var(--border);border-radius:10px;padding:.75rem;}
+.sum-item span{display:block;font-size:.62rem;color:var(--text3);letter-spacing:1px;text-transform:uppercase;margin-bottom:.25rem;}
+.sum-item strong{display:block;font-size:.78rem;color:var(--text);font-weight:700;line-height:1.35;}
 .sub-btns{display:flex;gap:.9rem;flex-wrap:wrap;}
 .btn-wa{flex:1;display:inline-flex;align-items:center;justify-content:center;gap:.55rem;background:linear-gradient(135deg,#25D366,#128C7E);color:#fff;padding:.85rem 1.2rem;border-radius:11px;font-size:.88rem;font-weight:700;box-shadow:0 4px 20px rgba(37,211,102,.22);transition:all .3s;cursor:pointer;border:none;font-family:var(--b);}
 .btn-wa:hover{transform:translateY(-3px);box-shadow:0 8px 28px rgba(37,211,102,.38);}
@@ -652,8 +715,8 @@ footer p{font-size:.78rem;color:var(--text3);}
 .faq-q:hover{background:rgba(79,142,247,.05);}
 .faq-ico{width:27px;height:27px;border-radius:7px;background:rgba(79,142,247,.1);border:1px solid rgba(79,142,247,.2);display:flex;align-items:center;justify-content:center;font-size:.68rem;color:var(--blue);flex-shrink:0;transition:all .3s;}
 .faq-item.open .faq-ico{background:var(--blue);border-color:var(--blue);color:#fff;transform:rotate(45deg);}
-.faq-a{display:none;padding:0 1.4rem 1.1rem;font-size:.82rem;color:var(--text2);line-height:1.75;}
-.faq-item.open .faq-a{display:block;}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .38s cubic-bezier(.4,0,.2,1),padding .38s;padding:0 1.4rem;font-size:.82rem;color:var(--text2);line-height:1.75;}
+.faq-item.open .faq-a{max-height:200px;padding:0 1.4rem 1.1rem;}
 
 /* Success modal */
 #hire-modal{display:none;position:fixed;inset:0;background:rgba(10,14,26,.95);backdrop-filter:blur(16px);z-index:9900;align-items:center;justify-content:center;padding:2rem;}
@@ -668,7 +731,7 @@ footer p{font-size:.78rem;color:var(--text3);}
 
 /* Responsive for hire section */
 @media(max-width:900px){.book-wrap{grid-template-columns:1fr;}.book-info{position:static;}}
-@media(max-width:600px){.f-row{grid-template-columns:1fr;}.sub-btns{flex-direction:column;}.svc-grid{grid-template-columns:1fr;}}
+@media(max-width:600px){.f-row{grid-template-columns:1fr;}.sub-btns{flex-direction:column;}.svc-grid{grid-template-columns:1fr;}.quick-services,.sum-grid{grid-template-columns:1fr;}}
 
 /* Single submit button */
 .btn-submit{
@@ -681,10 +744,461 @@ footer p{font-size:.78rem;color:var(--text3);}
 }
 .btn-submit:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(79,142,247,.5);}
 .btn-submit:disabled{opacity:.6;cursor:not-allowed;transform:none;}
+
+/* ── CUSTOM CURSOR ── */
+#cd,#cr{position:fixed;pointer-events:none;border-radius:50%;top:0;left:0;transform:translate(-50%,-50%);}
+#cd{width:7px;height:7px;background:var(--blue);z-index:99999;box-shadow:0 0 10px var(--blue);}
+#cr{width:36px;height:36px;border:1.5px solid rgba(79,142,247,.55);z-index:99998;}
+@media(pointer:coarse){#cd,#cr{display:none;}}
+
+/* ── CERT FLIP ── */
+.cert-card{background:transparent!important;border:none!important;perspective:900px;height:255px;cursor:pointer;}
+.cf-inner{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .65s cubic-bezier(.4,0,.2,1);}
+.cert-card:hover .cf-inner,.cert-card.flipped .cf-inner{transform:rotateY(180deg);}
+.cf-front,.cf-back{position:absolute;inset:0;border-radius:16px;backface-visibility:hidden;overflow:hidden;background:var(--card);border:1px solid var(--border);}
+.cf-back{transform:rotateY(180deg);background:linear-gradient(145deg,#111827,#1a2035);border-color:rgba(79,142,247,.3);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.85rem;padding:1.8rem;text-align:center;}
+.cfb-ico{width:54px;height:54px;border-radius:50%;background:rgba(79,142,247,.12);border:1px solid rgba(79,142,247,.3);display:flex;align-items:center;justify-content:center;font-size:1.4rem;color:var(--blue);}
+.cf-back h3{font-size:.95rem;font-weight:700;color:var(--text);}
+.cf-back p{font-size:.75rem;color:var(--text2);line-height:1.65;}
+
+/* ── TILT SHINE ── */
+.t-shine{position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:10;opacity:0;transition:opacity .3s;}
+
+/* ── SPOT GLOW ── */
+.spot{position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:0;transition:opacity .25s;z-index:0;}
+
+/* ── NAV UNDERLINE ── */
+.nav-links a:not(.nav-cta){position:relative;}
+.nav-links a:not(.nav-cta)::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1.5px;background:linear-gradient(90deg,var(--blue),var(--teal));transition:width .3s cubic-bezier(.4,0,.2,1);border-radius:2px;}
+.nav-links a:not(.nav-cta):hover::after,.nav-links a:not(.nav-cta).alink::after{width:100%;}
+.nav-links a:not(.nav-cta).alink{color:var(--text)!important;}
+
+/* ── HSTS HOVER ── */
+.hst{transition:transform .4s cubic-bezier(.34,1.56,.64,1),box-shadow .4s;}
+.hst:hover{transform:translateY(-5px) scale(1.06);box-shadow:0 10px 28px rgba(79,142,247,.22);}
+
+/* ── TICKER HOVER ── */
+.tki{transition:transform .3s cubic-bezier(.34,1.56,.64,1),color .25s;cursor:default;}
+.tki:hover{transform:translateY(-4px) scale(1.1);color:var(--blue);}
+
+/* ── PROC NUM ── */
+.proc-num{transition:all .4s cubic-bezier(.34,1.56,.64,1)!important;}
+.proc-step:hover .proc-num{background:var(--blue);color:#fff;border-color:var(--blue);box-shadow:0 0 28px rgba(79,142,247,.4);transform:scale(1.1)!important;}
+
+/* ── LOGO FLIP ── */
+.logo-mark{transition:transform .5s cubic-bezier(.34,1.56,.64,1);transform-style:preserve-3d;}
+.logo-mark:hover{transform:rotateY(180deg) scale(1.1);}
+
+/* ── FOOTER LINKS ── */
+.ft-a{transition:all .3s cubic-bezier(.34,1.56,.64,1);}
+.ft-a:hover{transform:translateY(-4px) scale(1.15);}
+
+/* ── SCROLL PROGRESS GLOW ── */
+#sp{height:3px!important;box-shadow:0 0 8px var(--blue),0 0 16px rgba(79,142,247,.3);}
+
+/* ── SKILL TOOLTIP ── */
+.sk-tip{position:absolute;bottom:calc(100% + 7px);left:50%;transform:translateX(-50%) translateY(4px);white-space:nowrap;background:rgba(10,14,26,.95);border:1px solid rgba(79,142,247,.3);color:var(--text2);font-size:.67rem;padding:.45rem .75rem;border-radius:8px;backdrop-filter:blur(10px);pointer-events:none;opacity:0;transition:opacity .2s,transform .2s;z-index:50;}
+.sk-card:hover .sk-tip{opacity:1;transform:translateX(-50%) translateY(0);}
+.sk-card{overflow:visible!important;position:relative;}
+
+/* ── SLOT / BUDGET SCALE ── */
+.slot,.b-opt{transition:all .2s cubic-bezier(.34,1.56,.64,1);}
+.slot:hover,.b-opt:hover{transform:scale(1.05);}
+.slot.sel,.b-opt.sel{transform:scale(1.05);}
+
+/* ── BUTTON RIPPLE BASE ── */
+.btn-p,.btn-s,.svc-btn,.btn-submit,.btn-wa,.btn-em,.sl-btn{position:relative;overflow:hidden;}
+
+/* ── HERO ENTRANCE ── */
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:none;}}
+@keyframes fadeRight{from{opacity:0;transform:translateX(20px);}to{opacity:1;transform:none;}}
+@keyframes rippleOut{to{width:300px;height:300px;opacity:0;}}
+.h-chip{animation:fadeUp .65s cubic-bezier(.4,0,.2,1) .15s both;}
+.h-name{animation:fadeUp .65s cubic-bezier(.4,0,.2,1) .26s both;}
+.h-role{animation:fadeUp .65s cubic-bezier(.4,0,.2,1) .36s both;}
+.h-desc{animation:fadeUp .65s cubic-bezier(.4,0,.2,1) .44s both;}
+.h-stats{animation:fadeUp .65s cubic-bezier(.4,0,.2,1) .52s both;}
+.h-btns{animation:fadeUp .65s cubic-bezier(.4,0,.2,1) .60s both;}
+.photo-area{animation:fadeRight .8s cubic-bezier(.4,0,.2,1) .3s both;}
+
+
+/* ── SERVICE CARD — price removed, better button ── */
+.svc-btn{
+  margin-top:.5rem;
+  border-radius:10px!important;
+  font-size:.82rem!important;
+  padding:.72rem 1rem!important;
+}
+
+/* ── ENHANCED HOVER GLOW on svc cards ── */
+.svc-card:hover{
+  box-shadow:0 20px 50px rgba(0,0,0,.45),0 0 0 1px rgba(79,142,247,.15)!important;
+}
+
+/* ── SCROLL SNAP feel for slider ── */
+.reel{scroll-snap-type:x mandatory;}
+.pj,.ach{scroll-snap-align:start;}
+
+/* ── SECTION LABEL pulse ── */
+.sec-label{position:relative;}
+.sec-label::after{content:'';position:absolute;left:0;top:50%;width:14px;height:14px;border-radius:50%;background:var(--blue);opacity:.15;transform:translate(-25%,-50%);animation:labelPulse 2s ease-in-out infinite;}
+@keyframes labelPulse{0%,100%{transform:translate(-25%,-50%) scale(1);}50%{transform:translate(-25%,-50%) scale(2);opacity:0;}}
+
+/* ── CONTACT LINKS extra polish ── */
+.ct-link{border-radius:14px!important;}
+.ct-link:hover{box-shadow:0 4px 20px rgba(79,142,247,.15);}
+
+/* ── BACK TO TOP button ── */
+#btt{
+  position:fixed;bottom:2rem;right:2rem;
+  width:42px;height:42px;border-radius:12px;
+  background:rgba(79,142,247,.15);border:1px solid rgba(79,142,247,.3);
+  color:var(--blue);font-size:.85rem;
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;z-index:800;
+  opacity:0;pointer-events:none;
+  transition:opacity .3s,background .3s,transform .3s;
+  backdrop-filter:blur(8px);
+}
+#btt.show{opacity:1;pointer-events:auto;}
+#btt:hover{background:var(--blue);color:#fff;transform:translateY(-3px);}
+/* ── MOBILE NAV — smooth slide ── */
+@media(max-width:800px){
+  .nav-links{
+    position:fixed;inset:0;
+    background:rgba(10,14,26,.97);
+    backdrop-filter:blur(24px);
+    flex-direction:column;justify-content:center;align-items:center;gap:2.5rem;
+    display:flex!important;
+    opacity:0;pointer-events:none;
+    transform:translateY(-12px);
+    transition:opacity .35s cubic-bezier(.4,0,.2,1), transform .35s cubic-bezier(.4,0,.2,1);
+    z-index:905;
+  }
+  .nav-links.open{opacity:1;pointer-events:auto;transform:none;}
+  .nav-links a{font-size:1.4rem;}
+}
+
+/* ── SECTION BASE ── */
+.sec{overflow:hidden;}
+
+/* ── HERO SCROLL HINT ── */
+.hero-scroll{opacity:.6;}
+.hero-scroll:hover{opacity:1;}
+
+/* ── EXP CARD date tag ── */
+.exp-co{
+  display:inline-flex;align-items:center;gap:.5rem;
+  background:rgba(79,142,247,.08);
+  border:1px solid rgba(79,142,247,.15);
+  border-radius:6px;padding:.2rem .6rem;
+  font-size:.72rem!important;
+}
+
+/* ── CERT GRID responsive ── */
+@media(max-width:700px){
+  .cert-grid{grid-template-columns:1fr!important;}
+  .cert-card{height:220px;}
+}
+
+/* ── PROJECT CARD image hover ── */
+.pj-img::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(to bottom,transparent 40%,rgba(10,14,26,.7) 100%);
+  opacity:0;transition:opacity .35s;
+}
+.pj:hover .pj-img::after{opacity:1;}
+
+/* ── ACHIEVEMENT CARD ── */
+.ach-img::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(to bottom,transparent 50%,rgba(10,14,26,.6) 100%);
+  opacity:0;transition:opacity .35s;
+}
+.ach:hover .ach-img::after{opacity:1;}
+
+/* ── FORM STYLE IMPROVEMENTS ── */
+.f-grp label{letter-spacing:.3px;}
+.fi:hover,.fs:hover,.ft:hover{border-color:rgba(255,255,255,.15);}
+.fi,.fs,.ft{font-size:.875rem!important;}
+
+/* ── SLOT selected ring ── */
+.slot.sel{box-shadow:0 0 0 2px var(--blue);}
+.b-opt.sel{box-shadow:0 0 0 2px var(--blue);}
+
+/* ── SUBMIT BUTTON ── */
+.btn-submit{
+  letter-spacing:.3px;
+  background:linear-gradient(135deg,var(--blue) 0%,#3a6fd4 50%,var(--teal) 100%)!important;
+  background-size:200% 200%!important;
+  transition:background-position .4s ease, transform .3s, box-shadow .3s!important;
+}
+.btn-submit:hover{background-position:right center!important;}
+
+/* ── MODAL ANIMATION ── */
+#hire-modal{transition:opacity .3s;}
+.modal-box{box-shadow:0 40px 80px rgba(0,0,0,.6);}
+
+/* ── FOOTER enhancement ── */
+footer{
+  background:var(--bg2);
+  position:relative;overflow:hidden;
+}
+footer::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,transparent,var(--blue),var(--teal),transparent);
+  opacity:.4;
+}
+
+/* ── REACH button fix ── */
+.reach{font-family:var(--b);}
+
+/* ── TICKER gap ── */
+.tki{gap:.5rem;padding:0 .75rem;}
+
+/* ── DIVIDER ── */
+.divider{
+  height:1px;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.06),transparent);
+  margin:0 clamp(1.5rem,7vw,6rem);
+}
+
+/* ── PROC STEP hover line ── */
+.proc-grid::before{opacity:.5;}
+.proc-step:hover .proc-num{box-shadow:0 0 0 8px rgba(79,142,247,.1),0 0 28px rgba(79,142,247,.4);}
+
+/* ── CONTACT BOX glow ── */
+.contact-box{overflow:hidden;}
+.contact-box:hover{box-shadow:0 0 60px rgba(79,142,247,.06);}
+
+/* ── AVAIL chip pulse ── */
+.avail{
+  animation:availPop 3s ease-in-out infinite;
+}
+@keyframes availPop{0%,100%{box-shadow:0 0 0 0 rgba(45,212,191,.3);}50%{box-shadow:0 0 0 6px rgba(45,212,191,.0);}}
+
+/* ── CERT flip hint ── */
+.cert-grid::before{
+  content:'Hover to flip';
+  display:block;
+  font-size:.62rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;
+  color:var(--text3);text-align:right;margin-bottom:.75rem;
+  grid-column:1/-1;
+}
+
+/* ══════════════════════════
+   RING SKILLS — conic-gradient
+══════════════════════════ */
+.sk-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:1.2rem;}
+.sk-card{
+  padding:1.6rem 1rem 1.2rem;
+  display:flex;flex-direction:column;align-items:center;
+  gap:.7rem;text-align:center;
+  background:var(--card);border:1px solid var(--border);
+  border-radius:18px;transition:all .35s cubic-bezier(.34,1.56,.64,1);
+  transform-style:preserve-3d;cursor:pointer;position:relative;overflow:visible;
+}
+.sk-card:hover{
+  border-color:rgba(79,142,247,.45);
+  box-shadow:0 14px 40px rgba(79,142,247,.18),0 0 0 1px rgba(79,142,247,.12);
+  transform:translateY(-5px);
+}
+/* conic ring */
+.sk-ring{
+  width:76px;height:76px;border-radius:50%;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  background:conic-gradient(#4F8EF7 0deg, #1A2035 0deg);
+  transition:background 1.4s cubic-bezier(.4,0,.2,1);
+  position:relative;
+}
+.sk-ring::before{
+  content:'';position:absolute;inset:7px;border-radius:50%;
+  background:var(--card);z-index:0;
+}
+.sk-ring-inner{
+  position:relative;z-index:1;
+  display:flex;align-items:center;justify-content:center;
+  width:100%;height:100%;
+}
+.sk-pct{
+  font-size:.72rem;font-weight:800;
+  color:var(--blue);font-family:var(--h);
+  line-height:1;
+}
+.sk-ico-box{
+  width:34px;height:34px;border-radius:9px;
+  background:rgba(79,142,247,.1);
+  display:flex;align-items:center;justify-content:center;
+  transition:background .3s,transform .3s;flex-shrink:0;
+}
+.sk-card:hover .sk-ico-box{
+  background:linear-gradient(135deg,var(--blue),var(--teal));
+  transform:scale(1.1) rotate(-5deg);
+}
+.sk-ico{font-size:1rem;color:var(--blue);transition:color .3s;}
+.sk-card:hover .sk-ico{color:#fff;}
+.sk-name{font-size:.78rem;font-weight:700;color:var(--text);letter-spacing:.1px;line-height:1.3;}
+.sk-desc{font-size:.66rem;color:var(--text2);line-height:1.45;max-width:140px;}
+/* professional skills matrix */
+.skill-matrix{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;}
+.skill-group{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1.45rem;position:relative;overflow:hidden;transition:all .3s ease;}
+.skill-group::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--blue),var(--teal));transform:scaleX(.45);transform-origin:left;transition:transform .3s ease;}
+.skill-group:hover{transform:translateY(-4px);border-color:rgba(79,142,247,.3);box-shadow:0 16px 45px rgba(0,0,0,.28);}
+.skill-group:hover::before{transform:scaleX(1);}
+.skill-head{display:flex;align-items:center;gap:.85rem;margin-bottom:1rem;}
+.skill-head i{width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:rgba(79,142,247,.11);border:1px solid rgba(79,142,247,.22);color:var(--blue2);font-size:.95rem;}
+.skill-head h3{font-size:.95rem;font-weight:800;color:var(--text);}
+.skill-list{display:flex;flex-wrap:wrap;gap:.45rem;}
+.skill-list span{font-size:.7rem;color:var(--text2);line-height:1.35;border:1px solid var(--border);background:rgba(255,255,255,.035);border-radius:999px;padding:.32rem .62rem;}
+.skill-proof{font-size:.74rem;color:var(--text2);line-height:1.65;margin-top:1rem;padding-top:1rem;border-top:1px solid var(--border);}
+.skill-proof strong{color:var(--teal);}
+/* ring glow on hover */
+.sk-card:hover .sk-ring{
+  box-shadow:0 0 16px rgba(79,142,247,.35);
+}
+
+/* ══════════════════════════
+   3D TIMELINE
+══════════════════════════ */
+.exp-timeline{
+  position:relative;
+  display:flex;flex-direction:column;gap:2rem;
+  padding-left:2.5rem;
+}
+.exp-tl-line{
+  position:absolute;left:8px;top:12px;bottom:12px;width:2px;
+  background:linear-gradient(180deg,var(--blue),var(--teal),var(--purple));
+  border-radius:2px;opacity:.4;
+}
+.exp-tl-item{position:relative;}
+.exp-tl-dot{
+  position:absolute;left:-2.5rem;top:1.8rem;
+  width:18px;height:18px;border-radius:50%;
+  background:var(--bg2);border:2px solid var(--blue);
+  display:flex;align-items:center;justify-content:center;
+  z-index:2;transition:all .4s cubic-bezier(.34,1.56,.64,1);
+}
+.exp-tl-dot-inner{
+  width:7px;height:7px;border-radius:50%;
+  background:var(--blue);
+  box-shadow:0 0 8px var(--blue);
+  transition:all .4s;
+}
+.exp-tl-item:hover .exp-tl-dot{
+  border-color:var(--teal);transform:scale(1.25);
+  box-shadow:0 0 16px rgba(45,212,191,.4);
+}
+.exp-tl-item:hover .exp-tl-dot-inner{background:var(--teal);box-shadow:0 0 10px var(--teal);}
+.exp-card{
+  background:var(--card);border:1px solid var(--border);border-radius:16px;
+  padding:1.8rem 2rem;display:flex;gap:1.4rem;
+  transition:all .35s cubic-bezier(.34,1.56,.64,1);
+  position:relative;overflow:hidden;
+  transform-style:preserve-3d;
+}
+.exp-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,var(--blue),var(--teal));
+  transform:scaleX(0);transform-origin:left;transition:transform .4s;
+}
+.exp-card:hover{
+  border-color:rgba(79,142,247,.25);
+  transform:translateY(-4px) translateX(6px);
+  box-shadow:0 16px 48px rgba(0,0,0,.4),0 0 0 1px rgba(79,142,247,.1);
+}
+.exp-card:hover::before{transform:scaleX(1);}
+@media(max-width:600px){
+  .exp-timeline{padding-left:1.5rem;}
+  .exp-tl-dot{left:-1.5rem;}
+  .exp-card{flex-direction:column;gap:1rem;}
+}
+
+/* ══════════════════════════
+   3D PROJECT CARDS
+══════════════════════════ */
+.pj{
+  min-width:290px;flex-shrink:0;
+  background:var(--card);border:1px solid var(--border);
+  border-radius:18px;overflow:hidden;
+  transition:all .4s cubic-bezier(.34,1.56,.64,1);
+  transform-style:preserve-3d;
+  position:relative;
+}
+.pj::after{
+  content:'';position:absolute;inset:0;border-radius:18px;
+  background:linear-gradient(135deg,rgba(79,142,247,.04),transparent 60%);
+  opacity:0;transition:opacity .3s;pointer-events:none;
+}
+.pj:hover{
+  border-color:rgba(79,142,247,.3);
+  transform:translateY(-8px) rotateX(2deg);
+  box-shadow:0 24px 60px rgba(0,0,0,.5),0 0 0 1px rgba(79,142,247,.15),0 8px 0 rgba(79,142,247,.08);
+}
+.pj:hover::after{opacity:1;}
+
+/* ══════════════════════════
+   CONTACT 3D CARD
+══════════════════════════ */
+.contact-box{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:28px;padding:4rem clamp(2rem,6vw,5rem);
+  position:relative;overflow:hidden;
+  transform-style:preserve-3d;
+}
+.contact-box::before{
+  content:'';position:absolute;inset:0;border-radius:28px;
+  background:
+    radial-gradient(ellipse at 20% 50%,rgba(79,142,247,.06) 0%,transparent 55%),
+    radial-gradient(ellipse at 80% 50%,rgba(45,212,191,.05) 0%,transparent 55%);
+  pointer-events:none;
+}
+/* animated border */
+.contact-box::after{
+  content:'';position:absolute;inset:-1px;border-radius:28px;
+  background:conic-gradient(from var(--angle,0deg),var(--blue),var(--teal),var(--purple),var(--blue));
+  z-index:-1;opacity:.18;
+  animation:spinBorder 6s linear infinite;
+}
+@property --angle{syntax:'<angle>';initial-value:0deg;inherits:false;}
+@keyframes spinBorder{to{--angle:360deg;}}
+
+/* ══════════════════════════
+   SECTION TITLE GLOW
+══════════════════════════ */
+.sec-title em{
+  background:linear-gradient(135deg,var(--blue) 0%,var(--teal) 50%,var(--purple) 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  filter:drop-shadow(0 0 20px rgba(79,142,247,.3));
+}
+
+/* ══════════════════════════
+   HERO STATS 3D
+══════════════════════════ */
+.h-stats{
+  border-radius:16px;
+  background:rgba(255,255,255,.02);
+  backdrop-filter:blur(10px);
+  border:1px solid var(--border);
+}
+.hst:hover{
+  background:rgba(79,142,247,.07);
+}
+
+/* ══════════════════════════
+   LOADER UPGRADE
+══════════════════════════ */
+#loader{background:var(--bg);}
+.ld-logo{
+  background:linear-gradient(135deg,var(--blue),var(--teal),var(--purple));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.ld-logo b{-webkit-text-fill-color:inherit;}
 </style>
 </head>
 <body>
 
+<div id="cd"></div><div id="cr"></div>
+<button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top"><i class="fas fa-chevron-up"></i></button>
 <div id="sp"></div>
 
 <!-- LOADER -->
@@ -703,12 +1217,14 @@ footer p{font-size:.78rem;color:var(--text3);}
   <div class="nav-logo"><div class="logo-mark">VC</div>Varun Chaubey</div>
   <ul class="nav-links" id="nl">
     <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#certifications">Certs</a></li>
     <li><a href="#projects">Projects</a></li>
+    <li><a href="#production-work">Production</a></li>
     <li><a href="#achievements">Achievements</a></li>
-    <li><a href="#hire" class="nav-cta" style="background:rgba(45,212,191,.15)!important;border-color:rgba(45,212,191,.35)!important;color:#2DD4BF!important;">💼 Hire Me</a></li>
+    <li><a href="#hire" class="nav-cta" style="background:rgba(45,212,191,.15)!important;border-color:rgba(45,212,191,.35)!important;color:#2DD4BF!important;">Hire Me</a></li>
     <li><a href="#contact" class="nav-cta">Contact</a></li>
   </ul>
   <div class="ham" id="ham"><span></span><span></span><span></span></div>
@@ -716,6 +1232,7 @@ footer p{font-size:.78rem;color:var(--text3);}
 
 <!-- ═══ HERO ═══ -->
 <section id="home" class="hero">
+  <canvas id="hc" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1;"></canvas>
   <div class="glow g1"></div>
   <div class="glow g2"></div>
   <div class="glow g3"></div>
@@ -725,7 +1242,7 @@ footer p{font-size:.78rem;color:var(--text3);}
   <div class="hero-l">
 
     <div class="h-chip rv" data-d="1">
-      <span class="h-chip-dot"></span>Available for Projects
+      <span class="h-chip-dot"></span>Open for BI roles & freelance projects
     </div>
 
     <h1 class="h-name rv" data-d="2">
@@ -733,28 +1250,25 @@ footer p{font-size:.78rem;color:var(--text3);}
     </h1>
 
     <div class="h-role rv" data-d="3">
-      <span>Data Analyst</span>
-      <span class="h-role-dot"></span>
-      <span>BI Developer</span>
-      <span class="h-role-dot"></span>
-      <span>Power BI Expert</span>
+      <span>Power BI Developer | SQL | ETL | API Integration</span>
     </div>
 
     <p class="h-desc rv" data-d="3">
-      Turning raw data into strategic dashboards and automated workflows for 2+ years — helping businesses make smarter decisions with Power BI, SQL, Python and Azure.
+      I build automated dashboards using real-world data that reduce manual reporting and improve business decisions.
+      <br><strong>2.5+ Years Experience | 50K+ Data Handling | KPI Dashboards</strong>
     </p>
 
     <div class="h-stats rv" data-d="4">
-      <div class="hst"><div class="hst-n">2<em>+</em></div><div class="hst-l">Years Exp.</div></div>
+      <div class="hst"><div class="hst-n">2.5<em>+</em></div><div class="hst-l">Years Exp.</div></div>
       <div class="hst"><div class="hst-n">8<em>+</em></div><div class="hst-l">Projects</div></div>
       <div class="hst"><div class="hst-n">15<em>h</em></div><div class="hst-l">Saved/Week</div></div>
       <div class="hst"><div class="hst-n">25<em>%</em></div><div class="hst-l">Perf. Boost</div></div>
     </div>
 
     <div class="h-btns rv" data-d="5">
-      <a href="#projects" class="btn-p"><i class="fas fa-chart-bar"></i> View Projects</a>
-      <a href="#hire" class="btn-p" style="background:linear-gradient(135deg,#2DD4BF,#059669);box-shadow:0 4px 20px rgba(45,212,191,.3);"><i class="fas fa-calendar-check"></i> Book a Session</a>
-      <a href="https://drive.google.com/file/d/18USOVOJa06Qouf5-1V-uTwwhB3dASIIe/view?usp=sharing" target="_blank" class="btn-s"><i class="fas fa-download"></i> Download CV</a>
+      <a href="#projects" class="btn-p"><i class="fas fa-chart-bar"></i> View Case Studies</a>
+      <a href="#contact" class="btn-p" style="background:linear-gradient(135deg,#2DD4BF,#059669);box-shadow:0 4px 20px rgba(45,212,191,.3);"><i class="fas fa-briefcase"></i> Discuss a Role</a>
+      <a href="https://drive.google.com/file/d/1zJ5pY3iWc4fvpD0tp6oMdB9qnCnpPyGm/view?usp=sharing" target="_blank" rel="noopener" class="btn-s"><i class="fas fa-download"></i> Download CV</a>
     </div>
   </div>
 
@@ -765,19 +1279,9 @@ footer p{font-size:.78rem;color:var(--text3);}
         <div class="photo-orbit"><div class="orbit-dot"></div></div>
         <div class="photo-spin"><div class="photo-spin-inner"></div></div>
         <picture>
-          <source srcset="images/varun-photo-small.webp 300w,images/varun-photo.webp 600w" type="image/webp">
-          <img src="images/varun-photo.jpg" alt="Varun Chaubey" class="photo-img" loading="eager">
+          <source srcset="images/varun-photo.webp" type="image/webp">
+          <img src="images/varun-photo.webp" alt="Varun Chaubey - Data Analyst and BI Developer" class="photo-img" loading="eager">
         </picture>
-        <!-- Floating tag 1 -->
-        <div class="ftag ft1">
-          <div class="ftag-icon fi-b"><i class="fas fa-chart-bar"></i></div>
-          <div class="ftag-txt"><strong>Power BI</strong><span>Expert Level</span></div>
-        </div>
-        <!-- Floating tag 2 -->
-        <div class="ftag ft2">
-          <div class="ftag-icon fi-t"><i class="fas fa-database"></i></div>
-          <div class="ftag-txt"><strong>SQL + Python</strong><span>Advanced</span></div>
-        </div>
       </div>
       <div class="avail"><span class="avail-dot"></span>Open to new opportunities</div>
     </div>
@@ -816,48 +1320,100 @@ footer p{font-size:.78rem;color:var(--text3);}
   </div>
 </div>
 
+<!-- ABOUT -->
+<section id="about" class="sec" aria-labelledby="about-title">
+  <div class="wrap">
+    <div class="rv">
+      <div class="sec-label">About Me</div>
+      <h2 class="sec-title" id="about-title">Power BI Developer with <em>real data</em> experience</h2>
+    </div>
+    <div class="about-hire">
+      <div class="about-copy rv" data-d="1">
+        <p>I am a Power BI Developer with 2.5+ years of experience working on real business data.</p>
+        <p>I have built end-to-end data solutions — from API data extraction to PostgreSQL database management to Power BI dashboards.</p>
+        <p>My focus is on building scalable dashboards that solve real business problems like revenue tracking, conversion analysis, and performance monitoring.</p>
+      </div>
+      <div class="hire-snapshot rv" data-d="2">
+        <div class="snap"><strong>Power BI</strong><span>DAX, data modeling, KPI dashboards, drilldowns, and business reporting.</span></div>
+        <div class="snap"><strong>SQL</strong><span>CTEs, window functions, optimization, and analytics-ready datasets.</span></div>
+        <div class="snap"><strong>ETL</strong><span>API extraction, transformation logic, PostgreSQL storage, and refresh workflows.</span></div>
+        <div class="snap"><strong>Business KPIs</strong><span>Revenue, conversion, department performance, sales, and operations monitoring.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- HIRING PROOF -->
+<section class="sec sec-dark" aria-labelledby="proof-title">
+  <div class="wrap">
+    <div class="rv">
+      <div class="sec-label">Hiring Proof</div>
+      <h2 class="sec-title" id="proof-title">Why hire <em>Varun</em></h2>
+      <p class="proof-note">A BI profile built around measurable business impact: cleaner pipelines, faster reporting, executive-ready dashboards, and stakeholder-friendly analytics delivery.</p>
+    </div>
+    <div class="proof-grid">
+      <div class="proof-card rv" data-d="1"><i class="fas fa-rocket"></i><h3>Automation first</h3><p>Reduced repetitive reporting by <strong>15 hours/week</strong> using Python, APIs, SQL, and Power BI refresh workflows.</p></div>
+      <div class="proof-card rv" data-d="2"><i class="fas fa-database"></i><h3>Data engineering mindset</h3><p>Built incremental sync logic and handled <strong>50K+ records</strong> with PostgreSQL-backed reporting pipelines.</p></div>
+      <div class="proof-card rv" data-d="3"><i class="fas fa-gauge-high"></i><h3>Performance focused</h3><p>Optimized SQL and BI models to improve dashboard and query performance by <strong>25%</strong>.</p></div>
+      <div class="proof-card rv" data-d="4"><i class="fas fa-users"></i><h3>Business aligned</h3><p>Turns stakeholder questions into KPI dashboards for revenue, conversion, marketing, and operations decisions.</p></div>
+    </div>
+  </div>
+</section>
+
 <div class="divider"></div>
 
 <!-- EXPERIENCE -->
 <section id="experience" class="sec sec-dark">
   <div class="wrap">
     <div class="rv"><div class="sec-label">Career</div><h2 class="sec-title">Work <em>Experience</em></h2></div>
-    <div class="exp-grid">
-      <div class="exp-card rv" data-d="1">
-        <div class="exp-logo" style="background:linear-gradient(135deg,#2DD4BF,#059669);display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--h);font-size:.75rem;font-weight:800;letter-spacing:.5px;border-radius:10px;width:48px;height:48px;flex-shrink:0;">GL</div>
-        <div class="exp-body">
-          <h3>Senior BI Developer</h3>
-          <div class="exp-co">Gleuhr Wellness Pvt. Ltd. · Chandigarh &nbsp;·&nbsp; Sep 2025 – Present</div>
-          <ul>
-            <li>Led design of scalable star-schema models integrating revenue, bookings, and performance metrics.</li>
-            <li>Built automated API-to-Power BI pipeline using Python and PostgreSQL, eliminating manual work.</li>
-            <li>Implemented incremental data sync logic with automated insert/update handling for 50K+ records.</li>
-            <li>Developed executive KPI dashboards tracking revenue, conversion rates, and department performance.</li>
-          </ul>
+    <div class="exp-timeline">
+      <div class="exp-tl-line"></div>
+      <div class="exp-tl-item rv" data-d="1">
+        <div class="exp-tl-dot"><div class="exp-tl-dot-inner"></div></div>
+        <div class="exp-card">
+          <div class="exp-logo" style="background:linear-gradient(135deg,#2DD4BF,#059669);display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--h);font-size:.75rem;font-weight:800;letter-spacing:.5px;border-radius:10px;width:48px;height:48px;flex-shrink:0;">GL</div>
+          <div class="exp-body">
+            <h3>Senior BI Developer</h3>
+            <div class="exp-co">Gleuhr Wellness Pvt. Ltd. · Chandigarh &nbsp;·&nbsp; Sep 2025 – Present</div>
+            <ul>
+              <li>Led design of scalable star-schema models integrating revenue, bookings, and performance metrics.</li>
+              <li>Built automated API-to-Power BI pipeline using Python and PostgreSQL, eliminating manual work.</li>
+              <li>Implemented incremental data sync logic with automated insert/update handling for 50K+ records.</li>
+              <li>Developed executive KPI dashboards tracking revenue, conversion rates, and department performance.</li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="exp-card rv" data-d="2">
-        <img src="images/experience/adglobal360-logo.webp" class="exp-logo" alt="Adglobal360" loading="lazy">
-        <div class="exp-body">
-          <h3>BI Analyst</h3>
-          <div class="exp-co">Adglobal360 India Pvt. Ltd. · Apr 2024 – Sep 2025</div>
-          <ul>
-            <li>Automated analysis of 10,000+ JSON files daily using Python.</li>
-            <li>Integrated APIs into workflows, saving 15 hours per week.</li>
-            <li>Built real-time dashboards for marketing performance tracking.</li>
-          </ul>
+      <div class="exp-tl-item rv" data-d="2">
+        <div class="exp-tl-dot"><div class="exp-tl-dot-inner"></div></div>
+        <div class="exp-card">
+          <img src="images/experience/adglobal360-logo.webp" class="exp-logo" alt="Adglobal360" loading="lazy">
+          <div class="exp-body">
+            <h3>BI Analyst</h3>
+            <div class="exp-co">Adglobal360 India Pvt. Ltd. · Apr 2024 – Sep 2025</div>
+            <ul>
+              <li>Automated analysis of 10,000+ JSON files daily using Python.</li>
+              <li>Integrated APIs into workflows, saving 15 hours per week.</li>
+              <li>Built real-time dashboards for marketing performance tracking.</li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="exp-card rv" data-d="3">
-        <img src="images/experience/varahe-logo.webp" class="exp-logo" alt="Varahe Analytics" loading="lazy">
-        <div class="exp-body">
-          <h3>BI Consultant</h3>
-          <div class="exp-co">Varahe Analytics Pvt. Ltd. · Jul 2023 – Apr 2024</div>
-          <ul>
-            <li>Built interactive Power BI dashboards for actionable insights.</li>
-            <li>Optimized SQL queries, boosting performance by 25%.</li>
-            <li>Collaborated with stakeholders to translate data into strategy.</li>
-          </ul>
+      <div class="exp-tl-item rv" data-d="3">
+        <div class="exp-tl-dot"><div class="exp-tl-dot-inner"></div></div>
+        <div class="exp-card">
+          <img src="images/experience/varahe-logo.webp" class="exp-logo" alt="Varahe Analytics" loading="lazy">
+          <div class="exp-body">
+            <h3>BI Consultant</h3>
+            <div class="exp-co">Varahe Analytics Pvt. Ltd. · Jul 2023 – Apr 2024</div>
+            <ul>
+              <li>Built interactive Power BI dashboards for actionable insights.</li>
+              <li>Optimized SQL queries, boosting performance by 25%.</li>
+              <li>Collaborated with stakeholders to translate data into strategy.</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -869,20 +1425,14 @@ footer p{font-size:.78rem;color:var(--text3);}
 <!-- SKILLS -->
 <section id="skills" class="sec">
   <div class="wrap">
-    <div class="rv"><div class="sec-label">Tech Stack</div><h2 class="sec-title">My <em>Skills</em></h2></div>
-    <div class="sk-grid">
-      <div class="sk-card rv" data-d="1"><div class="sk-ico-box"><i class="fas fa-table sk-ico"></i></div><div class="sk-name">Excel</div><div class="sk-bar-row"><div class="sk-bar" data-p="92"><div class="sk-fill"></div></div><span class="sk-pct">0%</span></div></div>
-      <div class="sk-card rv" data-d="2"><div class="sk-ico-box"><i class="fas fa-chart-bar sk-ico"></i></div><div class="sk-name">Power BI</div><div class="sk-bar-row"><div class="sk-bar" data-p="87"><div class="sk-fill"></div></div><span class="sk-pct">0%</span></div></div>
-      <div class="sk-card rv" data-d="3"><div class="sk-ico-box"><i class="fas fa-cloud sk-ico"></i></div><div class="sk-name">Power BI Service</div><div class="sk-bar-row"><div class="sk-bar" data-p="85"><div class="sk-fill"></div></div><span class="sk-pct">0%</span></div></div>
-      <div class="sk-card rv" data-d="1"><div class="sk-ico-box"><i class="fab fa-python sk-ico"></i></div><div class="sk-name">Python</div><div class="sk-bar-row"><div class="sk-bar" data-p="85"><div class="sk-fill"></div></div><span class="sk-pct">0%</span></div></div>
-      <div class="sk-card rv" data-d="2"><div class="sk-ico-box"><i class="fas fa-eye sk-ico"></i></div><div class="sk-name">Looker Studio</div><div class="sk-bar-row"><div class="sk-bar" data-p="80"><div class="sk-fill"></div></div><span class="sk-pct">0%</span></div></div>
-      <div class="sk-card rv" data-d="3"><div class="sk-ico-box"><i class="fas fa-database sk-ico"></i></div><div class="sk-name">SQL</div><div class="sk-bar-row"><div class="sk-bar" data-p="90"><div class="sk-fill"></div></div><span class="sk-pct">0%</span></div></div>
-      <div class="sk-card rv" data-d="1"><div class="sk-ico-box"><i class="fas fa-chart-pie sk-ico"></i></div><div class="sk-name">Tableau</div><div class="sk-bar-row"><div class="sk-bar" data-p="75"><div class="sk-fill"></div></div><span class="sk-pct">0%</span></div></div>
-      <div class="sk-card rv" data-d="2"><div class="sk-ico-box"><i class="fas fa-link sk-ico"></i></div><div class="sk-name">API Integration</div><div class="sk-bar-row"><div class="sk-bar" data-p="75"><div class="sk-fill"></div></div><span class="sk-pct">0%</span></div></div>
-      <div class="sk-card rv" data-d="3"><div class="sk-ico-box"><i class="fas fa-mobile-alt sk-ico"></i></div><div class="sk-name">Power Apps</div><div class="sk-bar-row"><div class="sk-bar" data-p="80"><div class="sk-fill"></div></div><span class="sk-pct">0%</span></div></div>
-      <div class="sk-card rv" data-d="1"><div class="sk-ico-box"><i class="fas fa-tools sk-ico"></i></div><div class="sk-name">Postman</div><div class="sk-bar-row"><div class="sk-bar" data-p="80"><div class="sk-fill"></div></div><span class="sk-pct">0%</span></div></div>
-      <div class="sk-card rv" data-d="2"><div class="sk-ico-box"><i class="fas fa-snowflake sk-ico"></i></div><div class="sk-name">Snowflake</div><div class="sk-bar-row"><div class="sk-bar" data-p="90"><div class="sk-fill"></div></div><span class="sk-pct">0%</span></div></div>
-      <div class="sk-card rv" data-d="3"><div class="sk-ico-box"><i class="fas fa-cogs sk-ico"></i></div><div class="sk-name">Azure Data Factory</div><div class="sk-bar-row"><div class="sk-bar" data-p="85"><div class="sk-fill"></div></div><span class="sk-pct">0%</span></div></div>
+    <div class="rv" style="max-width:780px;margin-bottom:3rem;"><div class="sec-label">Tech Stack</div><h2 class="sec-title" style="margin-bottom:1rem;">Business Intelligence <em>Skills</em></h2><p class="proof-note" style="margin-top:0;">Tools and workflows I use to move data from raw sources into reliable dashboards, automated reports, and business KPIs.</p></div>
+    <div class="skill-matrix">
+      <div class="skill-group rv" data-d="1"><div class="skill-head"><i class="fas fa-chart-bar"></i><h3>Power BI Development</h3></div><div class="skill-list"><span>DAX</span><span>Power Query</span><span>Data Modeling</span><span>Star Schema</span><span>KPI Cards</span><span>Drillthrough</span><span>Bookmarks</span><span>Tooltips</span><span>RLS</span><span>Dashboard UX</span></div><p class="skill-proof"><strong>Used for:</strong> executive dashboards, revenue tracking, conversion funnels, and department performance reports.</p></div>
+      <div class="skill-group rv" data-d="2"><div class="skill-head"><i class="fas fa-database"></i><h3>SQL & Databases</h3></div><div class="skill-list"><span>SQL</span><span>PostgreSQL</span><span>Snowflake</span><span>CTEs</span><span>Window Functions</span><span>Joins</span><span>Indexing Basics</span><span>Query Optimization</span><span>Views</span><span>Data Validation</span></div><p class="skill-proof"><strong>Used for:</strong> analytics-ready datasets, KPI logic, performance tuning, and 50K+ record reporting workflows.</p></div>
+      <div class="skill-group rv" data-d="3"><div class="skill-head"><i class="fab fa-python"></i><h3>ETL & Automation</h3></div><div class="skill-list"><span>Python</span><span>pandas</span><span>requests</span><span>JSON</span><span>CSV/Excel Processing</span><span>Data Cleaning</span><span>Incremental Load</span><span>Scheduled Scripts</span><span>Error Handling</span><span>Logging</span></div><p class="skill-proof"><strong>Used for:</strong> API-to-database pipelines, automated reporting, and repetitive workflow reduction.</p></div>
+      <div class="skill-group rv" data-d="1"><div class="skill-head"><i class="fas fa-link"></i><h3>API Integration</h3></div><div class="skill-list"><span>REST APIs</span><span>Postman</span><span>Authentication</span><span>Pagination</span><span>JSON Parsing</span><span>API Testing</span><span>Data Extraction</span><span>Refresh Logic</span><span>Endpoint Validation</span></div><p class="skill-proof"><strong>Used for:</strong> pulling live business data into PostgreSQL and Power BI dashboards.</p></div>
+      <div class="skill-group rv" data-d="2"><div class="skill-head"><i class="fas fa-cloud"></i><h3>Cloud & BI Deployment</h3></div><div class="skill-list"><span>Power BI Service</span><span>Azure Data Factory</span><span>Workspace Management</span><span>Gateway Setup</span><span>Scheduled Refresh</span><span>Access Control</span><span>Dataflows</span><span>Deployment Checks</span></div><p class="skill-proof"><strong>Used for:</strong> publishing reports, managing refreshes, and keeping dashboards available for stakeholders.</p></div>
+      <div class="skill-group rv" data-d="3"><div class="skill-head"><i class="fas fa-briefcase"></i><h3>Business Analytics</h3></div><div class="skill-list"><span>Revenue Analysis</span><span>Sales KPIs</span><span>Conversion Funnel</span><span>Operations Metrics</span><span>Marketing Performance</span><span>Trend Analysis</span><span>Excel</span><span>Looker Studio</span><span>Tableau</span><span>Power Apps</span></div><p class="skill-proof"><strong>Used for:</strong> translating business questions into metrics, dashboards, and decision-ready insights.</p></div>
     </div>
   </div>
 </section>
@@ -894,9 +1444,24 @@ footer p{font-size:.78rem;color:var(--text3);}
   <div class="wrap">
     <div class="rv"><div class="sec-label">Credentials</div><h2 class="sec-title">Certifi<em>cations</em></h2></div>
     <div class="cert-grid">
-      <div class="cert-card rv" data-d="1"><div class="cert-img"><img src="images/certificates/google-analyst-thumbnail.webp" alt="Google Data Analyst" loading="lazy"></div><div class="cert-foot"><h3>Google Data Analyst</h3><a href="https://skillshop.credential.net/675fb475-adcf-40eb-a0dc-900c45d6bec4" target="_blank" class="cert-btn">View ↗</a></div></div>
-      <div class="cert-card rv" data-d="2"><div class="cert-img"><img src="images/certificates/powerbi-masterclass-thumbnail.webp" alt="Power BI Master Class" loading="lazy"></div><div class="cert-foot"><h3>Power BI Master Class</h3><a href="https://drive.google.com/file/d/1brUVNXedj6sE9QWaFm1Znv36HJojIgii/view?usp=sharing" target="_blank" class="cert-btn">View ↗</a></div></div>
-      <div class="cert-card rv" data-d="3"><div class="cert-img"><img src="images/certificates/sql-cert-thumbnail.webp" alt="SQL" loading="lazy"></div><div class="cert-foot"><h3>SQL Certification</h3><a href="https://drive.google.com/file/d/1mmmX_WyhMiKnbiKjxKFLEnJ6m76ABvb8/view?usp=sharing" target="_blank" class="cert-btn">View ↗</a></div></div>
+      <div class="cert-card rv" data-d="1">
+        <div class="cf-inner">
+          <div class="cf-front"><div class="cert-img"><img src="images/certificates/google-analyst-thumbnail.webp" alt="Google Data Analyst" loading="lazy"></div><div class="cert-foot"><h3>Google Data Analyst</h3><a href="https://skillshop.credential.net/675fb475-adcf-40eb-a0dc-900c45d6bec4" target="_blank" rel="noopener" class="cert-btn">View ↗</a></div></div>
+          <div class="cf-back"><div class="cfb-ico"><i class="fas fa-certificate"></i></div><h3>Google Data Analyst</h3><p>Issued by Google via Coursera — covers data cleaning, SQL, R and Tableau visualisation.</p><a href="https://skillshop.credential.net/675fb475-adcf-40eb-a0dc-900c45d6bec4" target="_blank" rel="noopener" class="cert-btn" style="margin-top:.5rem;">View Certificate ↗</a></div>
+        </div>
+      </div>
+      <div class="cert-card rv" data-d="2">
+        <div class="cf-inner">
+          <div class="cf-front"><div class="cert-img"><img src="images/certificates/powerbi-masterclass-thumbnail.webp" alt="Power BI Master Class" loading="lazy"></div><div class="cert-foot"><h3>Power BI Master Class</h3><a href="https://drive.google.com/file/d/1brUVNXedj6sE9QWaFm1Znv36HJojIgii/view?usp=sharing" target="_blank" rel="noopener" class="cert-btn">View ↗</a></div></div>
+          <div class="cf-back"><div class="cfb-ico"><i class="fas fa-chart-bar"></i></div><h3>Power BI Master Class</h3><p>Advanced DAX, Power Query, data modelling and enterprise dashboard best-practices.</p><a href="https://drive.google.com/file/d/1brUVNXedj6sE9QWaFm1Znv36HJojIgii/view?usp=sharing" target="_blank" rel="noopener" class="cert-btn" style="margin-top:.5rem;">View Certificate ↗</a></div>
+        </div>
+      </div>
+      <div class="cert-card rv" data-d="3">
+        <div class="cf-inner">
+          <div class="cf-front"><div class="cert-img"><img src="images/certificates/sql-cert-thumbnail.webp" alt="SQL" loading="lazy"></div><div class="cert-foot"><h3>SQL Certification</h3><a href="https://drive.google.com/file/d/1mmmX_WyhMiKnbiKjxKFLEnJ6m76ABvb8/view?usp=sharing" target="_blank" rel="noopener" class="cert-btn">View ↗</a></div></div>
+          <div class="cf-back"><div class="cfb-ico"><i class="fas fa-database"></i></div><h3>SQL Certification</h3><p>Complex queries, CTEs, window functions, indexing & performance tuning at advanced level.</p><a href="https://drive.google.com/file/d/1mmmX_WyhMiKnbiKjxKFLEnJ6m76ABvb8/view?usp=sharing" target="_blank" rel="noopener" class="cert-btn" style="margin-top:.5rem;">View Certificate ↗</a></div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -907,19 +1472,61 @@ footer p{font-size:.78rem;color:var(--text3);}
 <section id="projects" class="sec">
   <div class="wrap">
     <div class="sl-head rv">
-      <div><div class="sec-label">Portfolio</div><h2 class="sec-title" style="margin-bottom:0">Selected <em>Projects</em></h2></div>
-      <div class="sl-btns"><button class="sl-btn" id="pP"><i class="fas fa-chevron-left"></i></button><button class="sl-btn" id="pN"><i class="fas fa-chevron-right"></i></button></div>
+      <div><div class="sec-label">Portfolio</div><h2 class="sec-title" style="margin-bottom:.6rem">Selected <em>Case Studies</em></h2><p class="proof-note" style="margin-top:0;">Dashboards built to answer real business questions across mobility, food delivery, finance, elections, weather APIs, and consumer analytics.</p></div>
+    </div>
+    <div class="featured-grid">
+      <article class="featured-pj rv" data-d="1" onclick="openCaseStudy('crm')">
+        <h3>CRM Analytics Dashboard</h3>
+        <p class="case-summary">Power BI dashboard connected to PostgreSQL with API-based CRM data pipeline.</p>
+        <div class="case-block case-long"><b>Problem</b><p>Business had no clear visibility on sales, appointments, and conversion.</p></div>
+        <div class="case-block case-long"><b>Solution</b><p>Built a Power BI dashboard connected to PostgreSQL with an API-based data pipeline.</p></div>
+        <div class="case-block"><b>Features</b><ul><li>Revenue tracking</li><li>Conversion funnel</li><li>Department-wise performance</li></ul></div>
+        <div class="case-result"><strong>Result:</strong> Reduced manual reporting effort by ~60% and enabled faster business decision making.</div>
+        <div class="case-actions"><button type="button" class="case-btn" onclick="event.stopPropagation();openCaseStudy('crm')"><i class="fas fa-layer-group"></i> View Case Study</button></div>
+      </article>
+      <article class="featured-pj rv" data-d="2" onclick="openCaseStudy('revenue')">
+        <h3>Revenue & KPI Dashboard</h3>
+        <p class="case-summary">Automated KPI dashboard for revenue trends, monthly growth, and top performers.</p>
+        <div class="case-block case-long"><b>Problem</b><p>Manual Excel reporting was slow, inconsistent, and difficult to review daily.</p></div>
+        <div class="case-block case-long"><b>Solution</b><p>Automated dashboard with KPI cards, trends, filters, and executive reporting views.</p></div>
+        <div class="case-block"><b>Features</b><ul><li>Revenue trends</li><li>Top performers</li><li>Monthly growth</li></ul></div>
+        <div class="case-result"><strong>Result:</strong> Reduced reporting time from hours to minutes.</div>
+        <div class="case-actions"><button type="button" class="case-btn" onclick="event.stopPropagation();openCaseStudy('revenue')"><i class="fas fa-layer-group"></i> View Case Study</button></div>
+      </article>
+      <article class="featured-pj rv" data-d="3" onclick="openCaseStudy('etl')">
+        <h3>ETL Pipeline: API to DB to Dashboard</h3>
+        <p class="case-summary">End-to-end flow extracting API data, storing it in PostgreSQL, and reporting in Power BI.</p>
+        <div class="case-block case-long"><b>Problem</b><p>Data was scattered across APIs and not structured for reporting.</p></div>
+        <div class="case-block case-long"><b>Solution</b><p>Extracted data using APIs, stored it in PostgreSQL, and built a dashboard on top.</p></div>
+        <div class="case-block"><b>Features</b><ul><li>API extraction</li><li>PostgreSQL storage</li><li>Power BI reporting layer</li></ul></div>
+        <div class="case-result"><strong>Result:</strong> Automated the full data pipeline and handled 50K+ records efficiently.</div>
+        <div class="case-actions"><button type="button" class="case-btn" onclick="event.stopPropagation();openCaseStudy('etl')"><i class="fas fa-layer-group"></i> View Case Study</button></div>
+      </article>
+    </div>
+    <div class="preview-strip rv" data-d="4">
+      <button type="button" class="preview-card" onclick="openCaseStudy('crm')"><img src="images/projects/atm-thumbnail.webp" alt="CRM analytics dashboard preview" loading="lazy"><span>CRM Dashboard</span></button>
+      <button type="button" class="preview-card" onclick="openCaseStudy('revenue')"><img src="images/projects/ola-thumbnail.webp" alt="Revenue KPI dashboard preview" loading="lazy"><span>Revenue KPIs</span></button>
+      <button type="button" class="preview-card" onclick="openCaseStudy('etl')"><img src="images/projects/weather-thumbnail.webp" alt="ETL API dashboard preview" loading="lazy"><span>API ETL Flow</span></button>
+    </div>
+    <div class="rv" style="margin-bottom:1rem;">
+      <div class="sl-head" style="margin-bottom:.7rem;">
+        <div>
+          <div class="sec-label">Dashboard Gallery</div>
+          <p class="proof-note" style="margin-top:0;">Additional Power BI dashboards with live demo links.</p>
+        </div>
+        <div class="sl-btns"><button class="sl-btn" id="pP" aria-label="Previous project"><i class="fas fa-chevron-left"></i></button><button class="sl-btn" id="pN" aria-label="Next project"><i class="fas fa-chevron-right"></i></button></div>
+      </div>
     </div>
     <div class="reel-box">
       <div class="reel" id="pR">
-        <div class="pj"><div class="pj-img"><div class="pj-tag">Power BI · SQL</div><img src="images/projects/ola-thumbnail.webp" alt="OLA" loading="lazy"></div><div class="pj-body"><h3>OLA Ride Analysis</h3><p class="pj-out">Ride patterns visualized → <strong>+10% efficiency</strong></p><a href="https://app.powerbi.com/view?r=eyJrIjoiMDQzNDlmZjgtZjZjYi00M2UzLWI1ZDEtMmZjZDFkYTMxYWFhIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" class="pj-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a></div></div>
-        <div class="pj"><div class="pj-img"><div class="pj-tag">Power BI · Python</div><img src="images/projects/blinkit-thumbnail.webp" alt="Blinkit" loading="lazy"></div><div class="pj-body"><h3>Blinkit Dashboard</h3><p class="pj-out">Delivery time analysis → <strong>overhead -20%</strong></p><a href="https://app.powerbi.com/view?r=eyJrIjoiMjk0YWM1ZjctNWE5My00OWM2LTg1MjQtMTAwMDBkNmU0MDI5IiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" class="pj-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a></div></div>
-        <div class="pj"><div class="pj-img"><div class="pj-tag">Power BI · SQL</div><img src="images/projects/zomato-thumbnail.webp" alt="Zomato" loading="lazy"></div><div class="pj-body"><h3>Zomato Analysis</h3><p class="pj-out">Restaurant insights → <strong>+15% visibility</strong></p><a href="https://app.powerbi.com/view?r=eyJrIjoiMDBiMzA2NWItNjE5My00NWRmLWIxZmMtOThiMGRhNjJkZTY0IiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" class="pj-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a></div></div>
-        <div class="pj"><div class="pj-img"><div class="pj-tag">Power BI · Python</div><img src="images/projects/election-thumbnail.webp" alt="Election" loading="lazy"></div><div class="pj-body"><h3>Election Dashboard</h3><p class="pj-out">Real-time insights for <strong>key stakeholders</strong></p><a href="https://app.powerbi.com/view?r=eyJrIjoiZDgxYTcyNjQtNDI3Yi00OWJiLTlhZjgtYjIwOWFlZGY4Y2JhIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" class="pj-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a></div></div>
-        <div class="pj"><div class="pj-img"><div class="pj-tag">Power BI · SQL</div><img src="images/projects/atm-thumbnail.webp" alt="ATM" loading="lazy"></div><div class="pj-body"><h3>ATM Transaction Analysis</h3><p class="pj-out">Monitoring efficiency → <strong>+12% improvement</strong></p><a href="https://app.powerbi.com/view?r=eyJrIjoiZGRlMDNkNjItZTg2Mi00ZjQyLTk5MjgtM2FmYTAwNWNhNTJjIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" class="pj-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a></div></div>
-        <div class="pj"><div class="pj-img"><div class="pj-tag">Power BI · Python</div><img src="images/projects/ipl-thumbnail.webp" alt="IPL" loading="lazy"></div><div class="pj-body"><h3>IPL Dashboard</h3><p class="pj-out">Match stats for <strong>fan engagement</strong> insights</p><a href="https://app.powerbi.com/view?r=eyJrIjoiZWYwZWIwMjgtZTE5YS00ZTEyLThhYjUtMDMyMjk0ZjY2YzRjIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" class="pj-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a></div></div>
-        <div class="pj"><div class="pj-img"><div class="pj-tag">Power BI · API</div><img src="images/projects/weather-thumbnail.webp" alt="Weather" loading="lazy"></div><div class="pj-body"><h3>Live Weather Forecasting</h3><p class="pj-out">Real-time tracking via <strong>live API feeds</strong></p><a href="https://app.powerbi.com/view?r=eyJrIjoiMjU5OGIzMTItOTM4YS00YWZiLTgyM2UtNmUyMGZjNDkyMmRkIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" class="pj-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a></div></div>
-        <div class="pj"><div class="pj-img"><div class="pj-tag">Power BI · Python</div><img src="images/projects/Spotify-thumbnail.webp" alt="Spotify" loading="lazy"></div><div class="pj-body"><h3>Spotify Analysis</h3><p class="pj-out">Listening patterns → <strong>smarter recommendations</strong></p><a href="https://app.powerbi.com/view?r=eyJrIjoiMzU4MDhkNDctZWM5Zi00NDQ4LWFkN2ItNzNiNWRiNWVjZjIwIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" class="pj-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a></div></div>
+        <div class="pj"><div class="pj-img"><div class="pj-tag">Power BI · SQL</div><img src="images/projects/ola-thumbnail.webp" alt="OLA ride analysis dashboard" loading="lazy"></div><div class="pj-body"><h3>OLA Ride Analysis</h3><div class="pj-meta"><span>Mobility</span><span>Operations</span></div><p class="pj-out">Ride demand, cancellations, and utilization dashboard for operational decisions.</p><ul class="pj-points"><li><i class="fas fa-check"></i>Modeled trip KPIs across booking status, revenue, distance, and vehicle type.</li><li><i class="fas fa-check"></i>Surfaced ride patterns that can support <strong>+10% efficiency</strong>.</li></ul><a href="https://app.powerbi.com/view?r=eyJrIjoiMDQzNDlmZjgtZjZjYi00M2UzLWI1ZDEtMmZjZDFkYTMxYWFhIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" rel="noopener" class="pj-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a></div></div>
+        <div class="pj"><div class="pj-img"><div class="pj-tag">Power BI · Python</div><img src="images/projects/blinkit-thumbnail.webp" alt="Blinkit delivery performance dashboard" loading="lazy"></div><div class="pj-body"><h3>Blinkit Dashboard</h3><div class="pj-meta"><span>Delivery</span><span>Retail</span></div><p class="pj-out">Delivery time and outlet performance analysis for faster fulfillment decisions.</p><ul class="pj-points"><li><i class="fas fa-check"></i>Tracked delivery, sales, outlet, and product-level performance in one report.</li><li><i class="fas fa-check"></i>Highlighted delay drivers tied to <strong>20% overhead reduction</strong> opportunities.</li></ul><a href="https://app.powerbi.com/view?r=eyJrIjoiMjk0YWM1ZjctNWE5My00OWM2LTg1MjQtMTAwMDBkNmU0MDI5IiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" rel="noopener" class="pj-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a></div></div>
+        <div class="pj"><div class="pj-img"><div class="pj-tag">Power BI · SQL</div><img src="images/projects/zomato-thumbnail.webp" alt="Zomato restaurant insights dashboard" loading="lazy"></div><div class="pj-body"><h3>Zomato Analysis</h3><div class="pj-meta"><span>Food Tech</span><span>Market Insights</span></div><p class="pj-out">Restaurant discovery, ratings, and location insights for marketplace visibility.</p><ul class="pj-points"><li><i class="fas fa-check"></i>Analyzed cuisines, city performance, pricing, ratings, and customer preference signals.</li><li><i class="fas fa-check"></i>Built views to improve restaurant insight visibility by <strong>15%</strong>.</li></ul><a href="https://app.powerbi.com/view?r=eyJrIjoiMDBiMzA2NWItNjE5My00NWRmLWIxZmMtOThiMGRhNjJkZTY0IiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" rel="noopener" class="pj-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a></div></div>
+        <div class="pj"><div class="pj-img"><div class="pj-tag">Power BI · Python</div><img src="images/projects/election-thumbnail.webp" alt="Election analytics dashboard" loading="lazy"></div><div class="pj-body"><h3>Election Dashboard</h3><div class="pj-meta"><span>Public Data</span><span>Stakeholders</span></div><p class="pj-out">Constituency and party-level performance dashboard for strategic review.</p><ul class="pj-points"><li><i class="fas fa-check"></i>Created interactive drilldowns across geography, parties, candidates, and vote share.</li><li><i class="fas fa-check"></i>Packaged real-time style insights for <strong>key stakeholder</strong> decisions.</li></ul><a href="https://app.powerbi.com/view?r=eyJrIjoiZDgxYTcyNjQtNDI3Yi00OWJiLTlhZjgtYjIwOWFlZGY4Y2JhIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" rel="noopener" class="pj-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a></div></div>
+        <div class="pj"><div class="pj-img"><div class="pj-tag">Power BI · SQL</div><img src="images/projects/atm-thumbnail.webp" alt="ATM transaction monitoring dashboard" loading="lazy"></div><div class="pj-body"><h3>ATM Transaction Analysis</h3><div class="pj-meta"><span>Banking</span><span>Monitoring</span></div><p class="pj-out">Transaction volume, uptime, and location performance monitoring dashboard.</p><ul class="pj-points"><li><i class="fas fa-check"></i>Built metrics for withdrawals, transaction failures, usage trends, and branch-level activity.</li><li><i class="fas fa-check"></i>Improved monitoring workflow visibility by <strong>12%</strong>.</li></ul><a href="https://app.powerbi.com/view?r=eyJrIjoiZGRlMDNkNjItZTg2Mi00ZjQyLTk5MjgtM2FmYTAwNWNhNTJjIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" rel="noopener" class="pj-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a></div></div>
+        <div class="pj"><div class="pj-img"><div class="pj-tag">Power BI · Python</div><img src="images/projects/ipl-thumbnail.webp" alt="IPL match statistics dashboard" loading="lazy"></div><div class="pj-body"><h3>IPL Dashboard</h3><div class="pj-meta"><span>Sports</span><span>Engagement</span></div><p class="pj-out">Match, player, and team analysis for fan-facing cricket storytelling.</p><ul class="pj-points"><li><i class="fas fa-check"></i>Mapped performance patterns across teams, seasons, venues, and player stats.</li><li><i class="fas fa-check"></i>Designed interactive views for <strong>fan engagement</strong> insights.</li></ul><a href="https://app.powerbi.com/view?r=eyJrIjoiZWYwZWIwMjgtZTE5YS00ZTEyLThhYjUtMDMyMjk0ZjY2YzRjIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" rel="noopener" class="pj-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a></div></div>
+        <div class="pj"><div class="pj-img"><div class="pj-tag">Power BI · API</div><img src="images/projects/weather-thumbnail.webp" alt="Live weather API dashboard" loading="lazy"></div><div class="pj-body"><h3>Live Weather Forecasting</h3><div class="pj-meta"><span>API</span><span>Real Time</span></div><p class="pj-out">API-powered weather dashboard for current conditions and forecasting signals.</p><ul class="pj-points"><li><i class="fas fa-check"></i>Connected live weather feeds and transformed JSON data for dashboard consumption.</li><li><i class="fas fa-check"></i>Enabled <strong>real-time tracking</strong> across key weather metrics.</li></ul><a href="https://app.powerbi.com/view?r=eyJrIjoiMjU5OGIzMTItOTM4YS00YWZiLTgyM2UtNmUyMGZjNDkyMmRkIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" rel="noopener" class="pj-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a></div></div>
+        <div class="pj"><div class="pj-img"><div class="pj-tag">Power BI · Python</div><img src="images/projects/Spotify-thumbnail.webp" alt="Spotify listening behavior dashboard" loading="lazy"></div><div class="pj-body"><h3>Spotify Analysis</h3><div class="pj-meta"><span>Consumer</span><span>Behavior</span></div><p class="pj-out">Listening behavior dashboard for playlist, artist, and preference analysis.</p><ul class="pj-points"><li><i class="fas fa-check"></i>Compared tracks, artists, popularity, and audio features for user preference patterns.</li><li><i class="fas fa-check"></i>Translated listening patterns into <strong>smarter recommendation</strong> insights.</li></ul><a href="https://app.powerbi.com/view?r=eyJrIjoiMzU4MDhkNDctZWM5Zi00NDQ4LWFkN2ItNzNiNWRiNWVjZjIwIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" rel="noopener" class="pj-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a></div></div>
       </div>
     </div>
   </div>
@@ -932,7 +1539,7 @@ footer p{font-size:.78rem;color:var(--text3);}
   <div class="wrap">
     <div class="sl-head rv">
       <div><div class="sec-label">Recognition</div><h2 class="sec-title" style="margin-bottom:0">Achieve<em>ments</em></h2></div>
-      <div class="sl-btns"><button class="sl-btn" id="aP"><i class="fas fa-chevron-left"></i></button><button class="sl-btn" id="aN"><i class="fas fa-chevron-right"></i></button></div>
+      <div class="sl-btns"><button class="sl-btn" id="aP" aria-label="Previous achievement"><i class="fas fa-chevron-left"></i></button><button class="sl-btn" id="aN" aria-label="Next achievement"><i class="fas fa-chevron-right"></i></button></div>
     </div>
     <div class="reel-box">
       <div class="reel" id="aR">
@@ -952,9 +1559,9 @@ footer p{font-size:.78rem;color:var(--text3);}
 <section id="hire" class="sec">
   <div class="wrap">
     <div class="rv" style="text-align:center;max-width:680px;margin:0 auto 3.5rem;">
-      <div class="sec-label" style="justify-content:center;">Freelance Services</div>
-      <h2 class="sec-title">Available to <em>Hire</em></h2>
-      <p style="font-size:.88rem;color:var(--text2);line-height:1.8;">Need a Power BI dashboard, SQL pipeline, or Python automation? Book a session and let's turn your data into decisions.</p>
+      <div class="sec-label" style="justify-content:center;">Hire Varun</div>
+      <h2 class="sec-title">Ready for <em>BI impact</em></h2>
+      <p style="font-size:.88rem;color:var(--text2);line-height:1.8;">Available for Data Analyst, BI Developer, Power BI Developer, and freelance dashboard or automation work. Need a Power BI dashboard, SQL pipeline, or Python automation? Let's turn your data into decisions.</p>
     </div>
     <!-- Trust strip -->
     <div class="trust-strip rv" style="border-radius:14px;margin-bottom:3rem;">
@@ -979,7 +1586,6 @@ footer p{font-size:.78rem;color:var(--text3);}
           <li><i class="fas fa-check-circle"></i>Mobile-responsive design</li>
           <li><i class="fas fa-check-circle"></i>1-month support included</li>
         </ul>
-        <div class="svc-price"><span class="pr-from">starting</span><span class="pr-amt">₹8,000</span><span class="pr-unit">/ project</span></div>
         <button class="svc-btn" onclick="pickSvc('Power BI Dashboard')">Book This Service ↓</button>
       </div>
       <div class="svc-card sc-teal popular rv" data-d="2">
@@ -993,7 +1599,6 @@ footer p{font-size:.78rem;color:var(--text3);}
           <li><i class="fas fa-check-circle"></i>Azure cloud deployment</li>
           <li><i class="fas fa-check-circle"></i>3-month support & training</li>
         </ul>
-        <div class="svc-price"><span class="pr-from">starting</span><span class="pr-amt">₹25,000</span><span class="pr-unit">/ project</span></div>
         <button class="svc-btn" onclick="pickSvc('Full BI Solution')">Book This Service ↓</button>
       </div>
       <div class="svc-card sc-purple rv" data-d="3">
@@ -1006,7 +1611,6 @@ footer p{font-size:.78rem;color:var(--text3);}
           <li><i class="fas fa-check-circle"></i>Email/WhatsApp alerts</li>
           <li><i class="fas fa-check-circle"></i>Full source code delivered</li>
         </ul>
-        <div class="svc-price"><span class="pr-from">starting</span><span class="pr-amt">₹6,000</span><span class="pr-unit">/ project</span></div>
         <button class="svc-btn" onclick="pickSvc('Python Automation')">Book This Service ↓</button>
       </div>
       <div class="svc-card sc-orange rv" data-d="4">
@@ -1019,7 +1623,6 @@ footer p{font-size:.78rem;color:var(--text3);}
           <li><i class="fas fa-check-circle"></i>Written action plan after</li>
           <li><i class="fas fa-check-circle"></i>Recording shared post-call</li>
         </ul>
-        <div class="svc-price"><span class="pr-from">completely</span><span class="pr-amt">Free</span><span class="pr-unit">first call</span></div>
         <button class="svc-btn" onclick="pickSvc('Free Consultation')">Book Free Call ↓</button>
       </div>
     </div>
@@ -1059,8 +1662,8 @@ footer p{font-size:.78rem;color:var(--text3);}
         <div class="book-info-card">
           <h4>Contact Details</h4>
           <div class="bi-item"><div class="bi-ico"><i class="fab fa-whatsapp"></i></div><div class="bi-txt"><strong>WhatsApp</strong><span>+91 94737 33774</span></div></div>
-          <div class="bi-item"><div class="bi-ico t"><i class="fas fa-envelope"></i></div><div class="bi-txt"><strong>Email</strong><span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5e283f2c2b303d363f2b3c3b2729312c351e39333f3732703d3133">[email&#160;protected]</a></span></div></div>
-          <div class="bi-item"><div class="bi-ico p"><i class="fab fa-linkedin"></i></div><div class="bi-txt"><strong>LinkedIn</strong><span>linkedin.com/in/varunchaubey</span></div></div>
+          <div class="bi-item"><div class="bi-ico t"><i class="fas fa-envelope"></i></div><div class="bi-txt"><strong>Email</strong><span><a href="mailto:varunchaubeywork@gmail.com">varunchaubeywork@gmail.com</a></span></div></div>
+          <div class="bi-item"><div class="bi-ico p"><i class="fab fa-linkedin"></i></div><div class="bi-txt"><strong>LinkedIn</strong><span><a href="https://linkedin.com/in/varunchaubey" target="_blank" rel="noopener">linkedin.com/in/varunchaubey</a></span></div></div>
           <div class="bi-item"><div class="bi-ico o"><i class="fas fa-clock"></i></div><div class="bi-txt"><strong>Response Time</strong><span>Within 2–4 hours</span></div></div>
         </div>
         <div class="avail-pill">
@@ -1072,6 +1675,13 @@ footer p{font-size:.78rem;color:var(--text3);}
       <div class="form-card rv" data-d="2">
         <h3>Book a Session</h3>
         <p class="form-sub">Fill this in and I'll confirm your slot within 2–4 hours.</p>
+        <div class="book-progress" aria-hidden="true"><span id="bookProgress"></span></div>
+        <div class="quick-services" aria-label="Quick service selection">
+          <button type="button" class="quick-svc" data-service="Power BI Dashboard"><i class="fas fa-chart-bar"></i>Dashboard</button>
+          <button type="button" class="quick-svc" data-service="Full BI Solution"><i class="fas fa-database"></i>Full BI</button>
+          <button type="button" class="quick-svc" data-service="Python Automation"><i class="fab fa-python"></i>Automation</button>
+          <button type="button" class="quick-svc" data-service="Free Consultation"><i class="fas fa-comments"></i>Free Call</button>
+        </div>
         <div class="f-row">
           <div class="f-grp"><label>Full Name <span>*</span></label><input type="text" class="fi" id="fn" placeholder="Your full name"></div>
           <div class="f-grp"><label>Phone / WhatsApp <span>*</span></label><input type="tel" class="fi" id="fp" placeholder="+91 XXXXX XXXXX"></div>
@@ -1117,17 +1727,16 @@ footer p{font-size:.78rem;color:var(--text3);}
             <div class="slot" onclick="pickSlot(this,'8:00 PM')">8:00 PM</div>
           </div>
         </div>
-        <div class="f-grp">
-          <label>Project Budget</label>
-          <div class="budget-g" id="budgetG">
-            <div class="b-opt" onclick="pickBudget(this,'Under ₹5k')">Under ₹5k</div>
-            <div class="b-opt" onclick="pickBudget(this,'₹5k–₹15k')">₹5k–₹15k</div>
-            <div class="b-opt" onclick="pickBudget(this,'₹15k–₹30k')">₹15k–₹30k</div>
-            <div class="b-opt" onclick="pickBudget(this,'₹30k+')">₹30k+</div>
-            <div class="b-opt" onclick="pickBudget(this,'Let\'s Discuss')">Let's Discuss</div>
+        <div class="f-grp"><label>Project Description <span>*</span></label><textarea class="ft" id="fdesc" placeholder="Briefly describe your data challenge, what you need built, your industry, and any tools you currently use..."></textarea><div class="brief-helper"><span>Tip: mention data source, target dashboard, and timeline.</span><span id="briefCount">0 chars</span></div></div>
+        <div class="booking-summary" aria-live="polite">
+          <h4>Request Summary</h4>
+          <div class="sum-grid">
+            <div class="sum-item"><span>Service</span><strong id="sumSvc">Not selected</strong></div>
+            <div class="sum-item"><span>Date</span><strong id="sumDate">Not selected</strong></div>
+            <div class="sum-item"><span>Time</span><strong id="sumSlot">Not selected</strong></div>
+            <div class="sum-item"><span>Contact</span><strong id="sumContact">Add email or phone</strong></div>
           </div>
         </div>
-        <div class="f-grp"><label>Project Description <span>*</span></label><textarea class="ft" id="fdesc" placeholder="Briefly describe your data challenge, what you need built, your industry, and any tools you currently use..."></textarea></div>
         <div class="sub-note"><i class="fas fa-shield-alt"></i>Your information is private and will never be shared.</div>
         <div class="sub-btns">
           <button class="btn-submit" id="submitBtn" onclick="submitForm()">
@@ -1137,6 +1746,32 @@ footer p{font-size:.78rem;color:var(--text3);}
         </div>
         <p style="font-size:.72rem;color:var(--text3);margin-top:.8rem;text-align:center;">You will get a confirmation on your email · Varun replies within 2–4 hrs</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- PRODUCTION WORK -->
+<section id="production-work" class="sec sec-dark" aria-labelledby="production-title">
+  <div class="wrap">
+    <div class="rv" style="text-align:center;max-width:760px;margin:0 auto 3rem;">
+      <div class="sec-label" style="justify-content:center;">Production Work</div>
+      <h2 class="sec-title" id="production-title">What I've Built in <em>Production</em></h2>
+      <p class="proof-note" style="margin:0 auto;">Real business work focused on reporting automation, scalable models, and decision-ready Power BI dashboards.</p>
+    </div>
+    <div class="prod-grid">
+      <div class="prod-card rv" data-d="1"><i class="fas fa-chart-line"></i><h3>50K+ record dashboards</h3><p>Built dashboards handling 50K+ records for business reporting and performance monitoring.</p></div>
+      <div class="prod-card rv" data-d="2"><i class="fas fa-code-branch"></i><h3>API + PostgreSQL ETL</h3><p>Automated ETL pipelines using APIs, Python, PostgreSQL, and scheduled refresh logic.</p></div>
+      <div class="prod-card rv" data-d="3"><i class="fas fa-sitemap"></i><h3>Star-schema models</h3><p>Designed scalable star-schema data models for clean relationships and faster dashboard performance.</p></div>
+      <div class="prod-card rv" data-d="4"><i class="fas fa-gauge-high"></i><h3>Sales & ops KPIs</h3><p>Created KPI dashboards for sales, revenue, conversion analysis, departments, and operations.</p></div>
+    </div>
+    <div class="final-cta rv" data-d="5">
+      <div>
+        <h3>Looking for a Power BI / Data Analyst role.</h3>
+        <p>Open to immediate opportunities. Let's connect and discuss how I can help with dashboards, ETL, SQL, and business reporting.</p>
+      </div>
+      <a href="https://linkedin.com/in/varunchaubey" target="_blank" rel="noopener" class="btn-p"><i class="fab fa-linkedin"></i> Connect on LinkedIn</a>
     </div>
   </div>
 </section>
@@ -1183,8 +1818,11 @@ footer p{font-size:.78rem;color:var(--text3);}
           <p class="ct-sub">Have a data challenge or project idea? I turn complex data into clear business decisions. Let's connect.</p>
         </div>
         <div class="ct-links">
-          <a href="https://linkedin.com/in/varunchaubey" target="_blank" class="ct-link"><div class="ct-link-l"><i class="fab fa-linkedin"></i>LinkedIn</div><span class="ct-arr">→</span></a>
-          <a href="/cdn-cgi/l/email-protection#daacbba8afb49abbb4bbb6a3a9aeacbba8afb4f4b9b5b7" class="ct-link"><div class="ct-link-l"><i class="fas fa-envelope"></i>Email Me</div><span class="ct-arr">→</span></a>
+          <a href="https://linkedin.com/in/varunchaubey" target="_blank" rel="noopener" class="ct-link"><div class="ct-link-l"><i class="fab fa-linkedin"></i>LinkedIn</div><span class="ct-arr">→</span></a>
+          <a href="https://wa.me/919473733774" target="_blank" rel="noopener" class="ct-link"><div class="ct-link-l"><i class="fab fa-whatsapp"></i>WhatsApp</div><span class="ct-arr">→</span></a>
+          <a href="https://www.instagram.com/varunchaubeyx/?hl=en" target="_blank" rel="noopener" class="ct-link"><div class="ct-link-l"><i class="fab fa-instagram"></i>Instagram</div><span class="ct-arr">→</span></a>
+          <a href="https://www.facebook.com/varunchaubey34" target="_blank" rel="noopener" class="ct-link"><div class="ct-link-l"><i class="fab fa-facebook"></i>Facebook</div><span class="ct-arr">→</span></a>
+          <a href="mailto:varunchaubeywork@gmail.com" class="ct-link"><div class="ct-link-l"><i class="fas fa-envelope"></i>Email Me</div><span class="ct-arr">→</span></a>
           <a href="tel:+919473733774" class="ct-link"><div class="ct-link-l"><i class="fas fa-phone"></i>Call Me</div><span class="ct-arr">→</span></a>
         </div>
       </div>
@@ -1198,11 +1836,34 @@ footer p{font-size:.78rem;color:var(--text3);}
   <div id="lb-cap"></div>
 </div>
 
+<div id="case-modal" class="case-modal" role="dialog" aria-modal="true" aria-labelledby="case-title">
+  <button class="case-close" type="button" onclick="closeCaseStudy()" aria-label="Close case study">×</button>
+  <div class="case-modal-box">
+    <div class="case-modal-hero">
+      <div class="case-modal-img"><img id="case-img" src="" alt=""></div>
+      <div class="case-modal-copy">
+        <div class="case-kicker" id="case-stack">Power BI</div>
+        <h3 id="case-title">Case Study</h3>
+        <p id="case-summary"></p>
+      </div>
+    </div>
+    <div class="case-modal-grid">
+      <div class="case-modal-section"><h4>Problem</h4><p id="case-problem"></p></div>
+      <div class="case-modal-section"><h4>Solution</h4><p id="case-solution"></p></div>
+      <div class="case-modal-section"><h4>Features</h4><ul id="case-features"></ul></div>
+      <div class="case-modal-section"><h4>Result</h4><p id="case-result"></p></div>
+    </div>
+  </div>
+</div>
+
 <footer>
   <p>© 2025 Varun Chaubey — Data Analyst & BI Developer</p>
   <div class="ft-links">
-    <a href="https://linkedin.com/in/varunchaubey" target="_blank" class="ft-a"><i class="fab fa-linkedin"></i></a>
-    <a href="https://github.com/VarunChaubey1" target="_blank" class="ft-a"><i class="fab fa-github"></i></a>
+    <a href="https://linkedin.com/in/varunchaubey" target="_blank" rel="noopener" class="ft-a" aria-label="LinkedIn profile"><i class="fab fa-linkedin"></i></a>
+    <a href="https://wa.me/919473733774" target="_blank" rel="noopener" class="ft-a" aria-label="WhatsApp chat"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://www.instagram.com/varunchaubeyx/?hl=en" target="_blank" rel="noopener" class="ft-a" aria-label="Instagram profile"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/varunchaubey34" target="_blank" rel="noopener" class="ft-a" aria-label="Facebook profile"><i class="fab fa-facebook"></i></a>
+    <a href="https://github.com/VarunChaubey1" target="_blank" rel="noopener" class="ft-a" aria-label="GitHub profile"><i class="fab fa-github"></i></a>
   </div>
 </footer>
 
@@ -1226,19 +1887,39 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>{
 /* REVEAL */
 const ro=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target);}});},{threshold:.1});
 document.querySelectorAll('.rv,.rv-r').forEach(el=>ro.observe(el));
-/* SKILL BARS */
-const so=new IntersectionObserver(es=>{
-  es.forEach(e=>{
-    if(!e.isIntersecting)return;
-    const b=e.target.querySelector('.sk-bar'),f=e.target.querySelector('.sk-fill'),p=e.target.querySelector('.sk-pct');
-    if(!b||!f||!p)return;
-    const t=parseInt(b.getAttribute('data-p'));
-    f.style.width=t+'%';let c=0;
-    const iv=setInterval(()=>{c=Math.min(c+1,t);p.textContent=c+'%';if(c>=t)clearInterval(iv);},13);
-    so.unobserve(e.target);
-  });
-},{threshold:.2});
-document.querySelectorAll('.sk-card').forEach(el=>so.observe(el));
+/* SKILL RINGS — conic-gradient */
+(function(){
+  const seen = new Set();
+  const obs = new IntersectionObserver(es => {
+    es.forEach(e => {
+      if (!e.isIntersecting || seen.has(e.target)) return;
+      seen.add(e.target);
+      const card = e.target;
+      const pct = parseInt(card.getAttribute('data-p') || '0');
+      const labelText = card.getAttribute('data-label');
+      const ring = card.querySelector('.sk-ring');
+      const label = card.querySelector('.sk-pct');
+      if (!ring || !label) return;
+
+      const t0 = performance.now(), dur = 1400;
+      (function step(now) {
+        const prog = Math.min((now - t0) / dur, 1);
+        const ease = 1 - Math.pow(1 - prog, 3);
+        const deg = Math.round(pct * ease * 3.6); // 0–360
+        // gradient: blue → teal → purple arc
+        ring.style.background =
+          `conic-gradient(#4F8EF7 0deg, #2DD4BF ${deg * 0.6}deg, #A78BFA ${deg}deg, #1A2035 ${deg}deg)`;
+        label.textContent = labelText || (Math.round(pct * ease) + '%');
+        if (prog < 1) requestAnimationFrame(step);
+        else {
+          // final glow ring
+          ring.style.boxShadow = `0 0 0 1px rgba(79,142,247,.2), 0 0 12px rgba(79,142,247,.2)`;
+        }
+      })(t0);
+    });
+  }, { threshold: 0.25 });
+  document.querySelectorAll('.sk-card[data-p]').forEach(el => obs.observe(el));
+})();
 /* SLIDERS */
 function slider(rid,pid,nid){
   const r=document.getElementById(rid);if(!r)return;
@@ -1260,27 +1941,111 @@ window.openLB=(s,c)=>{document.getElementById('lb-img').src=s;document.getElemen
 window.closeLB=()=>document.getElementById('lb').classList.remove('show');
 document.getElementById('lb').addEventListener('click',e=>{if(e.target.id==='lb')closeLB();});
 
+const caseStudies={
+  crm:{
+    title:'CRM Analytics Dashboard',
+    stack:'Power BI · PostgreSQL · API Pipeline',
+    img:'images/projects/atm-thumbnail.webp',
+    summary:'A business-facing CRM dashboard designed to track sales, appointments, conversions, and department performance from real operational data.',
+    problem:'Business had no clear visibility on sales, appointments, and conversion. Teams depended on scattered reports and manual follow-ups.',
+    solution:'Built a Power BI dashboard connected to PostgreSQL with an API-based data pipeline, transforming operational data into KPI-ready reporting tables.',
+    features:['Revenue tracking','Conversion funnel','Department-wise performance','Appointment and sales monitoring'],
+    result:'Reduced manual reporting effort by approximately 60% and enabled faster business decision making.'
+  },
+  revenue:{
+    title:'Revenue & KPI Dashboard',
+    stack:'Power BI · DAX · KPI Reporting',
+    img:'images/projects/ola-thumbnail.webp',
+    summary:'An executive KPI dashboard focused on revenue trends, top performers, monthly growth, and management-level decision views.',
+    problem:'Manual Excel reporting was slow, inconsistent, and difficult to review daily across teams.',
+    solution:'Automated the reporting view with KPI cards, trend charts, slicers, filters, and clean executive summary pages.',
+    features:['Revenue trends','Top performer analysis','Monthly growth tracking','Interactive filters and KPI cards'],
+    result:'Reduced reporting time from hours to minutes and made recurring performance reviews easier.'
+  },
+  etl:{
+    title:'ETL Pipeline: API to DB to Dashboard',
+    stack:'Python · REST API · PostgreSQL · Power BI',
+    img:'images/projects/weather-thumbnail.webp',
+    summary:'A full data pipeline that extracts API data, stores structured records in PostgreSQL, and powers Power BI dashboards.',
+    problem:'Data was scattered across APIs and not structured for reporting or dashboard refreshes.',
+    solution:'Extracted data using APIs, cleaned and transformed it with Python, stored it in PostgreSQL, and built a Power BI dashboard on top.',
+    features:['API extraction','JSON transformation','PostgreSQL storage','Power BI reporting layer'],
+    result:'Automated the full data pipeline and handled 50K+ records efficiently.'
+  }
+};
+function openCaseStudy(key){
+  const d=caseStudies[key];if(!d)return;
+  const modal=document.getElementById('case-modal');
+  document.getElementById('case-img').src=d.img;
+  document.getElementById('case-img').alt=d.title+' preview';
+  document.getElementById('case-stack').textContent=d.stack;
+  document.getElementById('case-title').textContent=d.title;
+  document.getElementById('case-summary').textContent=d.summary;
+  document.getElementById('case-problem').textContent=d.problem;
+  document.getElementById('case-solution').textContent=d.solution;
+  document.getElementById('case-result').textContent=d.result;
+  document.getElementById('case-features').innerHTML=d.features.map(f=>'<li>'+f+'</li>').join('');
+  modal.classList.add('show');
+  document.body.style.overflow='hidden';
+}
+function closeCaseStudy(){
+  document.getElementById('case-modal')?.classList.remove('show');
+  document.body.style.overflow='';
+}
+document.getElementById('case-modal')?.addEventListener('click',e=>{if(e.target===e.currentTarget)closeCaseStudy();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeCaseStudy();closeLB();}});
+
 /* ── BOOKING FORM JS (EmailJS) ── */
 /* Init EmailJS once at top level */
-emailjs.init({ publicKey: 'aWJFE2wLW-Q6sbFhi' });
+if (window.emailjs) {
+  emailjs.init({ publicKey: 'aWJFE2wLW-Q6sbFhi' });
+}
 
 /* Set min date */
 const fdEl=document.getElementById('fd');
 if(fdEl){const t=new Date();t.setDate(t.getDate()+1);fdEl.min=t.toISOString().split('T')[0];}
 let selSlot='',selBudget='';
 
+function updateBookingUI(){
+  const fields=['fn','fp','fe','fsvc','fd','fdesc'];
+  const filled=fields.reduce((n,id)=>n+(document.getElementById(id)?.value.trim()?1:0),0)+(selSlot?1:0);
+  const progress=document.getElementById('bookProgress');
+  if(progress)progress.style.width=Math.round((filled/7)*100)+'%';
+
+  const svc=document.getElementById('fsvc')?.value || 'Not selected';
+  const date=document.getElementById('fd')?.value || 'Not selected';
+  const tz=document.getElementById('ftz')?.value || 'IST';
+  const email=document.getElementById('fe')?.value.trim();
+  const phone=document.getElementById('fp')?.value.trim();
+  const desc=document.getElementById('fdesc')?.value || '';
+
+  const set=(id,v)=>{const el=document.getElementById(id);if(el)el.textContent=v;};
+  set('sumSvc',svc);
+  set('sumDate',date);
+  set('sumSlot',selSlot ? selSlot+' ('+tz+')' : 'Not selected');
+  set('sumContact',email || phone || 'Add email or phone');
+  set('briefCount',desc.length+' chars');
+
+  document.querySelectorAll('.quick-svc').forEach(btn=>btn.classList.toggle('sel',btn.dataset.service===svc));
+}
+
 function pickSvc(s){
   const el=document.getElementById('fsvc');if(el)el.value=s;
+  updateBookingUI();
   document.getElementById('book-form').scrollIntoView({behavior:'smooth',block:'start'});
 }
 function pickSlot(el,t){
   document.querySelectorAll('#slotsG .slot').forEach(s=>s.classList.remove('sel'));
-  el.classList.add('sel');selSlot=t;
+  el.classList.add('sel');selSlot=t;updateBookingUI();
 }
 function pickBudget(el,v){
   document.querySelectorAll('#budgetG .b-opt').forEach(b=>b.classList.remove('sel'));
   el.classList.add('sel');selBudget=v;
 }
+document.querySelectorAll('.quick-svc').forEach(btn=>btn.addEventListener('click',()=>pickSvc(btn.dataset.service)));
+['fn','fp','fe','fsvc','fd','ftz','fdesc'].forEach(id=>document.getElementById(id)?.addEventListener('input',updateBookingUI));
+['fsvc','fd','ftz'].forEach(id=>document.getElementById(id)?.addEventListener('change',updateBookingUI));
+updateBookingUI();
 function toggleFaq(el){
   const item=el.parentElement,isOpen=item.classList.contains('open');
   document.querySelectorAll('.faq-item.open').forEach(i=>i.classList.remove('open'));
@@ -1326,6 +2091,24 @@ async function submitForm(){
     reply_to    : d.em,
   };
 
+  if (!window.emailjs) {
+    const subject = encodeURIComponent('Portfolio booking request - ' + d.sv);
+    const body = encodeURIComponent(
+      'Name: ' + d.n + '\n' +
+      'Phone: ' + d.ph + '\n' +
+      'Email: ' + d.em + '\n' +
+      'Service: ' + d.sv + '\n' +
+      'Preferred date: ' + d.dt + '\n' +
+      'Time slot: ' + d.slot + ' (' + d.tz + ')\n\n' +
+      'Project brief:\n' + d.ds
+    );
+    window.location.href = 'mailto:varunchaubeywork@gmail.com?subject=' + subject + '&body=' + body;
+    btn.disabled=false;
+    document.getElementById('btnText').style.display='inline';
+    document.getElementById('btnLoad').style.display='none';
+    return;
+  }
+
   try {
     await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, { publicKey: 'aWJFE2wLW-Q6sbFhi' });
     document.getElementById('modal-msg').innerHTML =
@@ -1336,6 +2119,7 @@ async function submitForm(){
     document.getElementById('fsvc').value='';
     document.querySelectorAll('.slot.sel,.b-opt.sel').forEach(el=>el.classList.remove('sel'));
     selSlot='';selBudget='';
+    updateBookingUI();
   } catch(err){
     console.error('EmailJS error:', err);
     const msg = err?.text || err?.message || JSON.stringify(err) || 'Unknown error';
@@ -1348,5 +2132,469 @@ async function submitForm(){
 }
 document.getElementById('hire-modal')?.addEventListener('click',e=>{if(e.target===e.currentTarget)e.currentTarget.classList.remove('show');});
 </script>
+
+<!-- ── THREE.JS ── -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+'use strict';
+/* ─────────────────────────────────────────────
+   SMOOTH 3D LAYER — single self-contained block
+   lerp-based RAF everywhere, no CSS transitions
+   competing with JS transforms
+───────────────────────────────────────────── */
+
+/* utility */
+const L = (a,b,t) => a+(b-a)*t;
+const isMob = () => window.innerWidth <= 768;
+
+/* ── global mouse (normalised & raw) ── */
+const M = {x:0,y:0,nx:0,ny:0};
+document.addEventListener('mousemove',e=>{
+  M.x=e.clientX; M.y=e.clientY;
+  M.nx=(e.clientX/window.innerWidth-.5)*2;
+  M.ny=-(e.clientY/window.innerHeight-.5)*2;
+});
+
+/* ══════════════════════════════════
+   1. CUSTOM CURSOR
+══════════════════════════════════ */
+(function(){
+  const dot=document.getElementById('cd'), ring=document.getElementById('cr');
+  if(!dot||!ring||isMob()||matchMedia('(pointer:coarse)').matches) return;
+  dot.style.cssText+=';transition:none;';
+  ring.style.cssText+=';transition:none;';
+  let rx=M.x,ry=M.y, sc=1,tsc=1, rs=36,trs=36;
+
+  document.querySelectorAll('a,button,[onclick],.sk-card,.exp-card,.pj,.ach').forEach(el=>{
+    el.addEventListener('mouseenter',()=>{tsc=1.9;trs=54;});
+    el.addEventListener('mouseleave',()=>{tsc=1;trs=36;});
+  });
+
+  (function loop(){
+    rx=L(rx,M.x,.11); ry=L(ry,M.y,.11);
+    sc=L(sc,tsc,.15); rs=L(rs,trs,.13);
+    dot.style.left=M.x+'px'; dot.style.top=M.y+'px';
+    dot.style.transform=`translate(-50%,-50%) scale(${sc})`;
+    ring.style.left=rx+'px'; ring.style.top=ry+'px';
+    ring.style.width=rs+'px'; ring.style.height=rs+'px';
+    ring.style.transform='translate(-50%,-50%)';
+    requestAnimationFrame(loop);
+  })();
+})();
+
+/* ══════════════════════════════════
+   2. THREE.JS HERO — RICH SCENE
+══════════════════════════════════ */
+(function(){
+  const cv=document.getElementById('hc');
+  if(!cv||typeof THREE==='undefined') return;
+  const R=new THREE.WebGLRenderer({canvas:cv,antialias:true,alpha:true,powerPreference:'high-performance'});
+  R.setPixelRatio(Math.min(devicePixelRatio,1.8));
+  R.setClearColor(0,0);
+  const sc=new THREE.Scene();
+  const cam=new THREE.PerspectiveCamera(55,1,.1,2000);
+  cam.position.z=90;
+  let cx=0,cy=0;
+
+  function resize(){
+    const p=cv.parentElement,w=p.offsetWidth,h=p.offsetHeight;
+    R.setSize(w,h,false);cam.aspect=w/h;cam.updateProjectionMatrix();
+  }
+  resize();
+  window.addEventListener('resize',resize,{passive:true});
+
+  /* ── particles ── */
+  const N=110;
+  const pa=new Float32Array(N*3);
+  const pv=Array.from({length:N},()=>({x:(Math.random()-.5)*.03,y:(Math.random()-.5)*.03,z:(Math.random()-.5)*.015}));
+  const pColors=new Float32Array(N*3);
+  const palette=[[0.31,0.55,0.97],[0.18,0.83,0.75],[0.65,0.55,0.98]];
+  for(let i=0;i<N;i++){
+    pa[i*3]=(Math.random()-.5)*160;pa[i*3+1]=(Math.random()-.5)*90;pa[i*3+2]=(Math.random()-.5)*50;
+    const c=palette[i%3];pColors[i*3]=c[0];pColors[i*3+1]=c[1];pColors[i*3+2]=c[2];
+  }
+  const pGeo=new THREE.BufferGeometry();
+  pGeo.setAttribute('position',new THREE.BufferAttribute(pa,3));
+  pGeo.setAttribute('color',new THREE.BufferAttribute(pColors,3));
+  sc.add(new THREE.Points(pGeo,new THREE.PointsMaterial({size:.9,vertexColors:true,transparent:true,opacity:.65,blending:THREE.AdditiveBlending,depthWrite:false})));
+
+  /* ── connection lines ── */
+  const MAXL=200,la=new Float32Array(MAXL*6);
+  const lGeo=new THREE.BufferGeometry();
+  lGeo.setAttribute('position',new THREE.BufferAttribute(la,3));
+  lGeo.setDrawRange(0,0);
+  sc.add(new THREE.LineSegments(lGeo,new THREE.LineBasicMaterial({color:0x4F8EF7,transparent:true,opacity:.09,blending:THREE.AdditiveBlending,depthWrite:false})));
+
+  /* ── floating wireframe shapes ── */
+  const shapes=[];
+  const geos=[new THREE.BoxGeometry(5,5,5),new THREE.OctahedronGeometry(4),new THREE.TetrahedronGeometry(4.5)];
+  const shapeColors=[0x4F8EF7,0x2DD4BF,0xA78BFA,0x4F8EF7,0x2DD4BF,0x6BA3F8];
+  for(let i=0;i<6;i++){
+    const m=new THREE.Mesh(geos[i%3],new THREE.MeshBasicMaterial({color:shapeColors[i],wireframe:true,transparent:true,opacity:.13}));
+    m.position.set((Math.random()-.5)*130,(Math.random()-.5)*70,(Math.random()-.5)*35-10);
+    m.rotation.set(Math.random()*Math.PI,Math.random()*Math.PI,0);
+    shapes.push({m,rx:.004+Math.random()*.006,ry:.005+Math.random()*.008,vy:(Math.random()-.5)*.014});
+    sc.add(m);
+  }
+
+  /* ── DNA-style double helix ── */
+  const helixPts1=[],helixPts2=[],crossPts=[];
+  for(let i=0;i<80;i++){
+    const t=i/80*Math.PI*6;const z=-60+i*1.5;
+    helixPts1.push(new THREE.Vector3(Math.cos(t)*8,-40+i*1,z));
+    helixPts2.push(new THREE.Vector3(Math.cos(t+Math.PI)*8,-40+i*1,z));
+    if(i%5===0){crossPts.push(new THREE.Vector3(Math.cos(t)*8,-40+i*1,z));crossPts.push(new THREE.Vector3(Math.cos(t+Math.PI)*8,-40+i*1,z));}
+  }
+  const hMat=new THREE.LineBasicMaterial({color:0x2DD4BF,transparent:true,opacity:.15,blending:THREE.AdditiveBlending});
+  sc.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(helixPts1),hMat));
+  sc.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(helixPts2),hMat.clone()));
+  const cGeo=new THREE.BufferGeometry().setFromPoints(crossPts);
+  sc.add(new THREE.LineSegments(cGeo,new THREE.LineBasicMaterial({color:0xA78BFA,transparent:true,opacity:.1,blending:THREE.AdditiveBlending})));
+
+  /* ── large torus rings ── */
+  [[30,.1,8,64,0xA78BFA,-30],[20,.08,8,64,0x2DD4BF,20],[40,.06,8,64,0x4F8EF7,-50]].forEach(([r,t,rs,seg,col,z],i)=>{
+    const m=new THREE.Mesh(new THREE.TorusGeometry(r,t,rs,seg),
+      new THREE.MeshBasicMaterial({color:col,transparent:true,opacity:.08,blending:THREE.AdditiveBlending}));
+    m.position.set((i-.5)*20,0,z);
+    m._rx=.002*(i+1);m._ry=.003*(i+1);
+    shapes.push({m,rx:m._rx,ry:m._ry,vy:0,isTorus:true});
+    sc.add(m);
+  });
+
+  let frame=0,lc=0;const MD=26,MD2=MD*MD;
+  function tick(){
+    requestAnimationFrame(tick);frame++;
+    for(let i=0;i<N;i++){
+      pa[i*3]+=pv[i].x;pa[i*3+1]+=pv[i].y;pa[i*3+2]+=pv[i].z;
+      if(Math.abs(pa[i*3])>80)pv[i].x*=-1;
+      if(Math.abs(pa[i*3+1])>45)pv[i].y*=-1;
+      if(Math.abs(pa[i*3+2])>25)pv[i].z*=-1;
+    }
+    pGeo.attributes.position.needsUpdate=true;
+    if(frame%4===0){
+      lc=0;
+      for(let i=0;i<N&&lc<MAXL;i++)for(let j=i+1;j<N&&lc<MAXL;j++){
+        const dx=pa[i*3]-pa[j*3],dy=pa[i*3+1]-pa[j*3+1],dz=pa[i*3+2]-pa[j*3+2];
+        if(dx*dx+dy*dy+dz*dz<MD2){const k=lc*6;la[k]=pa[i*3];la[k+1]=pa[i*3+1];la[k+2]=pa[i*3+2];la[k+3]=pa[j*3];la[k+4]=pa[j*3+1];la[k+5]=pa[j*3+2];lc++;}
+      }
+      lGeo.attributes.position.needsUpdate=true;lGeo.setDrawRange(0,lc*2);
+    }
+    shapes.forEach(c=>{c.m.rotation.x+=c.rx;c.m.rotation.y+=c.ry;if(!c.isTorus){c.m.position.y+=c.vy;if(Math.abs(c.m.position.y)>40)c.vy*=-1;}});
+    cx=L(cx,M.nx*8,.032);cy=L(cy,M.ny*5,.032);
+    cam.position.x=cx;cam.position.y=cy;cam.lookAt(0,0,0);
+    R.render(sc,cam);
+  }
+  tick();
+})();
+
+/* ══════════════════════════════════
+   3. CARD TILT (RAF lerp per card)
+══════════════════════════════════ */
+(function(){
+  if(isMob()) return;
+  function tilt(card, str=6){
+    const shine=document.createElement('div');
+    shine.className='t-shine'; card.appendChild(shine);
+    let rx=0,ry=0,trx=0,try_=0,tz=0,ttz=0,on=false;
+    function loop(){
+      rx=L(rx,trx,.09); ry=L(ry,try_,.09); tz=L(tz,ttz,.09);
+      card.style.transform=`perspective(900px) rotateX(${rx}deg) rotateY(${ry}deg) translateZ(${tz}px)`;
+      shine.style.background=`radial-gradient(circle at ${(ry/str+1)*50}% ${(-rx/str+1)*50}%,rgba(255,255,255,.10) 0%,transparent 60%)`;
+      shine.style.opacity=on?'1':'0';
+      requestAnimationFrame(loop);
+    }
+    loop();
+    card.addEventListener('mouseenter',()=>{on=true;ttz=6;});
+    card.addEventListener('mousemove',e=>{
+      const r=card.getBoundingClientRect();
+      try_=(e.clientX-r.left-r.width/2)/(r.width/2)*str;
+      trx=-(e.clientY-r.top-r.height/2)/(r.height/2)*str;
+    });
+    card.addEventListener('mouseleave',()=>{on=false;trx=0;try_=0;ttz=0;});
+  }
+  document.querySelectorAll('.exp-card').forEach(c=>tilt(c,5));
+  document.querySelectorAll('.skill-group,.featured-pj').forEach(c=>tilt(c,4));
+  document.querySelectorAll('.sk-card').forEach(c=>tilt(c,8));
+  document.querySelectorAll('.svc-card').forEach(c=>tilt(c,5));
+  document.querySelectorAll('.book-info-card,.form-card').forEach(c=>tilt(c,3));
+  document.querySelectorAll('.pj,.ach').forEach(c=>tilt(c,4));
+})();
+
+/* ══════════════════════════════════
+   4. HERO PARALLAX (RAF lerp)
+══════════════════════════════════ */
+(function(){
+  if(isMob()) return;
+  const heroL=document.querySelector('.hero-l');
+  const photo=document.querySelector('.photo-wrap');
+  const ftags=[...document.querySelectorAll('.ftag')];
+  let lx=0,ly=0,px=0,py=0;
+  (function loop(){
+    lx=L(lx,M.nx*5,.06); ly=L(ly,M.ny*3,.06);
+    px=L(px,M.nx*-9,.05); py=L(py,M.ny*-5,.05);
+    if(heroL) heroL.style.transform=`translate(${lx}px,${ly}px)`;
+    if(photo) photo.style.transform=`translate(${px}px,${py}px)`;
+    ftags.forEach((ft,i)=>{
+      const d=(i%2?-1:1)*(i+1);
+      ft.style.transform=`translate(${M.nx*12*d*.04*(i*4+1)}px,${M.ny*7*d*.04*(i*4+1)}px)`;
+    });
+    requestAnimationFrame(loop);
+  })();
+})();
+
+/* ══════════════════════════════════
+   5. SPOTLIGHT GLOW on cards
+══════════════════════════════════ */
+document.querySelectorAll('.pj,.ach,.svc-card,.sk-card,.skill-group,.featured-pj,.exp-card,.cf-front').forEach(card=>{
+  const g=document.createElement('div'); g.className='spot'; card.prepend(g);
+  card.addEventListener('mouseenter',()=>g.style.opacity='1');
+  card.addEventListener('mouseleave',()=>g.style.opacity='0');
+  card.addEventListener('mousemove',e=>{
+    const r=card.getBoundingClientRect();
+    g.style.background=`radial-gradient(circle at ${e.clientX-r.left}px ${e.clientY-r.top}px,rgba(79,142,247,.09) 0%,transparent 52%)`;
+  });
+});
+
+/* ══════════════════════════════════
+   6. MAGNETIC BUTTONS (RAF lerp)
+══════════════════════════════════ */
+(function(){
+  if(isMob()) return;
+  document.querySelectorAll('.btn-p,.nav-cta,.logo-mark,.sl-btn').forEach(btn=>{
+    let bx=0,by=0,tbx=0,tby=0,on=false;
+    (function loop(){
+      bx=L(bx,tbx,.12); by=L(by,tby,.12);
+      btn.style.transform=`translate(${bx}px,${by}px)`;
+      if(on||Math.abs(bx)+Math.abs(by)>.05) requestAnimationFrame(loop);
+    })();
+    btn.addEventListener('mousemove',e=>{
+      const r=btn.getBoundingClientRect();
+      tbx=(e.clientX-r.left-r.width/2)*.28;
+      tby=(e.clientY-r.top-r.height/2)*.28;
+      on=true;
+    });
+    btn.addEventListener('mouseleave',()=>{tbx=0;tby=0;on=false;});
+  });
+})();
+
+/* ══════════════════════════════════
+   7. RIPPLE on buttons
+══════════════════════════════════ */
+document.querySelectorAll('.btn-p,.btn-s,.svc-btn,.btn-submit,.btn-wa,.btn-em,.sl-btn').forEach(btn=>{
+  btn.addEventListener('click',e=>{
+    const r=btn.getBoundingClientRect();
+    const rp=document.createElement('span');
+    rp.style.cssText=`position:absolute;border-radius:50%;background:rgba(255,255,255,.22);
+      width:0;height:0;left:${e.clientX-r.left}px;top:${e.clientY-r.top}px;
+      transform:translate(-50%,-50%);animation:rippleOut .6s ease forwards;pointer-events:none;`;
+    btn.appendChild(rp); setTimeout(()=>rp.remove(),700);
+  });
+});
+
+
+
+/* ══════════════════════════════════
+   9. SKILL TOOLTIPS
+══════════════════════════════════ */
+(function(){
+  const T={Excel:'Formulas, pivot tables & automation',
+    'Power BI':'Expert dashboards, DAX & data modelling',
+    'Power BI Service':'Workspaces, RLS & gateway config',
+    Python:'pandas, requests, API scripts & automation',
+    'Looker Studio':'Real-time marketing & ops dashboards',
+    SQL:'CTEs, window functions & query tuning',
+    Tableau:'Interactive visual analytics',
+    'API Integration':'REST APIs, JSON & live data feeds',
+    'Power Apps':'Low-code business apps',
+    Postman:'API testing & collection runs',
+    Snowflake:'Cloud data warehouse & zero-copy cloning',
+    'Azure Data Factory':'ETL pipelines & data flows'};
+  document.querySelectorAll('.sk-card').forEach(card=>{
+    const name=card.querySelector('.sk-name')?.textContent?.trim();
+    if(T[name]){const tip=document.createElement('div');tip.className='sk-tip';tip.textContent=T[name];card.appendChild(tip);}
+  });
+})();
+
+/* ══════════════════════════════════
+   10. NAV ACTIVE LINK
+══════════════════════════════════ */
+(function(){
+  const links=[...document.querySelectorAll('.nav-links a[href^="#"]:not(.nav-cta)')];
+  const secs=[...document.querySelectorAll('section[id]')];
+  function upd(){
+    let cur=secs[0];
+    secs.forEach(s=>{if(window.scrollY+110>=s.offsetTop) cur=s;});
+    links.forEach(a=>a.classList.toggle('alink',a.getAttribute('href')==='#'+cur.id));
+  }
+  window.addEventListener('scroll',upd,{passive:true}); upd();
+})();
+
+/* ══════════════════════════════════
+   11. TYPEWRITER on hero role
+══════════════════════════════════ */
+(function(){
+  const roles=['Data Analyst','BI Developer','Power BI Expert','SQL Specialist','Python Enthusiast'];
+  const spans=[...document.querySelectorAll('.h-role>span:not(.h-role-dot)')];
+  if(!spans.length) return;
+  let ri=0;
+  function run(){
+    ri=(ri+1)%roles.length;
+    const span=spans[ri%spans.length], tgt=roles[ri];
+    let i=span.textContent.length;
+    function del(){if(i>0){span.textContent=tgt.slice(0,--i);setTimeout(del,28);}else type(0);}
+    function type(j){if(j<=tgt.length){span.textContent=tgt.slice(0,j);setTimeout(()=>type(j+1),50);}else setTimeout(run,2000);}
+    del();
+  }
+  setTimeout(run,2500);
+})();
+
+/* ══════════════════════════════════
+   12. TICKER pause on hover
+══════════════════════════════════ */
+(function(){
+  const t=document.querySelector('.ticker-t'),p=t&&t.parentElement;
+  if(!t) return;
+  p.addEventListener('mouseenter',()=>t.style.animationPlayState='paused');
+  p.addEventListener('mouseleave',()=>t.style.animationPlayState='running');
+})();
+
+/* ══════════════════════════════════
+   13. COUNTER FIX (clean fallback)
+══════════════════════════════════ */
+(function(){
+  const seen=new Set();
+  const obs=new IntersectionObserver(es=>{
+    es.forEach(e=>{
+      if(!e.isIntersecting||seen.has(e.target)) return;
+      seen.add(e.target);
+      const el=e.target, raw=el.textContent.trim();
+      const num=parseFloat(raw), suf=raw.replace(/[\d.]/g,'');
+      if(isNaN(num)) return;
+      const t0=performance.now(), dur=1300;
+      (function step(now){
+        const prog=Math.min((now-t0)/dur,1), ease=1-Math.pow(1-prog,3);
+        el.innerHTML=(Number.isInteger(num)?Math.round(num*ease):(num*ease).toFixed(1))+`<em>${suf}</em>`;
+        if(prog<1) requestAnimationFrame(step);
+      })(t0);
+    });
+  },{threshold:.6});
+  document.querySelectorAll('.hst-n').forEach(el=>obs.observe(el));
+})();
+
+/* ══════════════════════════════════
+   14. BACK TO TOP
+══════════════════════════════════ */
+(function(){
+  const btn=document.getElementById('btt');
+  if(!btn) return;
+  window.addEventListener('scroll',()=>btn.classList.toggle('show',window.scrollY>400),{passive:true});
+})();
+
+/* ══════════════════════════════════
+   17. SMOOTH NAV SCROLL (override)
+══════════════════════════════════ */
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    const t=document.querySelector(a.getAttribute('href'));
+    if(!t)return;
+    e.preventDefault();
+    const offset=70;
+    const top=t.getBoundingClientRect().top+window.scrollY-offset;
+    window.scrollTo({top,behavior:'smooth'});
+  });
+});
+
+/* ══════════════════════════════════
+   18. CERT CARD TOUCH FLIP (mobile)
+══════════════════════════════════ */
+document.querySelectorAll('.cert-card').forEach(card=>{
+  card.addEventListener('click',()=>card.classList.toggle('flipped'));
+});
+
+/* ══════════════════════════════════
+   19. FORM — live character count for textarea
+══════════════════════════════════ */
+(function(){
+  const ta=document.getElementById('fdesc');
+  if(!ta)return;
+  const hint=document.createElement('div');
+  hint.style.cssText='font-size:.68rem;color:var(--text3);text-align:right;margin-top:.3rem;transition:color .2s;';
+  hint.textContent='0 / 500';
+  ta.after(hint);
+  ta.addEventListener('input',()=>{
+    const n=ta.value.length;
+    hint.textContent=n+' / 500';
+    hint.style.color=n>400?'#F59E0B':n>450?'#EF4444':'var(--text3)';
+    ta.style.borderColor=n>450?'rgba(239,68,68,.5)':'';
+  });
+})();
+
+/* ══════════════════════════════════
+   20. SLIDER — infinite feel + keyboard
+══════════════════════════════════ */
+(function(){
+  function enhance(reelId){
+    const reel=document.getElementById(reelId);
+    if(!reel)return;
+    /* keyboard arrow support when focused */
+    reel.setAttribute('tabindex','0');
+    reel.addEventListener('keydown',e=>{
+      const cards=reel.querySelectorAll('.pj,.ach');
+      if(!cards.length)return;
+      const w=cards[0].offsetWidth+19;
+      if(e.key==='ArrowRight'){reel.scrollBy({left:w,behavior:'smooth'});e.preventDefault();}
+      if(e.key==='ArrowLeft'){reel.scrollBy({left:-w,behavior:'smooth'});e.preventDefault();}
+    });
+    /* show scroll hint on first view */
+    const obs=new IntersectionObserver(es=>{
+      es.forEach(e=>{
+        if(!e.isIntersecting)return;
+        reel.style.transition='box-shadow .3s';
+        reel.style.boxShadow='inset -40px 0 30px -10px rgba(10,14,26,.6)';
+        setTimeout(()=>reel.style.boxShadow='',1500);
+        obs.disconnect();
+      });
+    },{threshold:.5});
+    obs.observe(reel);
+  }
+  enhance('pR'); enhance('aR');
+})();
+
+/* ══════════════════════════════════
+   21. CONTACT LINKS — hover sound wave effect
+══════════════════════════════════ */
+document.querySelectorAll('.ct-link').forEach(link=>{
+  link.addEventListener('mouseenter',()=>{
+    link.style.transition='all .25s cubic-bezier(.34,1.56,.64,1)';
+  });
+  link.addEventListener('mouseleave',()=>{
+    link.style.transition='all .3s ease';
+  });
+});
+
+/* ══════════════════════════════════
+   22. EXP CARD — timeline dot on first load
+══════════════════════════════════ */
+(function(){
+  const s=document.createElement('style');
+  s.textContent=`
+    .exp-card:nth-child(1){--accent:var(--teal);}
+    .exp-card:nth-child(2){--accent:var(--blue);}
+    .exp-card:nth-child(3){--accent:var(--purple);}
+    .exp-card::before{background:linear-gradient(90deg,var(--accent,var(--blue)),var(--teal))!important;}
+  `;
+  document.head.appendChild(s);
+})();
+
+/* ══════════════════════════════════
+   23. PAGE VISIBILITY — pause Three.js when tab hidden
+══════════════════════════════════ */
+document.addEventListener('visibilitychange',()=>{
+  const canvas=document.getElementById('hc');
+  if(canvas) canvas.style.animationPlayState=document.hidden?'paused':'running';
+});
+</script>
 </body>
 </html>
+
+
