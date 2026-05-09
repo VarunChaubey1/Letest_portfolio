@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -65,26 +65,34 @@
   "review": [
     {
       "@type": "Review",
+      "itemReviewed": {"@type": "ProfessionalService", "name": "Varun Chaubey — BI Consulting"},
       "author": {"@type": "Person", "name": "Rahul Mehta"},
-      "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+      "datePublished": "2025-08-12",
+      "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5", "worstRating": "1"},
       "reviewBody": "Varun rebuilt our entire sales reporting in Power BI in under 3 weeks. We went from spending 12 hours a week on Excel reports to instant dashboards."
     },
     {
       "@type": "Review",
+      "itemReviewed": {"@type": "ProfessionalService", "name": "Varun Chaubey — BI Consulting"},
       "author": {"@type": "Person", "name": "Sarah Khan"},
-      "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+      "datePublished": "2025-09-04",
+      "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5", "worstRating": "1"},
       "reviewBody": "Hands down the most reliable BI developer I've worked with. The Python ETL pipeline he built pulls data from 4 APIs into Postgres flawlessly."
     },
     {
       "@type": "Review",
+      "itemReviewed": {"@type": "ProfessionalService", "name": "Varun Chaubey — BI Consulting"},
       "author": {"@type": "Person", "name": "James Porter"},
-      "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+      "datePublished": "2025-10-21",
+      "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5", "worstRating": "1"},
       "reviewBody": "His DAX work is genuinely top-tier. Our exec dashboard finally tells the truth without 5 footnotes."
     },
     {
       "@type": "Review",
+      "itemReviewed": {"@type": "ProfessionalService", "name": "Varun Chaubey — BI Consulting"},
       "author": {"@type": "Person", "name": "Priya Agarwal"},
-      "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+      "datePublished": "2026-01-15",
+      "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5", "worstRating": "1"},
       "reviewBody": "Replaced 3 different consultants we tried before. Our weekly reporting time dropped 80%."
     }
   ]
@@ -144,8 +152,16 @@
   "name": "Analyst Varun",
   "alternateName": "Varun Chaubey BI Consulting",
   "url": "https://www.analystvarun.com/",
-  "logo": "https://www.analystvarun.com/images/varun-photo.webp",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://www.analystvarun.com/images/varun-photo.webp",
+    "width": 512,
+    "height": 512
+  },
+  "image": "https://www.analystvarun.com/images/varun-photo.webp",
+  "description": "Power BI dashboards, SQL analytics, and Python automation services for growing teams.",
   "founder": {"@type": "Person", "name": "Varun Chaubey"},
+  "foundingDate": "2023",
   "contactPoint": {
     "@type": "ContactPoint",
     "telephone": "+91-94737-33774",
@@ -153,6 +169,13 @@
     "contactType": "Sales",
     "availableLanguage": ["English", "Hindi"],
     "areaServed": ["IN", "GB", "AE", "US"]
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Fatehpur",
+    "addressRegion": "Uttar Pradesh",
+    "postalCode": "212601",
+    "addressCountry": "IN"
   },
   "sameAs": [
     "https://linkedin.com/in/varunchaubey",
@@ -167,33 +190,47 @@
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "@id": "https://www.analystvarun.com/#localbusiness",
-  "name": "Analyst Varun — Power BI &amp; Data Consulting",
+  "name": "Analyst Varun — Power BI & Data Consulting",
   "image": "https://www.analystvarun.com/images/varun-photo.webp",
+  "logo": "https://www.analystvarun.com/images/varun-photo.webp",
   "url": "https://www.analystvarun.com/",
   "telephone": "+91-94737-33774",
   "email": "varunchaubeywork@gmail.com",
   "priceRange": "₹₹",
+  "currenciesAccepted": "INR, USD, GBP, AED",
+  "paymentAccepted": "UPI, Bank Transfer, PayPal, Wise",
+  "description": "Top-rated Power BI Developer and Data Analyst. Custom dashboards, SQL pipelines, Python ETL automation for businesses in India, UK, UAE, and the US.",
   "address": {
     "@type": "PostalAddress",
-    "addressCountry": "IN",
-    "addressRegion": "India"
+    "streetAddress": "Fatehpur",
+    "addressLocality": "Fatehpur",
+    "addressRegion": "Uttar Pradesh",
+    "postalCode": "212601",
+    "addressCountry": "IN"
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": "20.5937",
-    "longitude": "78.9629"
+    "latitude": "25.9329",
+    "longitude": "80.8131"
   },
-  "openingHoursSpecification": {
+  "openingHoursSpecification": [{
     "@type": "OpeningHoursSpecification",
     "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
     "opens": "09:00",
     "closes": "20:00"
-  },
+  }],
+  "areaServed": [
+    {"@type": "Country", "name": "India"},
+    {"@type": "Country", "name": "United Kingdom"},
+    {"@type": "Country", "name": "United Arab Emirates"},
+    {"@type": "Country", "name": "United States"}
+  ],
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4.9",
     "reviewCount": "27",
-    "bestRating": "5"
+    "bestRating": "5",
+    "worstRating": "1"
   }
 }
 </script>
@@ -700,43 +737,39 @@
 
     <!-- Testimonials -->
     <div class="testi-grid">
-      <article class="testi-card rv" data-d="1" itemscope itemtype="https://schema.org/Review">
-        <meta itemprop="itemReviewed" content="Varun Chaubey - BI Consulting"/>
-        <div class="testi-stars" aria-label="5 stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating"><meta itemprop="ratingValue" content="5"/><meta itemprop="bestRating" content="5"/>★★★★★</div>
-        <blockquote itemprop="reviewBody">"Varun rebuilt our entire sales reporting in Power BI in under 3 weeks. We went from spending 12 hours a week on Excel reports to instant dashboards. Communication was sharp throughout."</blockquote>
-        <div class="testi-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+      <article class="testi-card rv" data-d="1">
+        <div class="testi-stars" aria-label="5 stars">★★★★★</div>
+        <blockquote>"Varun rebuilt our entire sales reporting in Power BI in under 3 weeks. We went from spending 12 hours a week on Excel reports to instant dashboards. Communication was sharp throughout."</blockquote>
+        <div class="testi-author">
           <div class="testi-avatar" style="background:linear-gradient(135deg,#22d3ee,#a78bfa);">RM</div>
-          <div class="testi-meta"><strong itemprop="name">Rahul Mehta</strong><span>Co-Founder, NorthBeam Logistics · India</span></div>
+          <div class="testi-meta"><strong>Rahul Mehta</strong><span>Co-Founder, NorthBeam Logistics · India</span></div>
         </div>
       </article>
 
-      <article class="testi-card rv" data-d="2" itemscope itemtype="https://schema.org/Review">
-        <meta itemprop="itemReviewed" content="Varun Chaubey - BI Consulting"/>
-        <div class="testi-stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating"><meta itemprop="ratingValue" content="5"/><meta itemprop="bestRating" content="5"/>★★★★★</div>
-        <blockquote itemprop="reviewBody">"Hands down the most reliable BI developer I've worked with. The Python ETL pipeline he built pulls data from 4 APIs into Postgres flawlessly. Zero issues in 6 months of production."</blockquote>
-        <div class="testi-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+      <article class="testi-card rv" data-d="2">
+        <div class="testi-stars" aria-label="5 stars">★★★★★</div>
+        <blockquote>"Hands down the most reliable BI developer I've worked with. The Python ETL pipeline he built pulls data from 4 APIs into Postgres flawlessly. Zero issues in 6 months of production."</blockquote>
+        <div class="testi-author">
           <div class="testi-avatar" style="background:linear-gradient(135deg,#fbbf24,#f472b6);">SK</div>
-          <div class="testi-meta"><strong itemprop="name">Sarah Khan</strong><span>Operations Lead, Bayline Group · UAE</span></div>
+          <div class="testi-meta"><strong>Sarah Khan</strong><span>Operations Lead, Bayline Group · UAE</span></div>
         </div>
       </article>
 
-      <article class="testi-card rv" data-d="3" itemscope itemtype="https://schema.org/Review">
-        <meta itemprop="itemReviewed" content="Varun Chaubey - BI Consulting"/>
-        <div class="testi-stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating"><meta itemprop="ratingValue" content="5"/><meta itemprop="bestRating" content="5"/>★★★★★</div>
-        <blockquote itemprop="reviewBody">"Hired Varun for a one-off SQL audit, ended up keeping him on retainer. His DAX work is genuinely top-tier. Our exec dashboard finally tells the truth without 5 footnotes."</blockquote>
-        <div class="testi-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+      <article class="testi-card rv" data-d="3">
+        <div class="testi-stars" aria-label="5 stars">★★★★★</div>
+        <blockquote>"Hired Varun for a one-off SQL audit, ended up keeping him on retainer. His DAX work is genuinely top-tier. Our exec dashboard finally tells the truth without 5 footnotes."</blockquote>
+        <div class="testi-author">
           <div class="testi-avatar" style="background:linear-gradient(135deg,#34d399,#22d3ee);">JP</div>
-          <div class="testi-meta"><strong itemprop="name">James Porter</strong><span>VP Analytics, Halcyon Retail · UK</span></div>
+          <div class="testi-meta"><strong>James Porter</strong><span>VP Analytics, Halcyon Retail · UK</span></div>
         </div>
       </article>
 
-      <article class="testi-card rv" data-d="4" itemscope itemtype="https://schema.org/Review">
-        <meta itemprop="itemReviewed" content="Varun Chaubey - BI Consulting"/>
-        <div class="testi-stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating"><meta itemprop="ratingValue" content="5"/><meta itemprop="bestRating" content="5"/>★★★★★</div>
-        <blockquote itemprop="reviewBody">"Replaced 3 different consultants we tried before. Varun actually understands the business question, not just the SQL. Our weekly reporting time dropped 80%."</blockquote>
-        <div class="testi-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+      <article class="testi-card rv" data-d="4">
+        <div class="testi-stars" aria-label="5 stars">★★★★★</div>
+        <blockquote>"Replaced 3 different consultants we tried before. Varun actually understands the business question, not just the SQL. Our weekly reporting time dropped 80%."</blockquote>
+        <div class="testi-author">
           <div class="testi-avatar" style="background:linear-gradient(135deg,#a78bfa,#22d3ee);">PA</div>
-          <div class="testi-meta"><strong itemprop="name">Priya Agarwal</strong><span>Director, FinEdge Capital · India</span></div>
+          <div class="testi-meta"><strong>Priya Agarwal</strong><span>Director, FinEdge Capital · India</span></div>
         </div>
       </article>
     </div>
@@ -951,51 +984,41 @@
       <h2 class="sec-title" id="faq-title">Frequently <em>Asked</em></h2>
       <p class="sec-desc" style="margin-left:auto;margin-right:auto;">Quick answers to what most clients ask before booking.</p>
     </div>
-    <div class="faq-list" itemscope itemtype="https://schema.org/FAQPage">
-      <div class="faq-item rv" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <div class="faq-list">
+      <div class="faq-item rv">
         <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
-          <span itemprop="name">How quickly can you start my project?</span>
+          <span>How quickly can you start my project?</span>
           <div class="faq-ico"><i class="fas fa-plus"></i></div>
         </button>
-        <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-          <div itemprop="text">Typically I start within 2–3 business days of onboarding. For urgent requirements, same-week starts are possible — just mention it in your booking form.</div>
-        </div>
+        <div class="faq-a"><div>Typically I start within 2–3 business days of onboarding. For urgent requirements, same-week starts are possible — just mention it in your booking form.</div></div>
       </div>
-      <div class="faq-item rv" data-d="1" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <div class="faq-item rv" data-d="1">
         <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
-          <span itemprop="name">Do you work with international clients?</span>
+          <span>Do you work with international clients?</span>
           <div class="faq-ico"><i class="fas fa-plus"></i></div>
         </button>
-        <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-          <div itemprop="text">Yes — I work with clients across India, UAE, UK, and the US. Payments via UPI, bank transfer, PayPal, or Wise. Meetings happen on Zoom, Google Meet, or WhatsApp.</div>
-        </div>
+        <div class="faq-a"><div>Yes — I work with clients across India, UAE, UK, and the US. Payments via UPI, bank transfer, PayPal, or Wise. Meetings happen on Zoom, Google Meet, or WhatsApp.</div></div>
       </div>
-      <div class="faq-item rv" data-d="2" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <div class="faq-item rv" data-d="2">
         <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
-          <span itemprop="name">What data sources do you work with?</span>
+          <span>What data sources do you work with?</span>
           <div class="faq-ico"><i class="fas fa-plus"></i></div>
         </button>
-        <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-          <div itemprop="text">Excel, Google Sheets, SQL databases (MySQL, PostgreSQL, SQL Server, Snowflake), REST APIs, Azure, Salesforce, SAP, Stripe, HubSpot, and more. If your source isn't standard, we'll figure it out on the call.</div>
-        </div>
+        <div class="faq-a"><div>Excel, Google Sheets, SQL databases (MySQL, PostgreSQL, SQL Server, Snowflake), REST APIs, Azure, Salesforce, SAP, Stripe, HubSpot, and more. If your source isn't standard, we'll figure it out on the call.</div></div>
       </div>
-      <div class="faq-item rv" data-d="3" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <div class="faq-item rv" data-d="3">
         <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
-          <span itemprop="name">How do payments work?</span>
+          <span>How do payments work?</span>
           <div class="faq-ico"><i class="fas fa-plus"></i></div>
         </button>
-        <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-          <div itemprop="text">Under ₹10,000: full upfront. Larger projects: 50% upfront, 50% on delivery. Simple invoice — UPI, bank transfer, PayPal, and Wise all accepted.</div>
-        </div>
+        <div class="faq-a"><div>Under ₹10,000: full upfront. Larger projects: 50% upfront, 50% on delivery. Simple invoice — UPI, bank transfer, PayPal, and Wise all accepted.</div></div>
       </div>
-      <div class="faq-item rv" data-d="4" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <div class="faq-item rv" data-d="4">
         <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
-          <span itemprop="name">Do you offer revisions and post-delivery support?</span>
+          <span>Do you offer revisions and post-delivery support?</span>
           <div class="faq-ico"><i class="fas fa-plus"></i></div>
         </button>
-        <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-          <div itemprop="text">Unlimited revisions within the agreed scope. Post-delivery bug fixes covered free for 30 days. After that, ongoing support available on retainer.</div>
-        </div>
+        <div class="faq-a"><div>Unlimited revisions within the agreed scope. Post-delivery bug fixes covered free for 30 days. After that, ongoing support available on retainer.</div></div>
       </div>
     </div>
   </div>
