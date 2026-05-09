@@ -297,7 +297,7 @@
 
 <!-- Critical CSS — above-the-fold styles inlined for instant paint -->
 <style>
-:root{--bg:#070a14;--bg2:#0b101e;--bg3:#111729;--card:#0f152a;--card2:#141c36;--border:rgba(148,163,184,.1);--border-h:rgba(34,211,238,.35);--primary:#22d3ee;--primary-d:#06b6d4;--primary-soft:rgba(34,211,238,.1);--primary-glow:rgba(34,211,238,.25);--pink:#f472b6;--amber:#fbbf24;--purple:#a78bfa;--green:#34d399;--text:#f1f5f9;--text2:#94a3b8;--text3:#64748b;--h:'Clash Display','Inter',system-ui,sans-serif;--b:'Inter',system-ui,sans-serif;--shadow:0 4px 16px rgba(0,0,0,.4);--shadow-lg:0 24px 60px rgba(0,0,0,.5);--shadow-glow:0 0 32px rgba(34,211,238,.18);--r:14px;--ease:cubic-bezier(.4,0,.2,1);--grad:linear-gradient(135deg,var(--primary) 0%,var(--purple) 100%);--teal:#22d3ee;--blue:#22d3ee;--cyan:#22d3ee;--cyan2:#06b6d4}
+:root{--bg:#070a14;--bg2:#0b101e;--bg3:#111729;--card:#0f152a;--card2:#141c36;--border:rgba(148,163,184,.1);--border-h:rgba(34,211,238,.35);--primary:#22d3ee;--primary-d:#06b6d4;--primary-soft:rgba(34,211,238,.1);--primary-glow:rgba(34,211,238,.25);--pink:#f472b6;--amber:#fbbf24;--purple:#a78bfa;--green:#34d399;--text:#f1f5f9;--text2:#b6c0cf;--text3:#8b96aa;--h:'Clash Display','Inter',system-ui,sans-serif;--b:'Inter',system-ui,sans-serif;--shadow:0 4px 16px rgba(0,0,0,.4);--shadow-lg:0 24px 60px rgba(0,0,0,.5);--shadow-glow:0 0 32px rgba(34,211,238,.18);--r:14px;--ease:cubic-bezier(.4,0,.2,1);--grad:linear-gradient(135deg,var(--primary) 0%,var(--purple) 100%);--teal:#22d3ee;--blue:#22d3ee;--cyan:#22d3ee;--cyan2:#06b6d4}
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--text);font-family:var(--b);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;position:relative}
@@ -411,7 +411,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
     <li><a href="#home">Home</a></li>
     <li><a href="#business">Services</a></li>
     <li><a href="#projects">Projects</a></li>
-    <li><a href="#hire">Packages</a></li>
+    <li><a href="#hire" aria-label="View all service packages">Packages</a></li>
     <li><a href="#book-form" class="nav-cta">Book Call</a></li>
     <li><a href="#contact" class="nav-cta">Contact</a></li>
   </ul>
@@ -422,10 +422,6 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 
 <!-- ═══ HERO ═══ -->
 <section id="home" class="hero">
-  <canvas id="hc" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1;"></canvas>
-  <div class="glow g1"></div>
-  <div class="glow g2"></div>
-  <div class="glow g3"></div>
 
   <!-- hero inner wrapper -->
   <div style="max-width:1220px;width:100%;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:4rem;position:relative;z-index:2;">
@@ -917,7 +913,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
           <li><i class="fas fa-check-circle"></i>Mobile-responsive layout + branded design</li>
           <li><i class="fas fa-check-circle"></i>30 days of post-launch support &amp; revisions</li>
         </ul>
-        <button class="svc-btn" onclick="pickSvc('Power BI Dashboard')">Get a custom quote <i class="fas fa-arrow-right"></i></button>
+        <button class="svc-btn" aria-label="Get a custom quote for Power BI Dashboard package" onclick="pickSvc('Power BI Dashboard')">Get a custom quote <i class="fas fa-arrow-right"></i></button>
       </div>
 
       <div class="svc-card sc-teal popular rv" data-d="2">
@@ -940,7 +936,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
           <li><i class="fas fa-check-circle"></i>Full Power BI dashboard suite (up to 10 pages)</li>
           <li><i class="fas fa-check-circle"></i>90 days of support, training &amp; documentation</li>
         </ul>
-        <button class="svc-btn" onclick="pickSvc('Full BI Solution')">Get a custom quote <i class="fas fa-arrow-right"></i></button>
+        <button class="svc-btn" aria-label="Get a custom quote for Full BI Solution package" onclick="pickSvc('Full BI Solution')">Get a custom quote <i class="fas fa-arrow-right"></i></button>
       </div>
 
       <div class="svc-card sc-purple rv" data-d="3">
@@ -960,7 +956,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
           <li><i class="fas fa-check-circle"></i>Scheduled runs with Email/WhatsApp/Slack alerts</li>
           <li><i class="fas fa-check-circle"></i>Full source code + setup docs (yours forever)</li>
         </ul>
-        <button class="svc-btn" onclick="pickSvc('Python Automation')">Get a custom quote <i class="fas fa-arrow-right"></i></button>
+        <button class="svc-btn" aria-label="Get a custom quote for Python Automation package" onclick="pickSvc('Python Automation')">Get a custom quote <i class="fas fa-arrow-right"></i></button>
       </div>
 
     </div>
@@ -1299,17 +1295,17 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#hire">Packages</a></li>
+          <li><a href="#hire" aria-label="View all service packages">Packages</a></li>
           <li><a href="#faq">FAQ</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h3 class="h-sub">Services</h3>
         <ul>
-          <li><a href="#hire">Power BI Dashboards</a></li>
-          <li><a href="#hire">Full BI Solutions</a></li>
-          <li><a href="#hire">Python Automation</a></li>
-          <li><a href="#hire">SQL Analytics</a></li>
+          <li><a href="#hire" aria-label="View Power BI Dashboard service">Power BI Dashboards</a></li>
+          <li><a href="#hire" aria-label="View Full BI Solution service">Full BI Solutions</a></li>
+          <li><a href="#hire" aria-label="View Python Automation service">Python Automation</a></li>
+          <li><a href="#hire" aria-label="View SQL Analytics service">SQL Analytics</a></li>
           <li><a href="#book-form">Free Consultation</a></li>
         </ul>
       </div>
@@ -1697,478 +1693,6 @@ document.getElementById('hire-modal')?.addEventListener('click',e=>{if(e.target=
   }
   outcomeBtns.forEach(btn=>btn.addEventListener('click',()=>setOutcome(btn.dataset.outcome)));
 })();
-</script>
-
-<!-- ── THREE.JS (deferred, loads after page idle) ── -->
-<script>
-window.addEventListener('load', function(){
-  var schedule = window.requestIdleCallback || function(cb){ return setTimeout(cb, 1500); };
-  schedule(function(){
-    var s = document.createElement('script');
-    s.src = 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js';
-    s.async = true;
-    document.body.appendChild(s);
-  });
-});
-</script>
-<script>
-'use strict';
-/* ─────────────────────────────────────────────
-   SMOOTH 3D LAYER — single self-contained block
-   lerp-based RAF everywhere, no CSS transitions
-   competing with JS transforms
-───────────────────────────────────────────── */
-
-/* utility */
-const L = (a,b,t) => a+(b-a)*t;
-const isMob = () => window.innerWidth <= 768;
-
-/* ── global mouse (normalised & raw) ── */
-const M = {x:0,y:0,nx:0,ny:0};
-document.addEventListener('mousemove',e=>{
-  M.x=e.clientX; M.y=e.clientY;
-  M.nx=(e.clientX/window.innerWidth-.5)*2;
-  M.ny=-(e.clientY/window.innerHeight-.5)*2;
-});
-
-/* ══════════════════════════════════
-   1. CUSTOM CURSOR
-══════════════════════════════════ */
-(function(){
-  const dot=document.getElementById('cd'), ring=document.getElementById('cr');
-  if(!dot||!ring||isMob()||matchMedia('(pointer:coarse)').matches) return;
-  dot.style.cssText+=';transition:none;';
-  ring.style.cssText+=';transition:none;';
-  let rx=M.x,ry=M.y, sc=1,tsc=1, rs=36,trs=36;
-
-  document.querySelectorAll('a,button,[onclick],.sk-card,.exp-card,.pj,.ach,.business-card,.hero-kpi-card,.outcome-btn').forEach(el=>{
-    el.addEventListener('mouseenter',()=>{tsc=1.9;trs=54;});
-    el.addEventListener('mouseleave',()=>{tsc=1;trs=36;});
-  });
-
-  (function loop(){
-    rx=L(rx,M.x,.11); ry=L(ry,M.y,.11);
-    sc=L(sc,tsc,.15); rs=L(rs,trs,.13);
-    dot.style.left=M.x+'px'; dot.style.top=M.y+'px';
-    dot.style.transform=`translate(-50%,-50%) scale(${sc})`;
-    ring.style.left=rx+'px'; ring.style.top=ry+'px';
-    ring.style.width=rs+'px'; ring.style.height=rs+'px';
-    ring.style.transform='translate(-50%,-50%)';
-    requestAnimationFrame(loop);
-  })();
-})();
-
-/* ══════════════════════════════════
-   2. THREE.JS HERO — RICH SCENE
-══════════════════════════════════ */
-(function(){
-  const cv=document.getElementById('hc');
-  if(!cv||typeof THREE==='undefined') return;
-  const R=new THREE.WebGLRenderer({canvas:cv,antialias:true,alpha:true,powerPreference:'high-performance'});
-  R.setPixelRatio(Math.min(devicePixelRatio,1.8));
-  R.setClearColor(0,0);
-  const sc=new THREE.Scene();
-  const cam=new THREE.PerspectiveCamera(55,1,.1,2000);
-  cam.position.z=90;
-  let cx=0,cy=0;
-
-  function resize(){
-    const p=cv.parentElement,w=p.offsetWidth,h=p.offsetHeight;
-    R.setSize(w,h,false);cam.aspect=w/h;cam.updateProjectionMatrix();
-  }
-  resize();
-  window.addEventListener('resize',resize,{passive:true});
-
-  /* ── particles ── */
-  const N=110;
-  const pa=new Float32Array(N*3);
-  const pv=Array.from({length:N},()=>({x:(Math.random()-.5)*.03,y:(Math.random()-.5)*.03,z:(Math.random()-.5)*.015}));
-  const pColors=new Float32Array(N*3);
-  const palette=[[0.31,0.55,0.97],[0.18,0.83,0.75],[0.65,0.55,0.98]];
-  for(let i=0;i<N;i++){
-    pa[i*3]=(Math.random()-.5)*160;pa[i*3+1]=(Math.random()-.5)*90;pa[i*3+2]=(Math.random()-.5)*50;
-    const c=palette[i%3];pColors[i*3]=c[0];pColors[i*3+1]=c[1];pColors[i*3+2]=c[2];
-  }
-  const pGeo=new THREE.BufferGeometry();
-  pGeo.setAttribute('position',new THREE.BufferAttribute(pa,3));
-  pGeo.setAttribute('color',new THREE.BufferAttribute(pColors,3));
-  sc.add(new THREE.Points(pGeo,new THREE.PointsMaterial({size:.9,vertexColors:true,transparent:true,opacity:.65,blending:THREE.AdditiveBlending,depthWrite:false})));
-
-  /* ── connection lines ── */
-  const MAXL=200,la=new Float32Array(MAXL*6);
-  const lGeo=new THREE.BufferGeometry();
-  lGeo.setAttribute('position',new THREE.BufferAttribute(la,3));
-  lGeo.setDrawRange(0,0);
-  sc.add(new THREE.LineSegments(lGeo,new THREE.LineBasicMaterial({color:0x4F8EF7,transparent:true,opacity:.09,blending:THREE.AdditiveBlending,depthWrite:false})));
-
-  /* ── floating wireframe shapes ── */
-  const shapes=[];
-  const geos=[new THREE.BoxGeometry(5,5,5),new THREE.OctahedronGeometry(4),new THREE.TetrahedronGeometry(4.5)];
-  const shapeColors=[0x4F8EF7,0x2DD4BF,0xA78BFA,0x4F8EF7,0x2DD4BF,0x6BA3F8];
-  for(let i=0;i<6;i++){
-    const m=new THREE.Mesh(geos[i%3],new THREE.MeshBasicMaterial({color:shapeColors[i],wireframe:true,transparent:true,opacity:.13}));
-    m.position.set((Math.random()-.5)*130,(Math.random()-.5)*70,(Math.random()-.5)*35-10);
-    m.rotation.set(Math.random()*Math.PI,Math.random()*Math.PI,0);
-    shapes.push({m,rx:.004+Math.random()*.006,ry:.005+Math.random()*.008,vy:(Math.random()-.5)*.014});
-    sc.add(m);
-  }
-
-  /* ── DNA-style double helix ── */
-  const helixPts1=[],helixPts2=[],crossPts=[];
-  for(let i=0;i<80;i++){
-    const t=i/80*Math.PI*6;const z=-60+i*1.5;
-    helixPts1.push(new THREE.Vector3(Math.cos(t)*8,-40+i*1,z));
-    helixPts2.push(new THREE.Vector3(Math.cos(t+Math.PI)*8,-40+i*1,z));
-    if(i%5===0){crossPts.push(new THREE.Vector3(Math.cos(t)*8,-40+i*1,z));crossPts.push(new THREE.Vector3(Math.cos(t+Math.PI)*8,-40+i*1,z));}
-  }
-  const hMat=new THREE.LineBasicMaterial({color:0x2DD4BF,transparent:true,opacity:.15,blending:THREE.AdditiveBlending});
-  sc.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(helixPts1),hMat));
-  sc.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(helixPts2),hMat.clone()));
-  const cGeo=new THREE.BufferGeometry().setFromPoints(crossPts);
-  sc.add(new THREE.LineSegments(cGeo,new THREE.LineBasicMaterial({color:0xA78BFA,transparent:true,opacity:.1,blending:THREE.AdditiveBlending})));
-
-  /* ── large torus rings ── */
-  [[30,.1,8,64,0xA78BFA,-30],[20,.08,8,64,0x2DD4BF,20],[40,.06,8,64,0x4F8EF7,-50]].forEach(([r,t,rs,seg,col,z],i)=>{
-    const m=new THREE.Mesh(new THREE.TorusGeometry(r,t,rs,seg),
-      new THREE.MeshBasicMaterial({color:col,transparent:true,opacity:.08,blending:THREE.AdditiveBlending}));
-    m.position.set((i-.5)*20,0,z);
-    m._rx=.002*(i+1);m._ry=.003*(i+1);
-    shapes.push({m,rx:m._rx,ry:m._ry,vy:0,isTorus:true});
-    sc.add(m);
-  });
-
-  let frame=0,lc=0;const MD=26,MD2=MD*MD;
-  function tick(){
-    requestAnimationFrame(tick);frame++;
-    for(let i=0;i<N;i++){
-      pa[i*3]+=pv[i].x;pa[i*3+1]+=pv[i].y;pa[i*3+2]+=pv[i].z;
-      if(Math.abs(pa[i*3])>80)pv[i].x*=-1;
-      if(Math.abs(pa[i*3+1])>45)pv[i].y*=-1;
-      if(Math.abs(pa[i*3+2])>25)pv[i].z*=-1;
-    }
-    pGeo.attributes.position.needsUpdate=true;
-    if(frame%4===0){
-      lc=0;
-      for(let i=0;i<N&&lc<MAXL;i++)for(let j=i+1;j<N&&lc<MAXL;j++){
-        const dx=pa[i*3]-pa[j*3],dy=pa[i*3+1]-pa[j*3+1],dz=pa[i*3+2]-pa[j*3+2];
-        if(dx*dx+dy*dy+dz*dz<MD2){const k=lc*6;la[k]=pa[i*3];la[k+1]=pa[i*3+1];la[k+2]=pa[i*3+2];la[k+3]=pa[j*3];la[k+4]=pa[j*3+1];la[k+5]=pa[j*3+2];lc++;}
-      }
-      lGeo.attributes.position.needsUpdate=true;lGeo.setDrawRange(0,lc*2);
-    }
-    shapes.forEach(c=>{c.m.rotation.x+=c.rx;c.m.rotation.y+=c.ry;if(!c.isTorus){c.m.position.y+=c.vy;if(Math.abs(c.m.position.y)>40)c.vy*=-1;}});
-    cx=L(cx,M.nx*8,.032);cy=L(cy,M.ny*5,.032);
-    cam.position.x=cx;cam.position.y=cy;cam.lookAt(0,0,0);
-    R.render(sc,cam);
-  }
-  tick();
-})();
-
-/* ══════════════════════════════════
-   3. CARD TILT (RAF lerp per card)
-══════════════════════════════════ */
-(function(){
-  if(isMob()) return;
-  function tilt(card, str=6){
-    const shine=document.createElement('div');
-    shine.className='t-shine'; card.appendChild(shine);
-    let rx=0,ry=0,trx=0,try_=0,tz=0,ttz=0,on=false;
-    function loop(){
-      rx=L(rx,trx,.09); ry=L(ry,try_,.09); tz=L(tz,ttz,.09);
-      card.style.transform=`perspective(900px) rotateX(${rx}deg) rotateY(${ry}deg) translateZ(${tz}px)`;
-      shine.style.background=`radial-gradient(circle at ${(ry/str+1)*50}% ${(-rx/str+1)*50}%,rgba(255,255,255,.10) 0%,transparent 60%)`;
-      shine.style.opacity=on?'1':'0';
-      requestAnimationFrame(loop);
-    }
-    loop();
-    card.addEventListener('mouseenter',()=>{on=true;ttz=6;});
-    card.addEventListener('mousemove',e=>{
-      const r=card.getBoundingClientRect();
-      try_=(e.clientX-r.left-r.width/2)/(r.width/2)*str;
-      trx=-(e.clientY-r.top-r.height/2)/(r.height/2)*str;
-    });
-    card.addEventListener('mouseleave',()=>{on=false;trx=0;try_=0;ttz=0;});
-  }
-  document.querySelectorAll('.exp-card').forEach(c=>tilt(c,5));
-  document.querySelectorAll('.skill-group,.featured-pj,.business-card,.hero-kpi-card').forEach(c=>tilt(c,4));
-  document.querySelectorAll('.sk-card').forEach(c=>tilt(c,8));
-  document.querySelectorAll('.svc-card').forEach(c=>tilt(c,5));
-  document.querySelectorAll('.book-info-card,.form-card').forEach(c=>tilt(c,3));
-  document.querySelectorAll('.pj,.ach').forEach(c=>tilt(c,4));
-})();
-
-/* ══════════════════════════════════
-   4. HERO PARALLAX (RAF lerp)
-══════════════════════════════════ */
-(function(){
-  if(isMob()) return;
-  const heroL=document.querySelector('.hero-l');
-  const photo=document.querySelector('.photo-wrap');
-  const ftags=[...document.querySelectorAll('.ftag')];
-  let lx=0,ly=0,px=0,py=0;
-  (function loop(){
-    lx=L(lx,M.nx*5,.06); ly=L(ly,M.ny*3,.06);
-    px=L(px,M.nx*-9,.05); py=L(py,M.ny*-5,.05);
-    if(heroL) heroL.style.transform=`translate(${lx}px,${ly}px)`;
-    if(photo) photo.style.transform=`translate(${px}px,${py}px)`;
-    ftags.forEach((ft,i)=>{
-      const d=(i%2?-1:1)*(i+1);
-      ft.style.transform=`translate(${M.nx*12*d*.04*(i*4+1)}px,${M.ny*7*d*.04*(i*4+1)}px)`;
-    });
-    requestAnimationFrame(loop);
-  })();
-})();
-
-/* ══════════════════════════════════
-   5. SPOTLIGHT GLOW on cards
-══════════════════════════════════ */
-document.querySelectorAll('.pj,.ach,.svc-card,.sk-card,.skill-group,.featured-pj,.exp-card,.cf-front,.business-card,.outcome-lab,.hero-kpi-card').forEach(card=>{
-  const g=document.createElement('div'); g.className='spot'; card.prepend(g);
-  card.addEventListener('mouseenter',()=>g.style.opacity='1');
-  card.addEventListener('mouseleave',()=>g.style.opacity='0');
-  card.addEventListener('mousemove',e=>{
-    const r=card.getBoundingClientRect();
-    g.style.background=`radial-gradient(circle at ${e.clientX-r.left}px ${e.clientY-r.top}px,rgba(79,142,247,.09) 0%,transparent 52%)`;
-  });
-});
-
-/* ══════════════════════════════════
-   6. MAGNETIC BUTTONS (RAF lerp)
-══════════════════════════════════ */
-(function(){
-  if(isMob()) return;
-  document.querySelectorAll('.btn-p,.nav-cta,.logo-mark,.sl-btn').forEach(btn=>{
-    let bx=0,by=0,tbx=0,tby=0,on=false;
-    (function loop(){
-      bx=L(bx,tbx,.12); by=L(by,tby,.12);
-      btn.style.transform=`translate(${bx}px,${by}px)`;
-      if(on||Math.abs(bx)+Math.abs(by)>.05) requestAnimationFrame(loop);
-    })();
-    btn.addEventListener('mousemove',e=>{
-      const r=btn.getBoundingClientRect();
-      tbx=(e.clientX-r.left-r.width/2)*.28;
-      tby=(e.clientY-r.top-r.height/2)*.28;
-      on=true;
-    });
-    btn.addEventListener('mouseleave',()=>{tbx=0;tby=0;on=false;});
-  });
-})();
-
-/* ══════════════════════════════════
-   7. RIPPLE on buttons
-══════════════════════════════════ */
-document.querySelectorAll('.btn-p,.btn-s,.svc-btn,.btn-submit,.btn-wa,.btn-em,.sl-btn').forEach(btn=>{
-  btn.addEventListener('click',e=>{
-    const r=btn.getBoundingClientRect();
-    const rp=document.createElement('span');
-    rp.style.cssText=`position:absolute;border-radius:50%;background:rgba(255,255,255,.22);
-      width:0;height:0;left:${e.clientX-r.left}px;top:${e.clientY-r.top}px;
-      transform:translate(-50%,-50%);animation:rippleOut .6s ease forwards;pointer-events:none;`;
-    btn.appendChild(rp); setTimeout(()=>rp.remove(),700);
-  });
-});
-
-
-
-/* ══════════════════════════════════
-   9. SKILL TOOLTIPS
-══════════════════════════════════ */
-(function(){
-  const T={Excel:'Formulas, pivot tables & automation',
-    'Power BI':'Expert dashboards, DAX & data modelling',
-    'Power BI Service':'Workspaces, RLS & gateway config',
-    Python:'pandas, requests, API scripts & automation',
-    'Looker Studio':'Real-time marketing & ops dashboards',
-    SQL:'CTEs, window functions & query tuning',
-    Tableau:'Interactive visual analytics',
-    'API Integration':'REST APIs, JSON & live data feeds',
-    'Power Apps':'Low-code business apps',
-    Postman:'API testing & collection runs',
-    Snowflake:'Cloud data warehouse & zero-copy cloning',
-    'Azure Data Factory':'ETL pipelines & data flows'};
-  document.querySelectorAll('.sk-card').forEach(card=>{
-    const name=card.querySelector('.sk-name')?.textContent?.trim();
-    if(T[name]){const tip=document.createElement('div');tip.className='sk-tip';tip.textContent=T[name];card.appendChild(tip);}
-  });
-})();
-
-/* ══════════════════════════════════
-   10. NAV ACTIVE LINK
-══════════════════════════════════ */
-(function(){
-  const links=[...document.querySelectorAll('.nav-links a[href^="#"]:not(.nav-cta)')];
-  const secs=[...document.querySelectorAll('section[id]')];
-  function upd(){
-    let cur=secs[0];
-    secs.forEach(s=>{if(window.scrollY+110>=s.offsetTop) cur=s;});
-    links.forEach(a=>a.classList.toggle('alink',a.getAttribute('href')==='#'+cur.id));
-  }
-  window.addEventListener('scroll',upd,{passive:true}); upd();
-})();
-
-/* ══════════════════════════════════
-   11. TYPEWRITER on hero role
-══════════════════════════════════ */
-(function(){
-  const roles=['Data Analyst','BI Developer','Power BI Expert','SQL Specialist','Python Enthusiast'];
-  const spans=[...document.querySelectorAll('.h-role>span:not(.h-role-dot)')];
-  if(!spans.length) return;
-  let ri=0;
-  function run(){
-    ri=(ri+1)%roles.length;
-    const span=spans[ri%spans.length], tgt=roles[ri];
-    let i=span.textContent.length;
-    function del(){if(i>0){span.textContent=tgt.slice(0,--i);setTimeout(del,28);}else type(0);}
-    function type(j){if(j<=tgt.length){span.textContent=tgt.slice(0,j);setTimeout(()=>type(j+1),50);}else setTimeout(run,2000);}
-    del();
-  }
-  setTimeout(run,2500);
-})();
-
-/* ══════════════════════════════════
-   12. TICKER pause on hover
-══════════════════════════════════ */
-(function(){
-  const t=document.querySelector('.ticker-t'),p=t&&t.parentElement;
-  if(!t) return;
-  p.addEventListener('mouseenter',()=>t.style.animationPlayState='paused');
-  p.addEventListener('mouseleave',()=>t.style.animationPlayState='running');
-})();
-
-/* ══════════════════════════════════
-   13. COUNTER FIX (clean fallback)
-══════════════════════════════════ */
-(function(){
-  const seen=new Set();
-  const obs=new IntersectionObserver(es=>{
-    es.forEach(e=>{
-      if(!e.isIntersecting||seen.has(e.target)) return;
-      seen.add(e.target);
-      const el=e.target, raw=el.textContent.trim();
-      const num=parseFloat(raw), suf=raw.replace(/[\d.]/g,'');
-      if(isNaN(num)) return;
-      const t0=performance.now(), dur=1300;
-      (function step(now){
-        const prog=Math.min((now-t0)/dur,1), ease=1-Math.pow(1-prog,3);
-        el.innerHTML=(Number.isInteger(num)?Math.round(num*ease):(num*ease).toFixed(1))+`<em>${suf}</em>`;
-        if(prog<1) requestAnimationFrame(step);
-      })(t0);
-    });
-  },{threshold:.6});
-  document.querySelectorAll('.hst-n').forEach(el=>obs.observe(el));
-})();
-
-/* ══════════════════════════════════
-   14. BACK TO TOP
-══════════════════════════════════ */
-(function(){
-  const btn=document.getElementById('btt');
-  if(!btn) return;
-  window.addEventListener('scroll',()=>btn.classList.toggle('show',window.scrollY>400),{passive:true});
-})();
-
-/* ══════════════════════════════════
-   17. SMOOTH NAV SCROLL (override)
-══════════════════════════════════ */
-document.querySelectorAll('a[href^="#"]').forEach(a=>{
-  a.addEventListener('click',e=>{
-    const t=document.querySelector(a.getAttribute('href'));
-    if(!t)return;
-    e.preventDefault();
-    const offset=70;
-    const top=t.getBoundingClientRect().top+window.scrollY-offset;
-    window.scrollTo({top,behavior:'smooth'});
-  });
-});
-
-/* ══════════════════════════════════
-   18. CERT CARD TOUCH FLIP (mobile)
-══════════════════════════════════ */
-document.querySelectorAll('.cert-card').forEach(card=>{
-  card.addEventListener('click',()=>card.classList.toggle('flipped'));
-});
-
-/* ══════════════════════════════════
-   19. FORM — live character count for textarea
-══════════════════════════════════ */
-(function(){
-  const ta=document.getElementById('fdesc');
-  if(!ta)return;
-  const hint=document.createElement('div');
-  hint.style.cssText='font-size:.68rem;color:var(--text3);text-align:right;margin-top:.3rem;transition:color .2s;';
-  hint.textContent='0 / 500';
-  ta.after(hint);
-  ta.addEventListener('input',()=>{
-    const n=ta.value.length;
-    hint.textContent=n+' / 500';
-    hint.style.color=n>400?'#F59E0B':n>450?'#EF4444':'var(--text3)';
-    ta.style.borderColor=n>450?'rgba(239,68,68,.5)':'';
-  });
-})();
-
-/* ══════════════════════════════════
-   20. SLIDER — infinite feel + keyboard
-══════════════════════════════════ */
-(function(){
-  function enhance(reelId){
-    const reel=document.getElementById(reelId);
-    if(!reel)return;
-    /* keyboard arrow support when focused */
-    reel.setAttribute('tabindex','0');
-    reel.addEventListener('keydown',e=>{
-      const cards=reel.querySelectorAll('.pj,.ach');
-      if(!cards.length)return;
-      const w=cards[0].offsetWidth+19;
-      if(e.key==='ArrowRight'){reel.scrollBy({left:w,behavior:'smooth'});e.preventDefault();}
-      if(e.key==='ArrowLeft'){reel.scrollBy({left:-w,behavior:'smooth'});e.preventDefault();}
-    });
-    /* show scroll hint on first view */
-    const obs=new IntersectionObserver(es=>{
-      es.forEach(e=>{
-        if(!e.isIntersecting)return;
-        reel.style.transition='box-shadow .3s';
-        reel.style.boxShadow='inset -40px 0 30px -10px rgba(10,14,26,.6)';
-        setTimeout(()=>reel.style.boxShadow='',1500);
-        obs.disconnect();
-      });
-    },{threshold:.5});
-    obs.observe(reel);
-  }
-  enhance('pR'); enhance('aR');
-})();
-
-/* ══════════════════════════════════
-   21. CONTACT LINKS — hover sound wave effect
-══════════════════════════════════ */
-document.querySelectorAll('.ct-link').forEach(link=>{
-  link.addEventListener('mouseenter',()=>{
-    link.style.transition='all .25s cubic-bezier(.34,1.56,.64,1)';
-  });
-  link.addEventListener('mouseleave',()=>{
-    link.style.transition='all .3s ease';
-  });
-});
-
-/* ══════════════════════════════════
-   22. EXP CARD — timeline dot on first load
-══════════════════════════════════ */
-(function(){
-  const s=document.createElement('style');
-  s.textContent=`
-    .exp-card:nth-child(1){--accent:var(--teal);}
-    .exp-card:nth-child(2){--accent:var(--blue);}
-    .exp-card:nth-child(3){--accent:var(--purple);}
-    .exp-card::before{background:linear-gradient(90deg,var(--accent,var(--blue)),var(--teal))!important;}
-  `;
-  document.head.appendChild(s);
-})();
-
-/* ══════════════════════════════════
-   23. PAGE VISIBILITY — pause Three.js when tab hidden
-══════════════════════════════════ */
-document.addEventListener('visibilitychange',()=>{
-  const canvas=document.getElementById('hc');
-  if(canvas) canvas.style.animationPlayState=document.hidden?'paused':'running';
-});
 </script>
 </body>
 </html>
