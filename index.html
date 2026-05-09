@@ -418,6 +418,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
   <div class="ham" id="ham"><span></span><span></span><span></span></div>
 </nav>
 
+<main id="main-content">
 
 <!-- ═══ HERO ═══ -->
 <section id="home" class="hero">
@@ -988,10 +989,10 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
       <h2 class="sec-title">Simple <em>Process</em></h2>
     </div>
     <div class="proc-grid">
-      <div class="proc-step rv" data-d="1"><div class="proc-num">01</div><h4>Book a Call</h4><p>Fill out the form or message on WhatsApp. First consultation is always free.</p></div>
-      <div class="proc-step rv" data-d="2"><div class="proc-num">02</div><h4>Discuss Project</h4><p>We discuss your data, goals, timeline and I give you a clear scope and pricing.</p></div>
-      <div class="proc-step rv" data-d="3"><div class="proc-num">03</div><h4>I Get to Work</h4><p>I build your solution with regular updates and check-ins at each milestone.</p></div>
-      <div class="proc-step rv" data-d="4"><div class="proc-num">04</div><h4>Deliver &amp; Support</h4><p>Final delivery with full handover, documentation, and ongoing support.</p></div>
+      <div class="proc-step rv" data-d="1"><div class="proc-num">01</div><h3 class="h-sub">Book a Call</h3><p>Fill out the form or message on WhatsApp. First consultation is always free.</p></div>
+      <div class="proc-step rv" data-d="2"><div class="proc-num">02</div><h3 class="h-sub">Discuss Project</h3><p>We discuss your data, goals, timeline and I give you a clear scope and pricing.</p></div>
+      <div class="proc-step rv" data-d="3"><div class="proc-num">03</div><h3 class="h-sub">I Get to Work</h3><p>I build your solution with regular updates and check-ins at each milestone.</p></div>
+      <div class="proc-step rv" data-d="4"><div class="proc-num">04</div><h3 class="h-sub">Deliver &amp; Support</h3><p>Final delivery with full handover, documentation, and ongoing support.</p></div>
     </div>
   </div>
 </section>
@@ -1133,7 +1134,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
       <div class="book-info rv" data-d="1">
         <div class="book-info-card">
           <span class="book-kicker">Direct Contact</span>
-          <h4>Pick a time that works. I will handle the rest.</h4>
+          <h3 class="h-sub">Pick a time that works. I will handle the rest.</h3>
           <p class="book-copy">Best for dashboards, automation, reporting fixes, and quick project discussions.</p>
           <div class="bi-item"><div class="bi-ico"><i class="fab fa-whatsapp"></i></div><div class="bi-txt"><strong>WhatsApp</strong><span>+91 94737 33774</span></div></div>
           <div class="bi-item"><div class="bi-ico t"><i class="fas fa-envelope"></i></div><div class="bi-txt"><strong>Email</strong><span><a href="mailto:varunchaubeywork@gmail.com">varunchaubeywork@gmail.com</a></span></div></div>
@@ -1165,12 +1166,12 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
         </div>
         <div class="book-progress" aria-hidden="true"><span id="bookProgress"></span></div>
         <div class="f-row">
-          <div class="f-grp"><label>Full Name <span>*</span></label><input type="text" class="fi" id="fn" placeholder="Your full name"></div>
-          <div class="f-grp"><label>Phone / WhatsApp <span>*</span></label><input type="tel" class="fi" id="fp" placeholder="+91 XXXXX XXXXX"></div>
+          <div class="f-grp"><label for="fn">Full Name <span>*</span></label><input type="text" class="fi" id="fn" placeholder="Your full name"></div>
+          <div class="f-grp"><label for="fp">Phone / WhatsApp <span>*</span></label><input type="tel" class="fi" id="fp" placeholder="+91 XXXXX XXXXX"></div>
         </div>
-        <div class="f-grp"><label>Email Address <span>*</span></label><input type="email" class="fi" id="fe" placeholder="you@example.com"></div>
+        <div class="f-grp"><label for="fe">Email Address <span>*</span></label><input type="email" class="fi" id="fe" placeholder="you@example.com"></div>
         <div class="f-grp">
-          <label>Service Required <span>*</span></label>
+          <label for="fsvc">Service Required <span>*</span></label>
           <select class="fs" id="fsvc">
             <option value="">— Select a service —</option>
             <option value="Power BI Dashboard">Power BI Dashboard</option>
@@ -1183,8 +1184,8 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
           </select>
         </div>
         <div class="f-row">
-          <div class="f-grp"><label>Preferred Date <span>*</span></label><input type="date" class="fi" id="fd"></div>
-          <div class="f-grp"><label>Time Zone</label>
+          <div class="f-grp"><label for="fd">Preferred Date <span>*</span></label><input type="date" class="fi" id="fd"></div>
+          <div class="f-grp"><label for="ftz">Time Zone</label>
             <select class="fs" id="ftz">
               <option value="IST">IST (India +5:30)</option>
               <option value="GMT">GMT (UK)</option>
@@ -1205,7 +1206,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
             <div class="slot" onclick="pickSlot(this,'8:00 PM')">8:00 PM</div>
           </div>
         </div>
-        <div class="f-grp"><label>Project Description <span>*</span></label><textarea class="ft" id="fdesc" placeholder="Briefly describe your data challenge, tools you use, and your timeline..."></textarea></div>
+        <div class="f-grp"><label for="fdesc">Project Description <span>*</span></label><textarea class="ft" id="fdesc" placeholder="Briefly describe your data challenge, tools you use, and your timeline..."></textarea></div>
         <div class="sub-note"><i class="fas fa-shield-alt"></i>Your information is private and will never be shared.</div>
         <div class="sub-btns">
           <button class="btn-submit" id="submitBtn" onclick="submitForm()">
@@ -1270,13 +1271,15 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
       </div>
     </div>
     <div class="case-modal-grid">
-      <div class="case-modal-section"><h4>Problem</h4><p id="case-problem"></p></div>
-      <div class="case-modal-section"><h4>Solution</h4><p id="case-solution"></p></div>
-      <div class="case-modal-section"><h4>Features</h4><ul id="case-features"></ul></div>
-      <div class="case-modal-section"><h4>Result</h4><p id="case-result"></p></div>
+      <div class="case-modal-section"><h3 class="h-sub">Problem</h3><p id="case-problem"></p></div>
+      <div class="case-modal-section"><h3 class="h-sub">Solution</h3><p id="case-solution"></p></div>
+      <div class="case-modal-section"><h3 class="h-sub">Features</h3><ul id="case-features"></ul></div>
+      <div class="case-modal-section"><h3 class="h-sub">Result</h3><p id="case-result"></p></div>
     </div>
   </div>
 </div>
+
+</main>
 
 <footer class="site-footer">
   <div class="footer-wrap">
@@ -1290,7 +1293,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
         </div>
       </div>
       <div class="footer-col">
-        <h4>Navigate</h4>
+        <h3 class="h-sub">Navigate</h3>
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -1301,7 +1304,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Services</h4>
+        <h3 class="h-sub">Services</h3>
         <ul>
           <li><a href="#hire">Power BI Dashboards</a></li>
           <li><a href="#hire">Full BI Solutions</a></li>
@@ -1311,7 +1314,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Get in touch</h4>
+        <h3 class="h-sub">Get in touch</h3>
         <ul>
           <li><a href="mailto:varunchaubeywork@gmail.com"><i class="fas fa-envelope"></i> varunchaubeywork@gmail.com</a></li>
           <li><a href="tel:+919473733774"><i class="fas fa-phone"></i> +91 94737 33774</a></li>
