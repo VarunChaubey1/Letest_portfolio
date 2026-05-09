@@ -810,14 +810,14 @@ body::after{
   transition:all .3s var(--ease)!important;
 }
 .proc-step:hover .proc-num{background:var(--primary);color:var(--bg);border-color:var(--primary);box-shadow:0 0 0 6px rgba(34,211,238,.1),0 0 24px var(--primary-glow);transform:scale(1.08)!important;}
-.proc-step h4{font-size:.93rem;font-weight:600;color:var(--text);margin-bottom:.5rem;}
+.proc-step h4,.proc-step h3.h-sub{font-size:.93rem;font-weight:600;color:var(--text);margin-bottom:.5rem;}
 .proc-step p{font-size:.82rem;color:var(--text2);line-height:1.65;}
 
 /* ─── BOOKING FORM ─── */
 .book-wrap{display:grid;grid-template-columns:1fr 1.6fr;gap:2.5rem;align-items:start;}
 .book-info{position:sticky;top:6rem;}
 .book-info-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:1.6rem;margin-bottom:1rem;}
-.book-info-card h4{font-size:.78rem;font-weight:600;color:var(--text2);margin-bottom:1.1rem;text-transform:uppercase;letter-spacing:1px;}
+.book-info-card h4,.book-info-card h3.h-sub{font-size:.78rem;font-weight:600;color:var(--text2);margin-bottom:1.1rem;text-transform:uppercase;letter-spacing:1px;}
 .bi-item{display:flex;align-items:flex-start;gap:.85rem;margin-bottom:.95rem;}
 .bi-item:last-child{margin-bottom:0;}
 .bi-ico{width:34px;height:34px;border-radius:8px;background:var(--primary-soft);border:1px solid rgba(34,211,238,.2);display:flex;align-items:center;justify-content:center;font-size:.82rem;color:var(--primary);flex-shrink:0;}
@@ -1008,7 +1008,7 @@ footer p{font-size:.78rem;color:var(--text3);}
 .case-modal-copy p{font-size:.9rem;color:var(--text2);line-height:1.7;}
 .case-modal-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;padding:1.4rem;}
 .case-modal-section{background:var(--bg3);border:1px solid var(--border);border-radius:10px;padding:1.1rem;}
-.case-modal-section h4{font-size:.7rem;letter-spacing:1.4px;text-transform:uppercase;color:var(--primary);margin-bottom:.6rem;font-weight:600;}
+.case-modal-section h4,.case-modal-section h3.h-sub{font-size:.7rem;letter-spacing:1.4px;text-transform:uppercase;color:var(--primary);margin-bottom:.6rem;font-weight:600;}
 .case-modal-section p,.case-modal-section li{font-size:.82rem;color:var(--text2);line-height:1.7;}
 .case-modal-section ul{list-style:none;display:flex;flex-direction:column;gap:.35rem;}
 .case-modal-section li{position:relative;padding-left:1rem;}
@@ -1435,7 +1435,7 @@ footer p{font-size:.78rem;color:var(--text3);}
 .footer-stars{color:var(--amber);font-size:.95rem;letter-spacing:1.5px;text-shadow:0 0 8px rgba(251,191,36,.4);}
 .footer-rating span{font-size:.78rem;color:var(--text3);}
 .footer-rating strong{color:var(--text);font-weight:600;}
-.footer-col h4{
+.footer-col h4,.footer-col h3.h-sub{
   font-family:var(--h);font-size:.78rem;font-weight:600;
   color:var(--text);text-transform:uppercase;
   letter-spacing:1.5px;margin-bottom:1.1rem;
@@ -1461,6 +1461,32 @@ footer p{font-size:.78rem;color:var(--text3);}
   .footer-grid{grid-template-columns:1fr;}
   .footer-bottom{flex-direction:column;text-align:center;}
 }
+
+/* ─── BASE H3.H-SUB (replaces former H4s) ─── */
+h3.h-sub{font-family:var(--h);font-size:.95rem;font-weight:600;color:var(--text);}
+
+/* ─── REDUCED MOTION (accessibility + perf on low-end devices) ─── */
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{
+    animation-duration:.01ms!important;
+    animation-iteration-count:1!important;
+    transition-duration:.01ms!important;
+    scroll-behavior:auto!important;
+  }
+  .photo-spin{animation:none!important;}
+  .ticker-t{animation:none!important;}
+  .avail-dot::before{animation:none!important;}
+  .h-chip-dot{animation:none!important;}
+}
+
+/* ─── PERF: GPU-compose all reveal animations + photo spin ─── */
+.rv,.rv-r,.h-chip,.h-name,.h-role,.h-desc,.h-stats,.h-btns,.photo-area,.photo-spin{
+  will-change:transform,opacity;
+}
+
+/* ─── ACCESSIBILITY: improved color contrast ─── */
+.bi-txt span,.bi-txt a,.testi-meta span{color:#b6c0cf;}
+.case-block li,.case-block p,.snap span{color:#b6c0cf;}
 
 /* ─── HIDE REDUNDANT SECTIONS ─── */
 .clean-main{display:none!important;}
