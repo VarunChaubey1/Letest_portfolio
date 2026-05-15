@@ -217,9 +217,9 @@ body::after{
 
 .h-name{
   font-family:var(--h);
-  font-size:clamp(2.4rem,5vw,4.6rem);
-  font-weight:600;line-height:1.04;letter-spacing:-2.5px;
-  color:var(--text);margin-bottom:1.1rem;
+  font-size:clamp(2rem,4vw,3.6rem);
+  font-weight:700;line-height:1.1;letter-spacing:-1.5px;
+  color:var(--text);margin-bottom:1rem;
 }
 .h-name-accent{
   background:var(--grad);
@@ -233,32 +233,21 @@ body::after{
 .h-role span{color:var(--primary);}
 .h-role-dot{width:3px;height:3px;border-radius:50%;background:var(--text3);}
 .h-desc{
-  font-size:1rem;color:var(--text2);line-height:1.7;
-  max-width:520px;margin-bottom:2rem;
+  font-size:.97rem;color:var(--text2);line-height:1.75;
+  max-width:480px;margin-bottom:1.6rem;
 }
 .h-desc strong{color:var(--text);font-weight:600;}
 .h-desc br{display:none;}
 
 .h-stats{
-  display:grid;grid-template-columns:repeat(4,auto);gap:0;margin-bottom:2rem;
-  border:1px solid var(--border);border-radius:14px;
-  padding:1rem 0;
-  width:fit-content;
-  background:rgba(15,21,42,.5);
-  backdrop-filter:blur(12px);
+  display:flex;gap:2.5rem;margin-bottom:2rem;align-items:flex-start;
 }
 .hst{
-  padding:0 1.5rem;display:flex;flex-direction:column;
-  border-right:1px solid var(--border);
-  cursor:default;
-  transition:transform .25s var(--ease);
+  display:flex;flex-direction:column;cursor:default;
 }
-.hst:first-child{padding-left:1.4rem;}
-.hst:last-child{border-right:none;padding-right:1.4rem;}
-.hst:hover{transform:translateY(-2px);}
-.hst-n{font-family:var(--h);font-size:1.7rem;font-weight:600;color:var(--text);line-height:1;letter-spacing:-1px;}
+.hst-n{font-family:var(--h);font-size:1.6rem;font-weight:700;color:var(--text);line-height:1;letter-spacing:-1px;}
 .hst-n em{font-style:normal;font-size:1rem;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
-.hst-l{font-size:.65rem;font-weight:500;text-transform:uppercase;letter-spacing:1.2px;color:var(--text3);margin-top:.4rem;}
+.hst-l{font-size:.65rem;font-weight:500;text-transform:uppercase;letter-spacing:1.2px;color:var(--text3);margin-top:.35rem;}
 
 .h-btns{display:flex;gap:.7rem;flex-wrap:wrap;}
 .btn-p{
