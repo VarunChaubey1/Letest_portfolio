@@ -281,6 +281,22 @@ body::after{
 .hst-l{font-size:.65rem;font-weight:500;text-transform:uppercase;letter-spacing:1.2px;color:var(--text3);margin-top:.35rem;}
 
 .h-btns{display:flex;gap:.7rem;flex-wrap:wrap;}
+.job-banner{
+  display:flex;flex-wrap:wrap;gap:.6rem;
+  margin-top:1.1rem;max-width:620px;
+}
+.job-banner div{
+  display:inline-flex;align-items:center;gap:.45rem;
+  background:rgba(15,21,42,.7);
+  border:1px solid var(--border);
+  color:var(--text2);
+  border-radius:8px;
+  padding:.48rem .7rem;
+  font-size:.72rem;
+  font-weight:600;
+  backdrop-filter:blur(10px);
+}
+.job-banner i{color:var(--primary);font-size:.72rem;}
 .btn-p{
   display:inline-flex;align-items:center;gap:.5rem;
   background:var(--grad);
@@ -1526,6 +1542,7 @@ footer p{font-size:.78rem;color:var(--text3);}
   .hero>div[style]{flex-direction:column!important;gap:2.5rem!important;align-items:center!important;text-align:center!important;}
   .hero-r{padding-left:0!important;order:-1;}
   .hero-l{align-items:center;max-width:100%;}
+  .job-banner{justify-content:center;}
   .h-chip,.h-stats,.h-btns,.h-role,.h-avail,.h-skills{justify-content:center;margin-left:auto;margin-right:auto;}
   .h-desc,.h-intro{margin-left:auto;margin-right:auto;text-align:center;}
   .photo-float{display:none;}
