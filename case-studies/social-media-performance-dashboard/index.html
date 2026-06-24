@@ -27,7 +27,12 @@
 .case-shot{width:100%;border:1px solid var(--border);border-radius:var(--r-lg);box-shadow:var(--shadow);background:var(--card);margin:1.2rem 0;}
 .case-shot-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0;}
 .case-actions{display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.5rem;}
-@media(max-width:760px){.case-shot-grid{grid-template-columns:1fr;}}
+.dashboard-embed{margin:2rem 0 2.5rem;}
+.dashboard-embed h2{font-family:var(--h);font-size:clamp(1.6rem,3vw,2.4rem);margin-bottom:.75rem;}
+.dashboard-embed p{color:var(--text2);line-height:1.7;margin-bottom:1rem;}
+.dashboard-frame{position:relative;width:100%;aspect-ratio:16/9;border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden;background:var(--card);box-shadow:var(--shadow);}
+.dashboard-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+@media(max-width:760px){.case-shot-grid{grid-template-columns:1fr;}.dashboard-frame{aspect-ratio:4/3;}}
 </style>
 </head>
 <body>
@@ -61,7 +66,7 @@
 
 <div class="page-wrap">
   <div class="page-hero rv">
-    <span class="page-label">Case Study · Meta API · SQL · Power BI · Fabric Gateway</span>
+    <span class="page-label">Case Study - Meta API - SQL - Power BI - Fabric Gateway</span>
     <h1>Social Media Performance Dashboard for <em>Facebook and Instagram Analytics</em></h1>
     <p class="page-sub">A Power BI dashboard built for social media performance tracking: followers, posts, reach, engagement, reels views, top content, platform comparison, and date-based trend analysis from API-driven data.</p>
     <div class="cs-hero-meta">
@@ -77,6 +82,17 @@
       <a href="https://github.com/VarunChaubey1/Letest_portfolio/tree/main/social_sync" class="btn-s" target="_blank" rel="noopener"><i class="fab fa-github"></i> View Code</a>
     </div>
   </div>
+
+  <section class="dashboard-embed rv" aria-labelledby="live-dashboard-title">
+    <h2 id="live-dashboard-title">Live Power BI Dashboard</h2>
+    <p>Explore the published Facebook and Instagram performance report directly inside the portfolio page.</p>
+    <div class="dashboard-frame">
+      <iframe title="Social Media Performance Dashboard - Power BI" src="https://app.powerbi.com/view?r=eyJrIjoiNmE1OWY0NDgtMDZlZi00YTFkLTkyYjEtNGMxZjhiYzFiYjVmIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" loading="lazy" allowfullscreen></iframe>
+    </div>
+    <div class="case-actions">
+      <a href="https://app.powerbi.com/view?r=eyJrIjoiNmE1OWY0NDgtMDZlZi00YTFkLTkyYjEtNGMxZjhiYzFiYjVmIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" class="btn-s" target="_blank" rel="noopener"><i class="fas fa-up-right-from-square"></i> Open Full Dashboard</a>
+    </div>
+  </section>
 
   <img class="case-shot rv" src="/images/projects/social-media-overview.png" alt="Social media analytics overview dashboard">
 
