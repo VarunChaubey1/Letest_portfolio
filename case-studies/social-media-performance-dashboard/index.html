@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Social Media Performance Dashboard | Meta API, SQL, Power BI | Varun Chaubey</title>
+<meta name="description" content="Power BI social media analytics dashboard built with Meta API, SQL, Fabric Gateway, and realtime Facebook and Instagram performance data.">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Social Media Performance Dashboard | Varun Chaubey">
+<meta property="og:description" content="Facebook and Instagram analytics in Power BI using Meta API, SQL, Fabric Gateway, and refresh-ready reporting.">
+<meta property="og:url" content="https://www.analystvarun.com/case-studies/social-media-performance-dashboard/">
+<meta property="og:image" content="https://www.analystvarun.com/images/projects/social-media-overview.png">
+<link rel="canonical" href="https://www.analystvarun.com/case-studies/social-media-performance-dashboard/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Social Media Performance Dashboard - Meta API to SQL to Power BI","author":{"@type":"Person","name":"Varun Chaubey","url":"https://www.analystvarun.com/"},"url":"https://www.analystvarun.com/case-studies/social-media-performance-dashboard/","description":"Social media analytics dashboard built with Meta API, SQL, Power BI, and Fabric Gateway for Facebook and Instagram reporting.","keywords":["Power BI","Meta API","Facebook Analytics","Instagram Analytics","SQL","Fabric Gateway","Social Media Dashboard"]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.analystvarun.com/"},{"@type":"ListItem","position":2,"name":"Case Studies","item":"https://www.analystvarun.com/case-studies/"},{"@type":"ListItem","position":3,"name":"Social Media Performance Dashboard","item":"https://www.analystvarun.com/case-studies/social-media-performance-dashboard/"}]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Clash+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="/styles.css">
+<style>
+.page-wrap{max-width:980px;margin:0 auto;padding:0 clamp(1.5rem,6vw,5rem);}
+.case-shot{width:100%;border:1px solid var(--border);border-radius:var(--r-lg);box-shadow:var(--shadow);background:var(--card);margin:1.2rem 0;}
+.case-shot-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0;}
+.case-actions{display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.5rem;}
+@media(max-width:760px){.case-shot-grid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<div id="sp"></div>
+<a href="tel:+919473733774" class="reach">Reach Out</a>
+<nav class="nav" id="nav">
+  <div class="nav-logo"><div class="logo-mark">VC</div><a href="/" style="color:inherit">Varun Chaubey</a></div>
+  <ul class="nav-links" id="nl">
+    <li><a href="/">Home</a></li>
+    <li class="nav-has-drop">
+      <button class="nav-drop-toggle" type="button">Services <i class="fas fa-chevron-down nav-arr"></i></button>
+      <ul class="nav-drop">
+        <li><a href="/services/"><i class="fas fa-chart-bar"></i> Power BI Dashboard</a></li>
+        <li><a href="/services/"><i class="fas fa-database"></i> Full BI Solution</a></li>
+        <li><a href="/services/"><i class="fab fa-python"></i> Python Automation</a></li>
+      </ul>
+    </li>
+    <li><a href="/case-studies/">Case Studies</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/about/">About</a></li>
+    <li><a href="/hire/" class="nav-cta">Hire Me &#8594;</a></li>
+  </ul>
+  <div class="ham" id="ham"><span></span><span></span><span></span></div>
+</nav>
+
+<nav class="breadcrumb">
+  <a href="/">Home</a><span class="sep">/</span>
+  <a href="/case-studies/">Case Studies</a><span class="sep">/</span>
+  <span class="cur">Social Media Performance Dashboard</span>
+</nav>
+
+<div class="page-wrap">
+  <div class="page-hero rv">
+    <span class="page-label">Case Study · Meta API · SQL · Power BI · Fabric Gateway</span>
+    <h1>Social Media Performance Dashboard for <em>Facebook and Instagram Analytics</em></h1>
+    <p class="page-sub">A Power BI dashboard built for social media performance tracking: followers, posts, reach, engagement, reels views, top content, platform comparison, and date-based trend analysis from API-driven data.</p>
+    <div class="cs-hero-meta">
+      <span class="cs-tag">Meta API</span>
+      <span class="cs-tag">SQL</span>
+      <span class="cs-tag">Power BI</span>
+      <span class="cs-tag">Fabric Gateway</span>
+      <span class="cs-tag">Facebook</span>
+      <span class="cs-tag">Instagram</span>
+    </div>
+    <div class="case-actions">
+      <a href="https://app.powerbi.com/view?r=eyJrIjoiNmE1OWY0NDgtMDZlZi00YTFkLTkyYjEtNGMxZjhiYzFiYjVmIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" class="btn-p" target="_blank" rel="noopener"><i class="fas fa-chart-bar"></i> View Live Dashboard</a>
+      <a href="https://github.com/VarunChaubey1/Letest_portfolio/tree/main/social_sync" class="btn-s" target="_blank" rel="noopener"><i class="fab fa-github"></i> View Code</a>
+    </div>
+  </div>
+
+  <img class="case-shot rv" src="/images/projects/social-media-overview.png" alt="Social media analytics overview dashboard">
+
+  <div class="cs-body" style="margin-top:3rem;">
+    <section class="cs-section rv" data-d="1">
+      <h2>The Problem</h2>
+      <p>Facebook and Instagram data usually stays inside separate platform screens. That makes it difficult to compare reach, engagement, followers, post volume, and top-performing content across both channels without manual exports.</p>
+      <ul>
+        <li>Facebook and Instagram performance data needed one reporting layer</li>
+        <li>Manual platform checks made trend tracking slow and inconsistent</li>
+        <li>Stakeholders needed overview, platform-level, content-level, and comparison pages</li>
+        <li>The dashboard needed refresh-ready data instead of static screenshots</li>
+      </ul>
+    </section>
+
+    <section class="cs-section rv" data-d="2">
+      <h2>The Solution</h2>
+      <p>I built a reporting pipeline that pulls social media data from Meta APIs, stores structured records in SQL, and exposes the analytics layer through Power BI. Fabric Gateway supports refresh-ready reporting for the published dashboard.</p>
+      <ul>
+        <li>API extraction for Facebook and Instagram profile, post, reach, engagement, and media metrics</li>
+        <li>SQL tables for platform, daily, and content-level analysis</li>
+        <li>Power BI model with overview, Facebook, Instagram, content, and compare pages</li>
+        <li>Fabric Gateway connection for refresh flow between the dataset and data source</li>
+        <li>Interactive date filters, top content ranking, trend charts, post type breakdown, and KPI cards</li>
+      </ul>
+    </section>
+
+    <section class="cs-section rv" data-d="3">
+      <h2>Dashboard Pages</h2>
+      <div class="case-shot-grid">
+        <img class="case-shot" src="/images/projects/social-media-facebook.png" alt="Facebook analytics dashboard page">
+        <img class="case-shot" src="/images/projects/social-media-instagram.png" alt="Instagram analytics dashboard page">
+      </div>
+      <ul>
+        <li><strong>Overview:</strong> total followers, posts, reach, engagement, platform contribution, and top content</li>
+        <li><strong>Facebook:</strong> Facebook reach, engagement, post type, daily performance, and post-wise analysis</li>
+        <li><strong>Instagram:</strong> followers, reach, engagement, reels views, post count, and media-type performance</li>
+        <li><strong>Compare:</strong> side-by-side platform analysis for business decisions</li>
+      </ul>
+    </section>
+
+    <section class="cs-section rv" data-d="4">
+      <h2>Architecture</h2>
+      <div class="result-box" style="font-family:monospace;font-size:.88rem;line-height:2;text-align:left;">
+        <strong style="font-family:var(--b);">Data Flow:</strong><br>
+        Meta Graph API -> Python/FastAPI service -> SQL database -> Power BI model -> Fabric Gateway -> Published dashboard
+        <br><br>
+        <strong style="font-family:var(--b);">Metrics:</strong> followers, reach, engagement, likes, comments, shares, reels views, post count<br>
+        <strong style="font-family:var(--b);">Platforms:</strong> Facebook + Instagram<br>
+        <strong style="font-family:var(--b);">Reporting layer:</strong> Power BI dashboard with interactive filters and ranking views
+      </div>
+    </section>
+
+    <section class="cs-section rv" data-d="5">
+      <h2>Tech Stack</h2>
+      <ul>
+        <li><strong>API:</strong> Meta Graph API for Facebook and Instagram data</li>
+        <li><strong>Backend:</strong> Python, FastAPI, requests/aiohttp, APScheduler</li>
+        <li><strong>Database:</strong> SQL database for structured social media metrics</li>
+        <li><strong>BI:</strong> Power BI dashboard, DAX measures, interactive visuals</li>
+        <li><strong>Refresh:</strong> Fabric Gateway for published reporting workflow</li>
+      </ul>
+    </section>
+
+    <section class="cs-section rv" data-d="6">
+      <h2>Outcome</h2>
+      <div class="result-box">
+        <strong>One dashboard for Facebook and Instagram performance</strong>
+        <p>The dashboard gives a single view of social media performance across reach, engagement, followers, top content, and platform comparison. It is built for ongoing refresh instead of one-time reporting.</p>
+      </div>
+    </section>
+
+    <div class="related-cta rv" style="text-align:left;">
+      <h3>Need a Similar Social Media Dashboard?</h3>
+      <p>I can build API-driven Power BI dashboards for marketing, social media, campaign, CRM, finance, and operations reporting.</p>
+      <div class="case-actions">
+        <a href="/hire/" class="btn-p"><i class="fas fa-calendar-check"></i> Book Free Strategy Call</a>
+        <a href="/case-studies/" class="btn-s"><i class="fas fa-layer-group"></i> View More Case Studies</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-wrap">
+    <div class="footer-grid footer-grid-5">
+      <div class="footer-col footer-brand">
+        <div class="nav-logo" style="margin-bottom:1rem;"><div class="logo-mark">VC</div>Varun Chaubey</div>
+        <p class="footer-blurb">Power BI Developer &amp; Data Engineer. Helping growing teams replace manual reporting with automated dashboards, SQL pipelines, and Python ETL.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="/services/">Power BI Dashboard</a></li>
+          <li><a href="/services/">Full BI Solution</a></li>
+          <li><a href="/services/">Python Automation</a></li>
+          <li><a href="/hire/">Free Consultation</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/case-studies/">Case Studies</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/hire/">Hire Me</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:varunchaubeywork@gmail.com">Email</a></li>
+          <li><a href="tel:+919473733774">Phone</a></li>
+          <li><a href="https://linkedin.com/in/varunchaubey" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/VarunChaubey1" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Location</h4>
+        <p>India<br>Available worldwide</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Varun Chaubey. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+<script src="/script.js"></script>
+</body>
+</html>
