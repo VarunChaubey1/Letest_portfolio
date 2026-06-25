@@ -216,84 +216,100 @@
     </div>
   </section>
 
-  <section class="lv-section" id="projects">
+  <section class="lv-section lv-band" id="projects">
     <div class="lv-wrap">
       <div class="lv-section-head lv-head-row">
         <div>
-          <span>[ Case studies ]</span>
-          <h2>Selected <em>business case studies</em>.</h2>
+          <span>[ Projects ]</span>
+          <h2>All dashboard projects with <em>live links</em>.</h2>
         </div>
-        <a href="/case-studies/">View all projects &rarr;</a>
-      </div>
-      <div class="lv-case-list">
-        <article class="lv-case">
-          <img src="images/projects/social-media-overview.png" alt="Social media performance dashboard overview">
-          <div>
-            <span>API + SQL + Power BI Fabric Gateway</span>
-            <h3>Social Media Performance Dashboard</h3>
-            <p><strong>Problem:</strong> Facebook and Instagram performance data was split across platforms, making reach, engagement, followers, and post performance hard to compare in one place.</p>
-            <p><strong>Solution:</strong> Built a social media analytics pipeline using Meta APIs, SQL storage, Power BI, and Fabric Gateway for refresh-ready reporting.</p>
-            <p><strong>Result:</strong> Unified Facebook and Instagram reporting with overview, platform-specific, content, and comparison pages.</p>
-            <div class="lv-tags"><b>Meta API</b><b>SQL</b><b>Power BI</b><b>Fabric Gateway</b><b>Realtime Data</b></div>
-          </div>
-        </article>
-        <article class="lv-case">
-          <img src="images/projects/zomato-thumbnail.webp" alt="CRM analytics dashboard preview">
-          <div>
-            <span>Retail / Sales</span>
-            <h3>CRM Analytics Dashboard</h3>
-            <p><strong>Problem:</strong> Business had no clear visibility on sales, appointments, and conversion.</p>
-            <p><strong>Solution:</strong> Built a Power BI dashboard connected to PostgreSQL with an API-based data pipeline.</p>
-            <p><strong>Result:</strong> Reduced manual reporting effort by about 60% and enabled faster decisions.</p>
-            <div class="lv-tags"><b>Power BI</b><b>PostgreSQL</b><b>REST API</b></div>
-          </div>
-        </article>
-        <article class="lv-case lv-case-reverse">
-          <img src="images/projects/atm-thumbnail.webp" alt="Revenue KPI dashboard preview">
-          <div>
-            <span>Executive Reporting</span>
-            <h3>Revenue &amp; KPI Dashboard</h3>
-            <p><strong>Problem:</strong> Manual Excel reporting was slow, inconsistent, and difficult to review daily.</p>
-            <p><strong>Solution:</strong> Automated dashboard with KPI cards, trends, filters, and executive views.</p>
-            <p><strong>Result:</strong> Reduced reporting time from hours to minutes.</p>
-            <div class="lv-tags"><b>Power BI</b><b>DAX</b><b>Excel</b></div>
-          </div>
-        </article>
-        <article class="lv-case">
-          <img src="images/projects/weather-thumbnail.webp" alt="ETL pipeline dashboard preview">
-          <div>
-            <span>Data Engineering</span>
-            <h3>ETL Pipeline: API to DB to Dashboard</h3>
-            <p><strong>Problem:</strong> Data was scattered across APIs and not structured for reporting.</p>
-            <p><strong>Solution:</strong> Extracted data using APIs, stored it in PostgreSQL, and built a dashboard on top.</p>
-            <p><strong>Result:</strong> Automated the full pipeline and handled 50K+ records efficiently.</p>
-            <div class="lv-tags"><b>Python</b><b>PostgreSQL</b><b>Power BI</b></div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="lv-section lv-band">
-    <div class="lv-wrap">
-      <div class="lv-section-head lv-head-row">
-        <div>
-          <span>[ Dashboard gallery ]</span>
-          <h2>Sample builds showing dashboard <em>design and storytelling</em>.</h2>
-        </div>
-        <div class="lv-nav-buttons" aria-label="Dashboard gallery navigation">
-          <button type="button" data-scroll-target="dashboard-gallery" data-scroll-dir="-1" aria-label="Previous dashboard">&#8592;</button>
-          <button type="button" data-scroll-target="dashboard-gallery" data-scroll-dir="1" aria-label="Next dashboard">&#8594;</button>
+        <div class="lv-nav-buttons" aria-label="Projects navigation">
+          <button type="button" data-scroll-target="project-gallery" data-scroll-dir="-1" aria-label="Previous project">&#8592;</button>
+          <button type="button" data-scroll-target="project-gallery" data-scroll-dir="1" aria-label="Next project">&#8594;</button>
         </div>
       </div>
-      <div class="lv-gallery lv-scroll-row" id="dashboard-gallery">
-        <article><img src="images/projects/social-media-overview.png" alt="Social media performance analytics dashboard"><h3>Social Media Analytics</h3><p>Facebook and Instagram reporting with API, SQL, Power BI, and Fabric Gateway.</p></article>
-        <article><img src="images/projects/ola-thumbnail.webp" alt="OLA ride analysis"><h3>OLA Ride Analysis</h3><p>Ride demand, cancellations, and utilization dashboard.</p></article>
-        <article><img src="images/projects/blinkit-thumbnail.webp" alt="Blinkit dashboard"><h3>Blinkit Delivery</h3><p>Delivery time and outlet performance reporting.</p></article>
-        <article><img src="images/projects/election-thumbnail.webp" alt="Election analytics"><h3>Election Analytics</h3><p>Constituency and party-level performance review.</p></article>
-        <article><img src="images/projects/Spotify-thumbnail.webp" alt="Spotify behavior dashboard"><h3>Spotify Behavior</h3><p>Listening behavior and preference analysis.</p></article>
-        <article><img src="images/projects/atm-thumbnail.webp" alt="ATM transaction dashboard"><h3>ATM Monitoring</h3><p>Transaction volume, uptime, and location performance.</p></article>
-        <article><img src="images/projects/weather-thumbnail.webp" alt="Weather API dashboard"><h3>Weather API</h3><p>API-powered current condition and forecast tracking.</p></article>
+      <div class="lv-gallery lv-project-grid lv-scroll-row" id="project-gallery">
+        <article>
+          <img src="images/projects/social-media-overview.png" alt="Social media performance analytics dashboard">
+          <div class="lv-project-body">
+            <h3>Social Media Analytics</h3>
+            <p>Facebook and Instagram reporting unified with Meta API, SQL, Power BI, and Fabric Gateway.</p>
+            <div class="lv-tags"><b>Meta API</b><b>SQL</b><b>Power BI</b></div>
+            <a class="lv-project-link" href="https://app.powerbi.com/view?r=eyJrIjoiNmE1OWY0NDgtMDZlZi00YTFkLTkyYjEtNGMxZjhiYzFiYjVmIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" rel="noopener">View Dashboard <span>&#8599;</span></a>
+          </div>
+        </article>
+        <article>
+          <img src="images/projects/ola-thumbnail.webp" alt="OLA ride analysis dashboard">
+          <div class="lv-project-body">
+            <h3>OLA Ride Analysis</h3>
+            <p>Ride demand, cancellations, revenue, distance, and vehicle utilization dashboard.</p>
+            <div class="lv-tags"><b>Power BI</b><b>SQL</b><b>Operations</b></div>
+            <a class="lv-project-link" href="https://app.powerbi.com/view?r=eyJrIjoiMDQzNDlmZjgtZjZjYi00M2UzLWI1ZDEtMmZjZDFkYTMxYWFhIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" rel="noopener">View Dashboard <span>&#8599;</span></a>
+          </div>
+        </article>
+        <article>
+          <img src="images/projects/blinkit-thumbnail.webp" alt="Blinkit delivery performance dashboard">
+          <div class="lv-project-body">
+            <h3>Blinkit Delivery</h3>
+            <p>Delivery time, outlet performance, product performance, and retail operations reporting.</p>
+            <div class="lv-tags"><b>Power BI</b><b>Retail</b><b>Performance</b></div>
+            <a class="lv-project-link" href="https://app.powerbi.com/view?r=eyJrIjoiMjk0YWM1ZjctNWE5My00OWM2LTg1MjQtMTAwMDBkNmU0MDI5IiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" rel="noopener">View Dashboard <span>&#8599;</span></a>
+          </div>
+        </article>
+        <article>
+          <img src="images/projects/zomato-thumbnail.webp" alt="Zomato restaurant insights dashboard">
+          <div class="lv-project-body">
+            <h3>Zomato Analysis</h3>
+            <p>Restaurant discovery, ratings, cuisine, pricing, and location insights dashboard.</p>
+            <div class="lv-tags"><b>Power BI</b><b>SQL</b><b>Market Insights</b></div>
+            <a class="lv-project-link" href="https://app.powerbi.com/view?r=eyJrIjoiMDBiMzA2NWItNjE5My00NWRmLWIxZmMtOThiMGRhNjJkZTY0IiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" rel="noopener">View Dashboard <span>&#8599;</span></a>
+          </div>
+        </article>
+        <article>
+          <img src="images/projects/election-thumbnail.webp" alt="Election analytics dashboard">
+          <div class="lv-project-body">
+            <h3>Election Dashboard</h3>
+            <p>Constituency, party, candidate, vote share, and stakeholder performance analytics.</p>
+            <div class="lv-tags"><b>Power BI</b><b>Public Data</b><b>Analytics</b></div>
+            <a class="lv-project-link" href="https://app.powerbi.com/view?r=eyJrIjoiZDgxYTcyNjQtNDI3Yi00OWJiLTlhZjgtYjIwOWFlZGY4Y2JhIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" rel="noopener">View Dashboard <span>&#8599;</span></a>
+          </div>
+        </article>
+        <article>
+          <img src="images/projects/atm-thumbnail.webp" alt="ATM transaction monitoring dashboard">
+          <div class="lv-project-body">
+            <h3>ATM Monitoring</h3>
+            <p>Transaction volume, uptime, withdrawals, failures, and branch/location performance.</p>
+            <div class="lv-tags"><b>Power BI</b><b>Banking</b><b>Monitoring</b></div>
+            <a class="lv-project-link" href="https://app.powerbi.com/view?r=eyJrIjoiZGRlMDNkNjItZTg2Mi00ZjQyLTk5MjgtM2FmYTAwNWNhNTJjIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" rel="noopener">View Dashboard <span>&#8599;</span></a>
+          </div>
+        </article>
+        <article>
+          <img src="images/projects/ipl-thumbnail.webp" alt="IPL match statistics dashboard">
+          <div class="lv-project-body">
+            <h3>IPL Dashboard</h3>
+            <p>Team, season, venue, player, and match performance dashboard for cricket storytelling.</p>
+            <div class="lv-tags"><b>Power BI</b><b>Sports</b><b>Storytelling</b></div>
+            <a class="lv-project-link" href="https://app.powerbi.com/view?r=eyJrIjoiZWYwZWIwMjgtZTE5YS00ZTEyLThhYjUtMDMyMjk0ZjY2YzRjIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" rel="noopener">View Dashboard <span>&#8599;</span></a>
+          </div>
+        </article>
+        <article>
+          <img src="images/projects/weather-thumbnail.webp" alt="Weather API dashboard">
+          <div class="lv-project-body">
+            <h3>Weather API Dashboard</h3>
+            <p>API-powered dashboard for current conditions, forecast tracking, and automated refresh.</p>
+            <div class="lv-tags"><b>API</b><b>JSON</b><b>Power BI</b></div>
+            <a class="lv-project-link" href="https://app.powerbi.com/view?r=eyJrIjoiMjU5OGIzMTItOTM4YS00YWZiLTgyM2UtNmUyMGZjNDkyMmRkIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" rel="noopener">View Dashboard <span>&#8599;</span></a>
+          </div>
+        </article>
+        <article>
+          <img src="images/projects/Spotify-thumbnail.webp" alt="Spotify listening behavior dashboard">
+          <div class="lv-project-body">
+            <h3>Spotify Analysis</h3>
+            <p>Track, artist, popularity, audio feature, playlist, and listening behavior analytics.</p>
+            <div class="lv-tags"><b>Power BI</b><b>Python</b><b>Behavior</b></div>
+            <a class="lv-project-link" href="https://app.powerbi.com/view?r=eyJrIjoiMzU4MDhkNDctZWM5Zi00NDQ4LWFkN2ItNzNiNWRiNWVjZjIwIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" rel="noopener">View Dashboard <span>&#8599;</span></a>
+          </div>
+        </article>
       </div>
     </div>
   </section>
@@ -428,7 +444,7 @@
   </div>
 </footer>
 
-<script>
+  <script>
 const menuButton = document.querySelector('.lv-menu-btn');
 const links = document.querySelector('.lv-links');
 menuButton?.addEventListener('click', () => {
@@ -440,8 +456,36 @@ document.querySelectorAll('[data-scroll-target]').forEach((button) => {
     const target = document.getElementById(button.dataset.scrollTarget);
     if (!target) return;
     const dir = Number(button.dataset.scrollDir || 1);
-    target.scrollBy({ left: dir * Math.min(360, target.clientWidth * 0.85), behavior: 'smooth' });
+    const firstCard = target.querySelector('article');
+    const gap = parseFloat(getComputedStyle(target).columnGap || getComputedStyle(target).gap || 18);
+    const cardWidth = firstCard ? firstCard.getBoundingClientRect().width + gap : target.clientWidth * 0.85;
+    target.scrollBy({ left: dir * cardWidth, behavior: 'smooth' });
   });
+});
+
+const lightbox = document.createElement('div');
+lightbox.className = 'lv-lightbox';
+lightbox.innerHTML = '<button type="button" class="lv-lightbox-close" aria-label="Close image">&times;</button><img src="" alt=""><p></p>';
+document.body.appendChild(lightbox);
+const lightboxImg = lightbox.querySelector('img');
+const lightboxCaption = lightbox.querySelector('p');
+function closeLightbox() {
+  lightbox.classList.remove('open');
+  lightboxImg.src = '';
+}
+document.querySelectorAll('.lv-achievements img').forEach((image) => {
+  image.addEventListener('click', () => {
+    lightboxImg.src = image.currentSrc || image.src;
+    lightboxImg.alt = image.alt || 'Achievement image';
+    lightboxCaption.textContent = image.closest('article')?.querySelector('h3')?.textContent || image.alt || '';
+    lightbox.classList.add('open');
+  });
+});
+lightbox.addEventListener('click', (event) => {
+  if (event.target === lightbox || event.target.classList.contains('lv-lightbox-close')) closeLightbox();
+});
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') closeLightbox();
 });
 const resumeHighlights = {
   impact: [
